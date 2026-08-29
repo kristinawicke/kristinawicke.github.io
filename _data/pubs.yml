@@ -4,7 +4,6 @@
   type: preprint
   arxiv: "2607.22097"
   journal: ""
-  journal_url: ""
   abstract: >-
     Grouping species according to their phylogenetic relationships often results
     in different groups than grouping them according to their shared traits.
@@ -133,7 +132,6 @@
   issue: 4
   pages: "489–500"
   journal_url: "https://doi.org/10.1007/s11557-018-1375-8"
-  arxiv: ""
   abstract: >-
     Multiple biotic and abiotic parameters influence the dynamics of individual 
     fungal species and entire communities. Major drivers for tropical plant endophytes
