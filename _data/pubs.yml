@@ -1,5 +1,5 @@
 - title: "Enumerating monophyletic characters in mathematical phylogenetics"
-  authors: "Mareike Fischer, Michael Hendriksen, and Kristina Wicke"
+  authors: "Mareike Fischer, Michael Hendriksen, Kristina Wicke"
   year: 2026
   type: preprint
   arxiv: "2607.22097"
@@ -15,7 +15,7 @@
     a certain trait and which are typically used for phylogenetic tree reconstruction.
 
 - title: Combinatorial properties of phylogenetic diversity indices
-  authors: Kristina Wicke and Mike Steel
+  authors: Kristina Wicke, Mike Steel
   year: 2020
   month: 2
   type: article
@@ -37,7 +37,7 @@
     representation of phylogenetic diversity.
 
 - title: "Statistical inconsistency of maximum parsimony for k-tuple-site data"
-  authors: Michelle Galla, Kristina Wicke, and Mareike Fischer
+  authors: Michelle Galla, Kristina Wicke, Mareike Fischer
   year: 2019
   month: 4
   type: article
@@ -65,7 +65,7 @@
     maximum parsimony is statistically inconsistent for k-tuple-site data and five taxa.
 
 - title: "On the Shapley value of unrooted phylogenetic trees"
-  authors: Kristina Wicke and Mareike Fischer
+  authors: Kristina Wicke, Mareike Fischer
   year: 2019
   month: 2
   type: article
@@ -92,7 +92,7 @@
     n species.
 
 - title: "Phylogenetic diversity and biodiversity indices on phylogenetic networks"
-  authors: "Kristina Wicke and Mareike Fischer"
+  authors: "Kristina Wicke, Mareike Fischer"
   year: 2018
   month: 4
   type: article
@@ -124,7 +124,7 @@
     characterized by widespread hybridization.
     
 - title: "Mycobiomes of sympatric Amorphophallus albispathus (Araceae) and Camellia sinensis (Theaceae) – a case study reveals clear tissue preferences and differences in diversity and composition"
-  authors: "Martin Unterseher, Samantha C. Karunarathna, Roberto García Cruz, Nikki H. Dagamac, Mathilde B. Dahl, Serena E. Dool, Michelle Galla, Lina Herbst, R. Henrik Nilsson, Sébastien J. Puechmaille, Caroline Schöner, Michael Schöner, Abu B. Siddique, Annette Teltewskoi, Kristina Wicke, David G. Würth, Christian Wurzbacher, and Kevin D. Hyde"
+  authors: "Martin Unterseher, Samantha C. Karunarathna, Roberto García Cruz, Nikki H. Dagamac, Mathilde B. Dahl, Serena E. Dool, Michelle Galla, Lina Herbst, R. Henrik Nilsson, Sébastien J. Puechmaille, Caroline Schöner, Michael Schöner, Abu B. Siddique, Annette Teltewskoi, Kristina Wicke, David G. Würth, Christian Wurzbacher, Kevin D. Hyde"
   year: 2018
   month: 4
   type: article
@@ -159,7 +159,7 @@
   
   
 - title: "Comparing the rankings obtained from two biodiversity indices: the Fair Proportion Index and the Shapley Value"
-  authors: "Kristina Wicke and Mareike Fischer"
+  authors: "Kristina Wicke, Mareike Fischer"
   year: 2017
   month: 10
   type: article
