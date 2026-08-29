@@ -65,16 +65,6 @@ plugins:
   - jemoji
   - jekyll-include-cache
 
-# ==========================================================
-# Scholar
-# ==========================================================
-
-scholar:
-  source: ./_bibliography
-  bibliography: papers
-  style: apa
-  sort_by: year
-  order: descending
 
 
 # ==========================================================
