@@ -23,7 +23,8 @@ classes: wide
   {% assign publications = site.data.pubs | sort: "year" | reverse %}
 
   {% assign current_year = "" %}
-  {% assign publication_number = 0 %}
+  {% assign total_publications = publications.size %}
+  {% assign publication_number = total_publications | minus: forloop.index0 %}
 
   {% for pub in publications %}
 
