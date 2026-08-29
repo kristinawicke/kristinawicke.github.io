@@ -69,7 +69,7 @@ plugins:
 # Scholar
 # ==========================================================
 
-  scholar:
+scholar:
   source: ./_bibliography
   bibliography: papers
   style: apa
