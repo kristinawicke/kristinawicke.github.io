@@ -1,10 +1,11 @@
 ---
+
 title: "Publications"
 permalink: /publications/
 layout: single
 author_profile: true
 classes: wide
----
+-------------
 
 <link rel="stylesheet" href="{{ '/assets/css/custom-pages.css' | relative_url }}">
 
@@ -20,122 +21,124 @@ classes: wide
     <button class="pub-filter" data-filter="other">Other</button>
   </div>
 
-  {% assign publications = site.data.pubs | sort: "year" | reverse %}
+{% assign publications = site.data.pubs | sort: "year" | reverse %}
 
-  {% assign current_year = "" %}
-  {% assign publication_number = 0 %}
+{% assign current_year = "" %}
+{% assign publication_number = 0 %}
 
-  {% for pub in publications %}
+{% for pub in publications %}
 
-    {% if pub.year != current_year %}
-      {% assign current_year = pub.year %}
-      <h2 class="publication-year">{{ current_year }}</h2>
-    {% endif %}
+```
+{% if pub.year != current_year %}
+  {% assign current_year = pub.year %}
+  <h2 class="publication-year">{{ current_year }}</h2>
+{% endif %}
 
-    {% assign publication_number = publication_number | plus: 1 %}
+{% assign publication_number = publication_number | plus: 1 %}
 
-    <article
-      class="publication-card"
-      data-type="{{ pub.type }}"
-    >
+<article
+  class="publication-card"
+  data-type="{{ pub.type }}"
+>
 
-      <div class="publication-number">
-        {{ publication_number }}
-      </div>
+  <div class="publication-number">
+    {{ publication_number }}
+  </div>
 
-      <div class="publication-content">
+  <div class="publication-content">
 
-        <h3 class="publication-title">
-          {{ pub.title }}
-        </h3>
+    <h3 class="publication-title">
+      {{ pub.title }}
+    </h3>
 
-        <div class="publication-authors">
-          {% assign author_list = pub.authors | split: ", " %}
+    <div class="publication-authors">
+      {% assign author_list = pub.authors | split: ", " %}
 
-          {% for author in author_list %}
+      {% for author in author_list %}
 
-            {% if author contains "Kristina Wicke" %}
-              <strong class="my-name">{{ author }}</strong>
-            {% else %}
-              {{ author }}
-            {% endif %}
-
-            {% unless forloop.last %}, {% endunless %}
-
-          {% endfor %}
-        </div>
-
-        <div class="publication-details">
-
-          {% if pub.journal %}
-            <em>{{ pub.journal }}</em>
-          {% endif %}
-
-          {% if pub.volume %}
-            {{ pub.volume }}
-          {% endif %}
-
-          {% if pub.issue %}
-            ({{ pub.issue }})
-          {% endif %}
-
-          {% if pub.pages %}
-            , {{ pub.pages }}
-          {% endif %}
-
-          {% if pub.journal or pub.volume or pub.pages %}
-            ({{ pub.year }})
-          {% else %}
-            {{ pub.type | capitalize }}, {{ pub.year }}
-          {% endif %}
-
-        </div>
-
-        <div class="publication-links">
-
-          {% if pub.doi %}
-            <a
-              href="https://doi.org/{{ pub.doi }}"
-              target="_blank"
-              rel="noopener"
-            >DOI</a>
-          {% endif %}
-
-          {% if pub.arxiv %}
-            <a
-              href="https://arxiv.org/abs/{{ pub.arxiv }}"
-              target="_blank"
-              rel="noopener"
-            >arXiv</a>
-          {% endif %}
-
-          {% if pub.pdf %}
-            <a
-              href="{{ pub.pdf }}"
-              target="_blank"
-              rel="noopener"
-            >PDF</a>
-          {% endif %}
-
-          {% if pub.abstract %}
-            <button class="abstract-toggle" type="button">
-              Abstract
-            </button>
-          {% endif %}
-
-        </div>
-
-        {% if pub.abstract %}
-          <div class="publication-abstract">
-            <p>{{ pub.abstract }}</p>
-          </div>
+        {% if author contains "Kristina Wicke" %}
+          <strong class="my-name">{{ author }}</strong>
+        {% else %}
+          {{ author }}
         {% endif %}
 
+        {% unless forloop.last %}, {% endunless %}
+
+      {% endfor %}
+    </div>
+
+    <div class="publication-details">
+
+      {% if pub.journal %}
+        <em>{{ pub.journal }}</em>
+      {% endif %}
+
+      {% if pub.volume %}
+        {{ pub.volume }}
+      {% endif %}
+
+      {% if pub.issue %}
+        ({{ pub.issue }})
+      {% endif %}
+
+      {% if pub.pages %}
+        , {{ pub.pages }}
+      {% endif %}
+
+      {% if pub.journal or pub.volume or pub.pages %}
+        ({{ pub.year }})
+      {% else %}
+        {{ pub.type | capitalize }}, {{ pub.year }}
+      {% endif %}
+
+    </div>
+
+    <div class="publication-links">
+
+      {% if pub.journal_url %}
+        <a
+          href="{{ pub.journal_url }}"
+          target="_blank"
+          rel="noopener"
+        >Journal</a>
+      {% endif %}
+
+      {% if pub.arxiv %}
+        <a
+          href="https://arxiv.org/abs/{{ pub.arxiv }}"
+          target="_blank"
+          rel="noopener"
+        >arXiv</a>
+      {% endif %}
+
+      {% if pub.pdf %}
+        <a
+          href="{{ pub.pdf }}"
+          target="_blank"
+          rel="noopener"
+        >PDF</a>
+      {% endif %}
+
+      {% if pub.abstract %}
+        <button class="abstract-toggle" type="button">
+          Abstract
+        </button>
+      {% endif %}
+
+    </div>
+
+    {% if pub.abstract %}
+      <div class="publication-abstract">
+        <p>{{ pub.abstract }}</p>
       </div>
+    {% endif %}
 
-    </article>
+  </div>
 
-  {% endfor %}
+</article>
+```
+
+{% endfor %}
 
 </div>
 
