@@ -3,6 +3,8 @@
   year: 2026
   type: preprint
   arxiv: "2607.22097"
+  journal: ""
+  journal_url: ""
   abstract: >-
     Grouping species according to their phylogenetic relationships often results
     in different groups than grouping them according to their shared traits.
@@ -21,7 +23,8 @@
   volume: 80
   issue: 3
   pages: "687-715"
-  doi: "10.1007/s00285-019-01438-0"
+  journal_url: "10.1007/s00285-019-01438-0"
+  arxiv: "1902.02463"
   abstract: >-
     Phylogenetic diversity indices provide a formal way to apportion ‘evolutionary heritage’
     across species. Two natural diversity indices are Fair Proportion (FP) and Equal Splits (ES).
@@ -41,7 +44,8 @@
   journal: Bulletin of Mathematical Biology
   volume: 81
   pages: "1173–1200"
-  doi: "10.1007/s11538-018-00552-2"
+  journal_url: "10.1007/s11538-018-00552-2"
+  arxiv: "1706.05568"
   abstract: >-
     One of the main aims of phylogenetics is to reconstruct the “Tree of Life.” In this respect,
     different methods and criteria are used to analyze DNA sequences of different species and
@@ -69,7 +73,8 @@
   volume: 81
   issue: 2
   pages: "618-638"
-  doi: "10.1007/s11538-018-0392-8"
+  journal_url: "10.1007/s11538-018-0392-8"
+  arxiv: "1707.09908"
   abstract: >-
     The Shapley value, a solution concept from cooperative game theory, has recently
     been considered for both unrooted and rooted phylogenetic trees. Here, we focus
@@ -94,7 +99,8 @@
   journal: "Mathematical Biosciences"
   volume: 298
   pages: "80-90"
-  doi: "10.1016/j.mbs.2018.02.005"
+  journal_url: "10.1016/j.mbs.2018.02.005"
+  arxiv: "1706.05279"
   abstract: >-
     In biodiversity conservation it is often necessary to prioritize the species to conserve.
     Existing approaches to prioritization, e.g. the Fair Proportion Index and the Shapley Value,
@@ -126,7 +132,8 @@
   volume: 17
   issue: 4
   pages: "489–500"
-  doi: "10.1007/s11557-018-1375-8"
+  journal_url: "10.1007/s11557-018-1375-8"
+  arxiv: ""
   abstract: >-
     Multiple biotic and abiotic parameters influence the dynamics of individual 
     fungal species and entire communities. Major drivers for tropical plant endophytes
@@ -159,7 +166,8 @@
   journal: "Journal of Theoretical Biology"
   volume: 430
   pages: "207–214"
-  doi: "10.1016/j.jtbi.2017.07.010"
+  journal_url: "10.1016/j.jtbi.2017.07.010"
+  arxiv: "1507.08620"
   abstract: >-
     The Shapley Value and the Fair Proportion Index of phylogenetic trees have been
     frequently discussed as prioritization tools in conservation biology. 
