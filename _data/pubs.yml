@@ -12,6 +12,77 @@
     possible monophyletic groups in characters, which assign each present-day species
     a certain trait and which are typically used for phylogenetic tree reconstruction.
 
+- title: Combinatorial properties of phylogenetic diversity indices
+  authors: Kristina Wicke and Mike Steel
+  year: 2019
+  type: article
+  journal: Journal of Mathematical Biology
+  volume: 80
+  issue: 3
+  pages: "687-715"
+  doi: "10.1007/s00285-019-01438-0"
+  abstract: >-
+    Phylogenetic diversity indices provide a formal way to apportion ‘evolutionary heritage’
+    across species. Two natural diversity indices are Fair Proportion (FP) and Equal Splits (ES).
+    FP is also called ‘evolutionary distinctiveness’ and, for rooted trees, is identical to the
+    Shapley Value (SV), which arises from cooperative game theory. In this paper, we
+    investigate the extent to which FP and ES can differ, characterise tree shapes on which the
+    indices are identical, and study the equivalence of FP and SV and its implications in more
+    detail. We also define and investigate analogues of these indices on unrooted trees (where
+    SV was originally defined), including an index that is closely related to the Pauplin
+    representation of phylogenetic diversity.
+
+- title: "Statistical inconsistency of maximum parsimony for k-tuple-site data"
+  authors: Michelle Galla, Kristina Wicke, and Mareike Fischer
+  year: 2019
+  type: article
+  journal: Bulletin of Mathematical Biology
+  volume: 81
+  pages: "1173–1200"
+  doi: "10.1007/s11538-018-00552-2"
+  abstract: >-
+    One of the main aims of phylogenetics is to reconstruct the “Tree of Life.” In this respect,
+    different methods and criteria are used to analyze DNA sequences of different species and
+    to compare them in order to derive the evolutionary relationships of these species. 
+    Maximum parsimony is one such criterion for tree reconstruction, and it is the one which
+    we will use in this paper. However, it is well known that tree reconstruction methods can
+    lead to wrong relationship estimates. One typical problem of maximum parsimony is long
+    branch attraction, which can lead to statistical inconsistency. In this work, we will consider
+    a blockwise approach to alignment analysis, namely the so-called k-tuple analyses. For
+    four taxa, it has already been shown that k-tuple-based analyses are statistically
+    inconsistent if and only if the standard character-based (site-based) analyses are
+    statistically inconsistent. So, in the four-taxon case, going from individual sites to k-tuples
+    does not lead to any improvement. However, real biological analyses often consider more
+    than only four taxa. Therefore, we analyze the case of five taxa for 2- and 3-tuple-site data
+    and consider alphabets with two and four elements. We show that the equivalence of
+    single-site data and k-tuple-site data then no longer holds. Even so, we can show that
+    maximum parsimony is statistically inconsistent for k-tuple-site data and five taxa.
+
+- title: "On the Shapley value of unrooted phylogenetic trees"
+  authors: Kristina Wicke and Mareike Fischer
+  year: 2019
+  type: article
+  journal: Bulletin of Mathematical Biology
+  volume: 81
+  issue: 2
+  pages: "618-638"
+  doi: "10.1007/s11538-018-0392-8"
+  abstract: >-
+    The Shapley value, a solution concept from cooperative game theory, has recently
+    been considered for both unrooted and rooted phylogenetic trees. Here, we focus
+    on the Shapley value of unrooted trees and first revisit the so-called split counts
+    of a phylogenetic tree and the Shapley transformation matrix that allows for the
+    calculation of the Shapley value from the edge lengths of a tree. We show that
+    non-isomorphic trees may have permutation-equivalent Shapley transformation matrices
+    and permutation-equivalent null spaces. This implies that estimating the split counts
+    associated with a tree or the Shapley values of its leaves does not suffice to
+    reconstruct the correct tree topology. We then turn to the use of the Shapley value
+    as a prioritization criterion in biodiversity conservation and compare it to a greedy
+    solution concept. Here, we show that for certain phylogenetic trees, the Shapley value
+    may fail as a prioritization criterion, meaning that the diversity spanned by the top k
+    species (ranked by their Shapley values) cannot approximate the total diversity of all
+    n species.
+
 - title: "Phylogenetic diversity and biodiversity indices on phylogenetic networks"
   authors: "Kristina Wicke and Mareike Fischer"
   year: 2018
