@@ -16,8 +16,8 @@
 title: Kristina Wicke
 email: kristina.wicke@njit.edu
 description: Personal homepage of Kristina Wicke, Assistant Professor of Mathematical Sciences at New Jersey Institute of Technology, working on mathematical phylogenetics
-twitter_username: username
-github_username: username
+# twitter_username: username
+# github_username: username
 minimal_mistakes_skin: default
 search: true
 
@@ -32,6 +32,7 @@ timezone: # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 
 include:
   - _pages
+  - assets
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
@@ -55,9 +56,9 @@ plugins:
   - jekyll-include-cache
 
 author:
-  name   : "First Lastname"
+  name   : "Kristina Wicke"
   avatar : "/assets/images/bio-photo.jpg"
-  bio    : "My awesome biography constrained to a sentence or two goes here."
+  bio    : "Assistant Professor of Mathematical Sciences at NJIT"
   links:
     - label: "Website"
       icon: "fas fa-fw fa-link"
