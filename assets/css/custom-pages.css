@@ -1,177 +1,1064 @@
-/* ==========================================================
-   Publications
-   ========================================================== */
-
-.publications-page {
-  max-width: 100%;
-}
-
-
-/* ----------------------------------------------------------
-   Filters
-   ---------------------------------------------------------- */
-
-.publication-filters {
-  display: flex;
-  flex-wrap: wrap;
+.talk-list {
+  display: grid;
   gap: 0.5rem;
-  margin: 0 0 2.5rem 0;
-  padding-bottom: 1.25rem;
-  border-bottom: 1px solid #e2ddd9;
+  margin-bottom: 0.5rem;
 }
 
-.pub-filter {
-  appearance: none;
-  border: 1px solid #cfc5c0;
-  background: transparent;
-  color: #4a3f3b;
-  padding: 0.45rem 0.9rem;
-  font-family: inherit;
-  font-size: 0.85rem;
-  line-height: 1.2;
-  cursor: pointer;
-  border-radius: 3px;
-  transition: all 0.2s ease;
-}
-
-.pub-filter:hover {
-  border-color: #7d2525;
-  color: #7d2525;
-}
-
-.pub-filter.active {
-  background: #7d2525;
-  border-color: #7d2525;
-  color: #ffffff;
-}
-
-
-/* ----------------------------------------------------------
-   Years
-   ---------------------------------------------------------- */
-
-.publication-year {
-  margin-top: 2.5rem;
-  margin-bottom: 1.25rem;
-  padding-bottom: 0.35rem;
-  border-bottom: 2px solid #7d2525;
-  color: #4a3f3b;
-  font-size: 1.5rem;
-  font-weight: 600;
-}
-
-
-/* ----------------------------------------------------------
-   Individual publications
-   ---------------------------------------------------------- */
-
-.publication-entry {
-  margin: 0 0 2rem 0;
-  padding-bottom: 1.75rem;
-  border-bottom: 1px solid #ebe7e4;
-}
-
-.publication-title {
-  margin: 0 0 0.35rem 0;
-  color: #302725;
-  font-size: 1.05rem;
-  line-height: 1.45;
-  font-weight: 600;
-}
-
-.publication-authors {
-  margin-bottom: 0.35rem;
-  color: #514945;
-  font-size: 0.95rem;
-  line-height: 1.5;
-}
-
-.publication-details {
-  margin-bottom: 0.65rem;
-  color: #665c58;
-  font-size: 0.9rem;
-  line-height: 1.5;
-}
-
-
-/* ----------------------------------------------------------
-   Links
-   ---------------------------------------------------------- */
-
-.publication-links {
+.talk-card {
   display: flex;
-  flex-wrap: wrap;
-  gap: 0.45rem;
-  margin-top: 0.5rem;
+  gap: 1rem;
+  background: #fff;
+  border: 1px solid #e3e8ef;
+  border-left: 3px solid #2f6f9f;
+  border-radius: 8px;
+  padding: 0.7rem 1rem;
+  box-shadow: 0 1px 4px rgba(15, 23, 42, 0.04);
+  transition: box-shadow 0.15s ease, border-color 0.15s ease;
 }
 
-.publication-links a,
-.abstract-toggle {
-  display: inline-block;
-  border: none;
-  background: none;
-  padding: 0;
-  margin-right: 0.75rem;
-  color: #7d2525;
-  font-family: inherit;
+.talk-card:hover {
+  box-shadow: 0 4px 12px rgba(15, 23, 42, 0.08);
+  border-color: #4a86b8;
+}
+
+.talk-date {
+  flex: 0 0 110px;
   font-size: 0.85rem;
-  font-weight: 600;
-  text-decoration: none;
-  cursor: pointer;
+  color: #5f6b7a;
+  padding-top: 0.1rem;
+  white-space: nowrap;
 }
 
-.publication-links a:hover,
-.abstract-toggle:hover {
-  color: #4f1515;
+.talk-body {
+  flex: 1;
+}
+
+.talk-event {
+  font-weight: 600;
+  font-size: 0.95rem;
+  line-height: 1.35;
+}
+
+.talk-event a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.talk-event a:hover {
+  color: #2f6f9f;
+}
+
+.talk-location {
+  font-size: 0.85rem;
+  color: #5f6b7a;
+  margin-top: 0.1rem;
+}
+
+.talk-title {
+  font-size: 0.88rem;
+  color: #444;
+  margin-top: 0.3rem;
+  font-style: italic;
+}
+
+.talk-title a {
+  color: #2f6f9f;
+  text-decoration: none;
+  font-style: italic;
+}
+
+.talk-title a:hover {
   text-decoration: underline;
 }
 
-
-/* ----------------------------------------------------------
-   Abstracts
-   ---------------------------------------------------------- */
-
-.publication-abstract {
-  display: none;
-  margin-top: 1rem;
-  padding: 1rem 1.25rem;
-  border-left: 3px solid #7d2525;
-  background: #f7f3f1;
-  color: #514945;
-  font-size: 0.9rem;
-  line-height: 1.65;
+.talk-type {
+  display: inline-block;
+  font-size: 0.75rem;
+  font-style: normal;
+  font-weight: 600;
+  background: #e8f0f8;
+  color: #2f6f9f;
+  border-radius: 3px;
+  padding: 1px 5px;
+  margin-right: 4px;
+  vertical-align: middle;
 }
 
-.publication-abstract.open {
+.sidebar-images a {
   display: block;
+  margin-bottom: 1.25em;
 }
 
-.publication-abstract p {
+.sidebar-images img {
+  width: 65%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  border: 1px solid #e0e0e0;
+}
+
+.sidebar-images img:hover {
+  opacity: 0.85;
+}
+
+.about-images {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5em;
+  margin-top: 1.5em;
+}
+
+.about-image-card {
+  display: block;
+  max-width: 100%;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 2px 12px rgba(15, 23, 42, 0.07);
+  background: #fff;
+  text-decoration: none;
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.about-image-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(15, 23, 42, 0.12);
+}
+
+.about-image-card img {
+  display: block;
+  height: 340px;
+  width: auto;
+  max-width: 100%;
+}
+
+.about-image-caption {
+  display: block;
+  /* Keep the caption out of the card's intrinsic width, so the image alone
+     decides how wide the card is. Otherwise a caption wider than its picture
+     stretches the card past it, stranding the rounded corners off the image
+     -- "Research Semester Program" clears its 243px image by only 11px, so
+     any slightly wider font rendering tips it over. The caption still fills
+     the card, and wraps instead of widening it. */
+  width: 0;
+  min-width: 100%;
+  padding: 0.6em 0.8em;
+  border-top: 1px solid #eee;
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: #24292f;
+}
+
+.about-image-year {
+  display: block;
+  margin-top: 0.2em;
+  font-size: 0.78rem;
+  font-weight: 400;
+  color: #6b7280;
+}
+
+/* Category filter, matching the role chips on the Students page. */
+.event-filter {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.35rem;
+  margin: 0 0 1.2rem;
+}
+
+.event-filter__label {
+  font-size: 0.85rem;
+  color: #5f6b7a;
+  margin-right: 0.4rem;
+}
+
+.event-filter__chip {
+  font-size: 0.8rem;
+  line-height: 1.4;
+  padding: 0.2em 0.7em;
+  border: 1px solid #cfdae6;
+  border-radius: 999px;
+  background: #fff;
+  color: #2f6f9f;
+  cursor: pointer;
+  transition: background 0.12s ease, border-color 0.12s ease, color 0.12s ease;
+}
+
+.event-filter__chip:hover {
+  border-color: #4a86b8;
+  background: #f2f7fb;
+}
+
+.event-filter__chip.is-active {
+  background: #3b83b9;
+  border-color: #3b83b9;
+  color: #fff;
+}
+
+.event-filter__count {
+  opacity: 0.65;
+  font-size: 0.9em;
+  margin-left: 0.15em;
+}
+
+.event-list {
+  display: grid;
+  gap: 0.75rem;
+  margin: 1rem 0 1.75rem;
+  padding: 0;
+}
+
+.event-card {
+  background: #fff;
+  border: 1px solid #e3e8ef;
+  border-left: 3px solid #2f6f9f;
+  border-radius: 10px;
+  padding: 0.85rem 1.1rem;
+  box-shadow: 0 2px 10px rgba(15, 23, 42, 0.04);
+  transition: transform 0.15s ease, box-shadow 0.15s ease, border-color 0.15s ease;
+}
+
+.event-card--with-image {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  padding: 0.75rem;
+}
+
+.event-card__image {
+  flex: 0 0 auto;
+}
+
+.event-card__image img {
+  width: 160px;
+  height: auto;
+  display: block;
+  border: 1px solid #e0e0e0;
+  border-radius: 4px;
+}
+
+.event-card__image--right {
+  margin-left: auto;
+}
+
+/* Two 160px images plus the gaps need most of a narrow screen on their own,
+   leaving the title a sliver and pushing the page sideways. The second image
+   is supplementary, so drop it until the card has room for both. */
+@media (max-width: 640px) {
+  .event-card__image--right {
+    display: none;
+  }
+}
+
+.event-card__body {
+  flex: 1 1 auto;
+  padding: 0.1rem 0.35rem;
+}
+
+.event-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(15, 23, 42, 0.08);
+  border-color: #4a86b8;
+}
+
+.event-card h3 {
+  margin: 0 0 0.25rem;
+  font-size: 1rem;
+  line-height: 1.35;
+}
+
+.event-card h3 a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.event-card h3 a:hover {
+  color: #2f6f9f;
+}
+
+.event-meta {
+  margin: 0;
+  font-size: 0.9rem;
+  color: #5f6b7a;
+}
+
+.event-meta a {
+  color: #2f6f9f;
+  font-weight: 600;
+}
+
+.software-card--with-logo {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.software-logo {
+  flex: 0 0 auto;
+  width: 70px;
+  height: 70px;
+  object-fit: contain;
+}
+
+.software-list {
+  display: grid;
+  gap: 1rem;
+  margin: 1.25rem 0 1.5rem;
+  padding: 0;
+}
+
+.software-card {
+  position: relative;
+  background: #fff;
+  border: 1px solid #e3e8ef;
+  border-left: 3px solid #2f6f9f;
+  border-radius: 10px;
+  padding: 1rem 1.1rem;
+  box-shadow: 0 2px 10px rgba(15, 23, 42, 0.04);
+  transition: transform 0.15s ease, box-shadow 0.15s ease, border-color 0.15s ease;
+  scroll-margin-top: 1em;
+}
+
+/* Matches the "journal article" / "preprint" label on the publication cards.
+   Done in CSS rather than markup so every software card picks it up. */
+.software-card::before {
+  content: "software";
+  position: absolute;
+  top: -0.8em;
+  right: 1em;
+  background-color: #e8f0f8;
+  color: #2f6f9f;
+  font-weight: 600;
+  border-radius: 3px;
+  padding: 1px 6px;
+  font-size: 0.65rem;
+}
+
+.software-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(15, 23, 42, 0.08);
+  border-color: #4a86b8;
+}
+
+.software-card h3 {
+  margin: 0 0 0.35rem;
+  font-size: 1.05rem;
+  line-height: 1.35;
+}
+
+.software-card h3 a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.software-card h3 a:hover {
+  color: #2f6f9f;
+}
+
+.software-card p {
+  margin: 0 0 0.35rem;
+  line-height: 1.55;
+}
+
+.software-card .software-meta {
+  font-size: 0.92rem;
+  color: #5f6b7a;
+}
+
+.software-card .software-meta a:not(.link-button) {
+  color: #2f6f9f;
+  font-weight: 600;
+}
+
+/* Usage notes folded in from the retired WordPress/TU Delft software pages,
+   revealed by the card's "usage" toggle. */
+.legacy-usage {
+  margin-top: 0.6rem;
+  font-size: 0.9rem;
+  line-height: 1.5;
+  color: #374151;
+}
+
+/* These are reference docs the reader deliberately opened, so let them expand
+   rather than sit in the short scroll box .abstract-box defaults to. Qualified
+   with .abstract-box so it wins regardless of rule order. */
+.abstract-box.legacy-usage {
+  max-height: none;
+  overflow: visible;
+}
+
+.legacy-usage__note {
+  color: #6b7280;
+  font-style: italic;
+}
+
+.legacy-usage h4 {
+  margin: 0.9rem 0 0.3rem;
+  font-size: 0.9rem;
+  color: #2f6f9f;
+}
+
+.legacy-usage p {
+  margin: 0 0 0.45rem;
+}
+
+.legacy-usage ul {
+  margin: 0 0 0.5rem;
+  padding-left: 1.2rem;
+}
+
+.legacy-usage li {
+  margin-bottom: 0.2rem;
+}
+
+.legacy-usage code {
+  background: #eef2f7;
+  border-radius: 3px;
+  padding: 0.05em 0.35em;
+  font-size: 0.88em;
+  word-break: break-word;
+}
+
+/* Wide tables scroll inside the box rather than stretching the card. */
+.legacy-usage__tablewrap {
+  overflow-x: auto;
+  margin-bottom: 0.5rem;
+}
+
+.legacy-usage table {
+  border-collapse: collapse;
+  font-size: 0.85rem;
+}
+
+.legacy-usage th,
+.legacy-usage td {
+  border: 1px solid #dbe3ec;
+  padding: 0.25rem 0.55rem;
+  text-align: left;
+  white-space: nowrap;
+}
+
+.legacy-usage th {
+  background: #f4f7fa;
+  font-weight: 600;
+}
+
+.software-page-intro {
+  margin-bottom: 1rem;
+  color: #4b5563;
+  font-size: 1rem;
+}
+
+.software-page-footer {
+  margin-top: 0.5rem;
+  color: #4b5563;
+}
+
+.project-list {
+  display: grid;
+  gap: 1rem;
+  margin: 1.25rem 0 1.5rem;
+  padding: 0;
+}
+
+.project-card {
+  position: relative;
+  background: #fff;
+  border: 1px solid #e3e8ef;
+  border-left: 3px solid #2f6f9f;
+  border-radius: 10px;
+  padding: 1rem 1.1rem;
+  box-shadow: 0 2px 10px rgba(15, 23, 42, 0.04);
+  transition: transform 0.15s ease, box-shadow 0.15s ease, border-color 0.15s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(15, 23, 42, 0.08);
+  border-color: #4a86b8;
+}
+
+.project-card h3 {
+  margin: 0 0 0.35rem;
+  font-size: 1.05rem;
+  line-height: 1.35;
+}
+
+.project-card p {
+  margin: 0 0 0.35rem;
+  line-height: 1.55;
+}
+
+.project-card .project-meta {
+  font-size: 0.92rem;
+  color: #5f6b7a;
+  margin-bottom: 0;
+}
+
+.project-card .project-meta a:not(.link-button) {
+  color: #2f6f9f;
+  font-weight: 600;
+}
+
+/* Centred on the card's bottom border. translateY(50%) from bottom:0 does
+   this regardless of the buttons' height, unlike a fixed em offset. */
+.project-highlights {
+  position: absolute;
+  bottom: 0;
+  right: 0.6em;
+  transform: translateY(50%);
+  margin: 0;
+  line-height: 1;
+  z-index: 2;
+}
+
+.coauthor-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 0.6rem;
+  margin: 1.25rem 0 1.5rem;
+}
+
+.coauthor-card {
+  background: #fff;
+  border: 1px solid #e3e8ef;
+  border-left: 3px solid #2f6f9f;
+  border-radius: 8px;
+  padding: 0.6rem 0.85rem;
+  box-shadow: 0 1px 4px rgba(15, 23, 42, 0.04);
+  transition: box-shadow 0.15s ease, border-color 0.15s ease;
+}
+
+.coauthor-card:hover {
+  box-shadow: 0 4px 12px rgba(15, 23, 42, 0.08);
+  border-color: #4a86b8;
+}
+
+.pub-middle {
+  background: #fff;
+  border: 1px solid #e3e8ef;
+  border-left: 3px solid #2f6f9f;
+  border-radius: 8px;
+  box-shadow: 0 1px 4px rgba(15, 23, 42, 0.04);
+  transition: box-shadow 0.15s ease, border-color 0.15s ease;
+}
+
+.pub-middle:hover {
+  box-shadow: 0 4px 12px rgba(15, 23, 42, 0.08);
+  border-color: #4a86b8;
+}
+
+.coauthor-name {
+  font-weight: 600;
+  font-size: 0.92rem;
+  line-height: 1.3;
+}
+
+.coauthor-count {
+  font-size: 0.8rem;
+  color: #5f6b7a;
+  margin-top: 0.15rem;
+}
+
+.software-box {
+  border: 1px solid #ccc;
+  padding: 1em 1.2em;
+  margin: 1.2em 0;
+  border-radius: 6px;
+  position: relative;
+  overflow: hidden;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: #fafafa;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.software-box::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(255, 255, 255, 0.82);
+  pointer-events: none;
+}
+
+.software-box.expanded::before {
+  background: rgba(255, 255, 255, 0.68);
+}
+
+.software-box > * {
+  position: relative;
+  z-index: 1;
+}
+
+.software-box:hover {
+  background-color: #f0f0f0;
+}
+
+.software-overlay {
+  backdrop-filter: blur(2px);
+  background: rgba(255, 255, 255, 0.5);
+  padding: 0.5em 0.8em;
+  border-radius: 6px;
+}
+
+.software-title {
+  font-weight: bold;
+  font-size: 1.1em;
+}
+
+.lang-note {
+  font-size: 0.8em;
+  color: #666;
+  margin-top: 0.2em;
+}
+
+.software-detail {
+  display: none;
+  margin-top: 0.8em;
+  padding: 0.7em 0.8em 0.6em;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  background: rgba(255, 255, 255, 0.88);
+}
+
+.software-buttons a {
+  display: inline-block;
+  margin-top: 0.4em;
+  margin-right: 0.6em;
+  padding: 4px 8px;
+  background: #eee;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  text-decoration: none;
+  font-size: 0.85em;
+  color: black;
+}
+
+.software-buttons a:hover {
+  background: #ddd;
+}
+
+.noshow {
+  display: none;
+}
+
+/* ---- Publications keyword filter ---- */
+.pub-filter {
+  margin: 0 0 1.4rem;
+}
+
+.pub-filter__bar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.35rem;
+}
+
+.pub-filter__label {
+  font-size: 0.85rem;
+  color: #5f6b7a;
+  margin-right: 0.4rem;
+}
+
+.pub-filter__dropdown {
+  position: relative;
+}
+
+/* Separator before the second dropdown. */
+.pub-filter__label--second {
+  margin-left: 0.5rem;
+}
+
+.pub-filter__toggle {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5em;
+  min-width: 14rem;
+  font-size: 0.85rem;
+  line-height: 1.5;
+  padding: 0.25em 0.7em;
+  border: 1px solid #cfdae6;
+  border-radius: 6px;
+  background: #fff;
+  color: #2f6f9f;
+  cursor: pointer;
+  text-align: left;
+}
+
+.pub-filter__toggle:hover,
+.pub-filter__dropdown.is-open .pub-filter__toggle {
+  border-color: #4a86b8;
+}
+
+.pub-filter__dropdown.has-selection .pub-filter__toggle {
+  background: #3b83b9;
+  border-color: #3b83b9;
+  color: #fff;
+}
+
+#pub-filter-toggle-text {
+  flex: 1;
+}
+
+.pub-filter__caret {
+  border-left: 0.3em solid transparent;
+  border-right: 0.3em solid transparent;
+  border-top: 0.34em solid currentColor;
+}
+
+.pub-filter__dropdown.is-open .pub-filter__caret {
+  transform: rotate(180deg);
+}
+
+.pub-filter__panel {
+  position: absolute;
+  z-index: 30;
+  top: calc(100% + 4px);
+  left: 0;
+  /* Size to the longest keyword so the rows never need a sideways scrollbar,
+     while still never narrower than the button above it. */
+  width: max-content;
+  min-width: 100%;
+  max-width: 90vw;
+  max-height: 19rem;
+  overflow-y: auto;
+  padding: 0.3rem;
+  background: #fff;
+  border: 1px solid #cfdae6;
+  border-radius: 6px;
+  box-shadow: 0 6px 18px rgba(15, 23, 42, 0.12);
+}
+
+.pub-filter__option {
+  display: flex;
+  align-items: center;
+  gap: 0.45em;
+  padding: 0.2em 0.4em;
+  border-radius: 4px;
+  font-size: 0.85rem;
+  white-space: nowrap;
+  cursor: pointer;
+}
+
+.pub-filter__option:hover {
+  background: #f2f7fb;
+}
+
+.pub-filter__option input {
+  margin: 0;
+  cursor: pointer;
+}
+
+.pub-filter__option-name {
+  flex: 1;
+}
+
+.pub-filter__count {
+  opacity: 0.6;
+  font-size: 0.9em;
+}
+
+.pub-filter__clear {
+  display: block;
+  width: 100%;
+  margin-top: 0.25rem;
+  padding: 0.25em;
+  border: none;
+  border-top: 1px solid #e3e8ef;
+  /* Stays reachable without scrolling to the foot of a long list. */
+  position: sticky;
+  bottom: -0.3rem;
+  background: #fff;
+  color: #2f6f9f;
+  font-size: 0.8rem;
+  cursor: pointer;
+}
+
+.pub-filter__clear:hover {
+  background: #f2f7fb;
+}
+
+.pub-filter__status {
+  margin: 0.5rem 0 0;
+  font-size: 0.82rem;
+  color: #5f6b7a;
+}
+
+/* Utility, so it has to beat more specific rules -- notably
+   `.page__content h2` in overrides.css, which makes headings inline-block
+   and would otherwise keep the "Theses" heading visible when filtered out. */
+.is-hidden {
+  display: none !important;
+}
+
+.bibtex,
+.abstract-box {
+  margin-top: 1em;
+  margin-bottom: 1em;
+  border: 1px solid #ccc;
+  padding: 1em;
+  background: #fdfdfd;
+  position: relative;
+}
+
+.bibtex pre {
+  font-size: 85%;
+  overflow-x: auto;
+  overflow-y: auto;
+  white-space: pre;
+  font-family: monospace;
   margin: 0;
 }
 
+.abstract-box {
+  font-size: 95%;
+  line-height: 1.4em;
+  max-height: 20em;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
 
-/* ----------------------------------------------------------
-   Responsive layout
-   ---------------------------------------------------------- */
+/* Used when a reveal box embeds a full pub/software card rather than
+   plain text, so the embedded card's own styling isn't double-boxed. */
+.abstract-box.highlight-reveal {
+  border: none;
+  padding: 0;
+  background: none;
+  max-height: none;
+  overflow: visible;
+  font-size: 100%;
+  line-height: inherit;
+}
 
-@media screen and (max-width: 600px) {
+/* The embedded pub_entry card's summary/abstract/bibtex toggle buttons don't
+   work in this nested context (they'd also match .abstract-box and close the
+   outer reveal box they live in), so hide them here. The plain-language
+   summary itself is still worth showing, so it's displayed unconditionally
+   below, while the abstract and bibtex stay hidden since they have no working
+   toggle here. (The number badge needs no rule: those cards pass a bullet
+   rather than a number, so no badge is rendered.) */
+.highlight-reveal .lowkey-button-group {
+  display: none;
+}
 
-  .publication-filters {
-    gap: 0.4rem;
+.highlight-reveal .pub-toggles [id^="abs_"],
+.highlight-reveal .pub-toggles [id^="bib_"] {
+  display: none;
+}
+
+/* The spotlight boxes render the summary themselves, beside a figure, so the
+   copy the include would otherwise show is suppressed here. */
+.highlight-reveal .pub-toggles [id^="sum_"] {
+  display: none;
+}
+
+.spotlight-summary {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.9rem;
+  margin-top: 0.75rem;
+  font-size: 0.92em;
+  line-height: 1.5;
+  color: #374151;
+}
+
+.spotlight-summary p {
+  margin: 0;
+}
+
+.spotlight-figure {
+  flex: 0 0 auto;
+  width: 84px;
+  height: 84px;
+}
+
+/* A journal cover rather than a diagram: portrait, so height-led with its own
+   aspect ratio kept. */
+.spotlight-figure--cover {
+  width: auto;
+  height: 92px;
+  border-radius: 3px;
+  box-shadow: 0 1px 4px rgba(15, 23, 42, 0.18);
+}
+
+@media (max-width: 480px) {
+  .spotlight-summary {
+    flex-direction: column;
+    align-items: center;
+    text-align: left;
   }
+}
 
-  .pub-filter {
-    font-size: 0.8rem;
-    padding: 0.4rem 0.7rem;
-  }
+.pub-toggles {
+  margin-top: -0.7em;
+}
 
-  .publication-year {
-    font-size: 1.3rem;
-  }
+.copy-btn {
+  position: absolute;
+  top: 0.4em;
+  right: 0.4em;
+  background: #eee;
+  border: 1px solid #ccc;
+  padding: 0.2em 0.4em;
+  font-size: 0.9em;
+  cursor: pointer;
+  border-radius: 4px;
+  z-index: 1;
+}
 
-  .publication-title {
-    font-size: 1rem;
-  }
+.copy-btn:hover {
+  background: #ddd;
+}
 
+.button-group {
+  margin-top: 0.1em;
+}
+
+.toggle-button,
+.link-button {
+  display: inline-block;
+  font-size: 0.75em;
+  padding: 3px 8px;
+  margin-right: 4px;
+  margin-top: 2px;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.link-button {
+  background-color: #3b83b9;
+  color: #fff;
+  font-weight: 600;
+}
+
+.link-button:hover {
+  color: #3b83b9;
+  background-color: #fff;
+  font-weight: 600;
+}
+
+.toggle-button.lowkey {
+  font-family: inherit;
+  font-size: 0.72rem;
+  font-weight: 600;
+  color: #2f6f9f;
+  background: #f5f8fb;
+  border: 1px solid #d8e3ec;
+  padding: 2px 6px;
+  margin-top: 2px;
+  border-radius: 3px;
+}
+
+.toggle-button.lowkey:hover {
+  background: #e8f0f8;
+  border-color: #2f6f9f;
+  color: #2f6f9f;
+}
+
+.year-label {
+  position: relative;
+  text-align: right;
+  margin: 2em 0 1.5em;
+  font-weight: normal;
+  font-size: 0.9em;
+  color: #888;
+}
+
+.year-label::before {
+  content: "";
+  display: block;
+  height: 1px;
+  background-color: #ccc;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 100%;
+  z-index: 0;
+}
+
+.year-label span {
+  position: relative;
+  background: white;
+  padding: 0 0.5em;
+  z-index: 1;
+}
+
+.top-label {
+  position: absolute;
+  top: -0.8em;
+  right: 1em;
+  background-color: #e8f0f8;
+  color: #2f6f9f;
+  font-weight: 600;
+  border-radius: 3px;
+  padding: 1px 6px;
+  font-size: 0.65em;
+}
+
+/* The publication number, sitting on the top-left border as a counterpart to
+   the type label on the right. Muted, so it reads as a reference rather than
+   competing with the title. */
+.pubnum-label {
+  position: absolute;
+  top: -0.8em;
+  left: 1em;
+  background-color: #eef2f7;
+  color: #5f6b7a;
+  font-weight: 600;
+  border-radius: 3px;
+  padding: 1px 6px;
+  font-size: 0.65em;
+}
+
+ul.no-bullets {
+  list-style: none;
+  padding-left: 0;
+  margin-left: 0;
+}
+
+ul.no-bullets li {
+  list-style: none;
+  margin-left: 0;
+  padding-left: 0;
+  margin-bottom: 0.6em;
+}
+
+.authors {
+  font-size: 0.8em;
+}
+
+.title {
+  font-weight: bold;
+  font-size: 1em;
+}
+
+.info {
+  font-size: 0.75em;
+  color: #555;
+}
+
+.coauthor-links {
+  margin-top: 0.4rem;
+}
+
+.coauthor-link-btn {
+  display: inline-block;
+  font-size: 0.7em;
+  padding: 1px 6px;
+  background-color: #3b83b9;
+  border: none;
+  border-radius: 3px;
+  text-decoration: none;
+  color: #fff;
+  font-weight: 600;
+  vertical-align: middle;
+}
+
+.coauthor-link-btn:hover {
+  color: #3b83b9;
+  background-color: #fff;
+  box-shadow: inset 0 0 0 1px #3b83b9;
 }
