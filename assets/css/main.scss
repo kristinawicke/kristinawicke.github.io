@@ -6,7 +6,434 @@
  *
  * Warm academic/editorial palette:
  *   Background: #FCFBFA
+ *   Text:       #292626---
+---
+
+/*
+ * Kristina Wicke — custom Minimal Mistakes theme
+ *
+ * Warm academic/editorial palette:
+ *   Background: #FCFBFA
  *   Text:       #292626
+ *   Burgundy:   #7A263A
+ */
+
+
+/* ==========================================================
+   COLORS
+   ========================================================== */
+
+$background-color: #ffffff;
+$body-color: #ffffff;
+$text-color: #292626;
+$muted-text-color: #706b6b;
+
+$link-color: #7a263a;
+$link-color-hover: #5e1d2c;
+
+$masthead-link-color: #292626;
+$masthead-link-color-hover: #7a263a;
+
+$border-color: #e5dfdd;
+
+$primary-color: #7a263a;
+
+
+/* ==========================================================
+   TYPOGRAPHY
+   ========================================================== */
+
+$serif:
+  Georgia,
+  "Times New Roman",
+  Times,
+  serif;
+
+$sans-serif:
+  -apple-system,
+  BlinkMacSystemFont,
+  "Segoe UI",
+  Helvetica,
+  Arial,
+  sans-serif;
+
+$monospace:
+  "SFMono-Regular",
+  Consolas,
+  "Liberation Mono",
+  monospace;
+
+$global-font-family: $sans-serif;
+$header-font-family: $sans-serif;
+
+
+/* ==========================================================
+   TYPE SCALE
+   ========================================================== */
+
+$type-size-1: 2.4em;
+$type-size-2: 1.9em;
+$type-size-3: 1.5em;
+$type-size-4: 1.25em;
+$type-size-5: 1em;
+$type-size-6: 0.8em;
+
+
+/* ==========================================================
+   MINIMAL MISTAKES
+   ========================================================== */
+
+@import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}";
+@import "minimal-mistakes";
+
+
+/* ==========================================================
+   GLOBAL
+   ========================================================== */
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: $background-color;
+  color: $text-color;
+  font-size: 16px;
+  line-height: 1.7;
+}
+
+::selection {
+  background: #eadcdf;
+  color: #292626;
+}
+
+
+/* ==========================================================
+   LINKS
+   ========================================================== */
+
+a {
+  color: $link-color;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 2px;
+}
+
+a:hover,
+a:focus {
+  color: $link-color-hover;
+}
+
+
+/* ==========================================================
+   HEADINGS
+   ========================================================== */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #211f1f;
+  font-family: $header-font-family;
+  font-weight: 600;
+  letter-spacing: -0.025em;
+}
+
+h1 {
+  line-height: 1.15;
+}
+
+h2 {
+  margin-top: 2em;
+  margin-bottom: 0.7em;
+}
+
+h3 {
+  margin-top: 1.7em;
+}
+
+
+/* ==========================================================
+   HEADER / NAVIGATION
+   ========================================================== */
+
+.masthead {
+  background: $background-color;
+  border-bottom: 1px solid $border-color;
+}
+
+.greedy-nav {
+  background: transparent;
+}
+
+.greedy-nav a {
+  color: #292626;
+  font-size: 0.9em;
+  font-weight: 500;
+}
+
+.greedy-nav a:hover {
+  color: $link-color;
+}
+
+.greedy-nav .visible-links a:before {
+  background: $link-color;
+}
+
+
+/* Site title */
+
+.masthead__menu-item--lg a {
+  color: #211f1f;
+  font-size: 1.05em;
+  font-weight: 600;
+}
+
+.masthead__menu-item--lg a:hover {
+  color: $link-color;
+}
+
+
+/* ==========================================================
+   MAIN CONTENT
+   ========================================================== */
+
+.page {
+  background: transparent;
+}
+
+.page__content {
+  font-size: 1em;
+}
+
+.page__content p {
+  margin-bottom: 1.25em;
+}
+
+.page__content li {
+  margin-bottom: 0.35em;
+}
+
+
+/* ==========================================================
+   HOMEPAGE
+   ========================================================== */
+
+/*
+ * Make the homepage feel more like a personal academic site
+ * and less like a traditional blog.
+ */
+
+.layout--home .page__content {
+  max-width: 850px;
+}
+
+.layout--home .page__title {
+  display: none;
+}
+
+
+/* Introductory lead */
+
+.page__lead {
+  color: #706b6b;
+  font-size: 1.15em;
+  line-height: 1.6;
+}
+
+
+/* ==========================================================
+   AUTHOR / PROFILE
+   ========================================================== */
+
+.author__avatar img {
+  border-radius: 50%;
+}
+
+.author__name {
+  color: #211f1f;
+  font-weight: 600;
+}
+
+.author__bio {
+  color: #706b6b;
+  line-height: 1.5;
+}
+
+.author__urls a {
+  color: #706b6b;
+}
+
+.author__urls a:hover {
+  color: $link-color;
+}
+
+
+/* ==========================================================
+   SECTION HEADINGS
+   ========================================================== */
+
+.home-section {
+  margin-top: 3.5rem;
+}
+
+.home-section h2 {
+  color: #211f1f;
+  font-size: 1.45em;
+  padding-bottom: 0.4em;
+  border-bottom: 1px solid $border-color;
+}
+
+
+/* Burgundy accent on section headings */
+
+.home-section h2::before {
+  content: "";
+  display: inline-block;
+  width: 0.45em;
+  height: 0.45em;
+  margin-right: 0.55em;
+  background: $link-color;
+  vertical-align: 0.08em;
+}
+
+
+/* ==========================================================
+   NEWS
+   ========================================================== */
+
+.news-item {
+  display: grid;
+  grid-template-columns: 7.5rem 1fr;
+  column-gap: 1.5rem;
+  padding: 0.75rem 0;
+  border-bottom: 1px solid #eee9e7;
+}
+
+.news-date {
+  color: #817979;
+  font-size: 0.9em;
+  white-space: nowrap;
+}
+
+.news-text {
+  margin: 0;
+}
+
+@media (max-width: 600px) {
+  .news-item {
+    display: block;
+  }
+
+  .news-date {
+    margin-bottom: 0.25rem;
+  }
+}
+
+
+/* ==========================================================
+   PUBLICATIONS
+   ========================================================== */
+
+.publication {
+  margin-bottom: 1.4rem;
+}
+
+.publication-title {
+  margin-bottom: 0.15rem;
+  font-weight: 600;
+}
+
+.publication-meta {
+  color: #706b6b;
+  font-size: 0.9em;
+}
+
+
+/* ==========================================================
+   BUTTONS
+   ========================================================== */
+
+.btn--primary {
+  background: $link-color;
+  border-color: $link-color;
+}
+
+.btn--primary:hover {
+  background: $link-color-hover;
+  border-color: $link-color-hover;
+}
+
+
+/* ==========================================================
+   BLOCKQUOTES
+   ========================================================== */
+
+blockquote {
+  border-left: 3px solid $link-color;
+  color: #706b6b;
+  font-style: normal;
+}
+
+
+/* ==========================================================
+   HORIZONTAL RULES
+   ========================================================== */
+
+hr {
+  border-top: 1px solid $border-color;
+}
+
+
+/* ==========================================================
+   FOOTER
+   ========================================================== */
+
+.page__footer {
+  background: $background-color;
+  border-top: 1px solid $border-color;
+  color: #817979;
+}
+
+.page__footer a {
+  color: #706b6b;
+}
+
+.page__footer a:hover {
+  color: $link-color;
+}
+
+
+/* ==========================================================
+   SEARCH
+   ========================================================== */
+
+.search-content {
+  background: $background-color;
+}
+
+
+/* ==========================================================
+   MOBILE
+   ========================================================== */
+
+@media (max-width: 768px) {
+
+  body {
+    font-size: 15px;
+  }
+
+  .masthead__menu-item--lg a {
+    font-size: 1em;
+  }
+
+  .page__content {
+    font-size: 1em;
+  }
+
+}
+
  *   Burgundy:   #7A263A
  */
 
