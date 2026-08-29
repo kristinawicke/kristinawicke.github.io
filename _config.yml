@@ -1,4 +1,156 @@
-# Welcome to Jekyll!
+# ==========================================================
+# Site settings
+# ==========================================================
+
+title: "Kristina Wicke"
+
+email: "kristina.wicke@njit.edu"
+
+description: >-
+  Personal homepage of Kristina Wicke, Assistant Professor
+  of Mathematical Sciences at New Jersey Institute of Technology,
+  working on mathematical phylogenetics.
+
+url: "https://kristinawicke.github.io"
+
+baseurl: ""
+
+repository: "kristinawicke/kristinawicke.github.io"
+
+
+# ==========================================================
+# Theme
+# ==========================================================
+
+minimal_mistakes_skin: "default"
+
+remote_theme: "mmistakes/minimal-mistakes"
+
+search: true
+
+
+# ==========================================================
+# Build settings
+# ==========================================================
+
+markdown: kramdown
+
+permalink: /:categories/:title/
+
+paginate: 5
+
+paginate_path: /page:num/
+
+timezone: "America/New_York"
+
+
+# ==========================================================
+# Files to include
+# ==========================================================
+
+include:
+  - _pages
+  - assets
+
+
+# ==========================================================
+# Plugins
+# ==========================================================
+
+plugins:
+  - jekyll-paginate
+  - jekyll-sitemap
+  - jekyll-gist
+  - jekyll-feed
+  - jemoji
+  - jekyll-include-cache
+
+
+# ==========================================================
+# Author / profile
+# ==========================================================
+
+author:
+  name: "Kristina Wicke"
+
+  avatar: "/assets/images/bio-photo.jpg"
+
+  bio: "Assistant Professor of Mathematical Sciences at NJIT"
+
+  links:
+    - label: "Email"
+      icon: "fas fa-fw fa-envelope"
+      url: "mailto:kristina.wicke@njit.edu"
+
+    - label: "Google Scholar"
+      icon: "fab fa-fw fa-google-scholar"
+      url: "https://scholar.google.com/citations?user=pNgZWZYAAAAJ&hl"
+
+    - label: "LinkedIn"
+      icon: "fab fa-fw fa-linkedin"
+      url: "https://www.linkedin.com/in/kristina-wicke-94a81b103/"
+
+    - label: "ORCID"
+      icon: "fab fa-fw fa-orcid"
+      url: "https://orcid.org/0000-0002-4275-5546"
+
+    - label: "NJIT"
+      icon: "fas fa-fw fa-university"
+      url: "https://people.njit.edu/profile/kw344"
+
+
+# ==========================================================
+# Footer
+# ==========================================================
+
+footer:
+  links:
+    - label: "Email"
+      icon: "fas fa-fw fa-envelope"
+      url: "mailto:kristina.wicke@njit.edu"
+
+    - label: "Google Scholar"
+      icon: "fab fa-fw fa-google-scholar"
+      url: "https://scholar.google.com/citations?user=pNgZWZYAAAAJ&hl"
+
+    - label: "LinkedIn"
+      icon: "fab fa-fw fa-linkedin"
+      url: "https://www.linkedin.com/in/kristina-wicke-94a81b103/"
+
+    - label: "ORCID"
+      icon: "fab fa-fw fa-orcid"
+      url: "https://orcid.org/0000-0002-4275-5546"
+
+    - label: "NJIT"
+      icon: "fas fa-fw fa-university"
+      url: "https://people.njit.edu/profile/kw344"
+
+
+# ==========================================================
+# Defaults
+# ==========================================================
+
+defaults:
+
+  # Pages
+  - scope:
+      path: "_pages"
+      type: pages
+
+    values:
+      layout: single
+      author_profile: false
+      classes: wide
+
+  # Posts
+  - scope:
+      path: "_posts"
+      type: posts
+
+    values:
+      layout: single
+      author_profile: true
+      read_time: true# Welcome to Jekyll!
 #
 # This config file is meant for settings that affect your whole blog, values
 # which you are expected to set up once and rarely edit after that. If you find
