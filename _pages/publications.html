@@ -106,7 +106,19 @@ classes: wide
             </a>
           {% endif %}
 
+          {% if pub.abstract %}
+            <button class="abstract-toggle" type="button">
+              Abstract
+            </button>
+          {% endif %}
+
         </div>
+
+        {% if pub.abstract %}
+          <div class="publication-abstract">
+            <p>{{ pub.abstract }}</p>
+          </div>
+        {% endif %}
 
       </div>
 
@@ -118,6 +130,8 @@ classes: wide
 
 <script>
 document.addEventListener("DOMContentLoaded", function () {
+
+  /* Publication filters */
 
   const filters = document.querySelectorAll(".pub-filter");
   const publications = document.querySelectorAll(".publication-card");
@@ -146,6 +160,32 @@ document.addEventListener("DOMContentLoaded", function () {
         }
 
       });
+
+    });
+
+  });
+
+
+  /* Abstract toggles */
+
+  const abstractButtons =
+    document.querySelectorAll(".abstract-toggle");
+
+  abstractButtons.forEach(function (button) {
+
+    button.addEventListener("click", function () {
+
+      const abstract =
+        button.closest(".publication-card")
+              .querySelector(".publication-abstract");
+
+      abstract.classList.toggle("open");
+
+      if (abstract.classList.contains("open")) {
+        button.textContent = "Hide abstract";
+      } else {
+        button.textContent = "Abstract";
+      }
 
     });
 
