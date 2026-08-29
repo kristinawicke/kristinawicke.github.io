@@ -1,0 +1,166 @@
+---
+title: "Publications"
+permalink: /publications/
+layout: single
+author_profile: true
+classes: wide
+---
+
+<div class="publications-page">
+
+  <div class="publication-filters">
+    <button class="pub-filter active" data-filter="all">All</button>
+    <button class="pub-filter" data-filter="article">Articles</button>
+    <button class="pub-filter" data-filter="preprint">Preprints</button>
+    <button class="pub-filter" data-filter="book">Books</button>
+    <button class="pub-filter" data-filter="chapter">Book Chapters</button>
+    <button class="pub-filter" data-filter="thesis">Theses</button>
+    <button class="pub-filter" data-filter="other">Other</button>
+  </div>
+
+  {% assign publications = site.data.pubs | sort: "year" | reverse %}
+
+  {% assign current_year = "" %}
+
+  {% for pub in publications %}
+
+    {% if pub.year != current_year %}
+      {% assign current_year = pub.year %}
+      <h2 class="publication-year">{{ current_year }}</h2>
+    {% endif %}
+
+    <article class="publication-entry" data-type="{{ pub.type }}">
+
+      <h3 class="publication-title">
+        {{ pub.title }}
+      </h3>
+
+      <div class="publication-authors">
+        {{ pub.authors }}
+      </div>
+
+      <div class="publication-details">
+
+        {% if pub.journal %}
+          <em>{{ pub.journal }}</em>
+        {% endif %}
+
+        {% if pub.volume %}
+          {{ pub.volume }}
+        {% endif %}
+
+        {% if pub.issue %}
+          ({{ pub.issue }})
+        {% endif %}
+
+        {% if pub.pages %}
+          , {{ pub.pages }}
+        {% endif %}
+
+        {% if pub.journal or pub.volume or pub.pages %}
+          ({{ pub.year }})
+        {% else %}
+          {{ pub.type | capitalize }}, {{ pub.year }}
+        {% endif %}
+
+      </div>
+
+      <div class="publication-links">
+
+        {% if pub.doi %}
+          <a href="https://doi.org/{{ pub.doi }}" target="_blank" rel="noopener">
+            DOI
+          </a>
+        {% endif %}
+
+        {% if pub.arxiv %}
+          <a href="https://arxiv.org/abs/{{ pub.arxiv }}" target="_blank" rel="noopener">
+            arXiv
+          </a>
+        {% endif %}
+
+        {% if pub.pdf %}
+          <a href="{{ pub.pdf }}" target="_blank" rel="noopener">
+            PDF
+          </a>
+        {% endif %}
+
+        {% if pub.abstract %}
+          <button class="abstract-toggle" type="button">
+            Abstract
+          </button>
+        {% endif %}
+
+      </div>
+
+      {% if pub.abstract %}
+        <div class="publication-abstract">
+          <p>{{ pub.abstract }}</p>
+        </div>
+      {% endif %}
+
+    </article>
+
+  {% endfor %}
+
+</div>
+
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+
+  const filters = document.querySelectorAll(".pub-filter");
+  const publications = document.querySelectorAll(".publication-entry");
+
+  filters.forEach(function (filter) {
+
+    filter.addEventListener("click", function () {
+
+      filters.forEach(function (button) {
+        button.classList.remove("active");
+      });
+
+      filter.classList.add("active");
+
+      const selected = filter.dataset.filter;
+
+      publications.forEach(function (publication) {
+
+        if (selected === "all" ||
+            publication.dataset.type === selected) {
+          publication.style.display = "";
+        } else {
+          publication.style.display = "none";
+        }
+
+      });
+
+    });
+
+  });
+
+
+  const abstractButtons =
+    document.querySelectorAll(".abstract-toggle");
+
+  abstractButtons.forEach(function (button) {
+
+    button.addEventListener("click", function () {
+
+      const abstract =
+        button.closest(".publication-entry")
+               .querySelector(".publication-abstract");
+
+      abstract.classList.toggle("open");
+
+      if (abstract.classList.contains("open")) {
+        button.textContent = "Hide abstract";
+      } else {
+        button.textContent = "Abstract";
+      }
+
+    });
+
+  });
+
+});
+</script>
