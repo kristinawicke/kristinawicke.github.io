@@ -20,26 +20,24 @@ classes: wide
     <button class="pub-filter" data-filter="other">Other</button>
   </div>
 
-  {% assign publications = site.data.pubs | sort: "year" | reverse %}
+ {% assign publications = site.data.pubs | sort: "year" | reverse %}
 
-  {% assign current_year = "" %}
-  {% assign total_publications = publications.size %}
-  {% assign publication_number = total_publications | minus: forloop.index0 %}
+{% assign current_year = "" %}
 
-  {% for pub in publications %}
+{% for pub in publications %}
 
-    {% if pub.year != current_year %}
-      {% assign current_year = pub.year %}
-      <h2 class="publication-year">{{ current_year }}</h2>
-    {% endif %}
+  {% if pub.year != current_year %}
+    {% assign current_year = pub.year %}
+    <h2 class="publication-year">{{ current_year }}</h2>
+  {% endif %}
 
-    {% assign publication_number = publication_number | plus: 1 %}
+  {% assign publication_number = publications.size | minus: forloop.index %}
 
-    <article class="publication-card" data-type="{{ pub.type }}">
+  <article class="publication-card" data-type="{{ pub.type }}">
 
-      <div class="publication-number">
-        {{ publication_number }}
-      </div>
+    <div class="publication-number">
+      {{ publication_number }}
+    </div>
 
       <div class="publication-content">
 
