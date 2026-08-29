@@ -23,6 +23,7 @@ classes: wide
   {% assign publications = site.data.pubs | sort: "year" | reverse %}
 
   {% assign current_year = "" %}
+  {% assign publication_number = 0 %}
 
   {% for pub in publications %}
 
@@ -31,75 +32,106 @@ classes: wide
       <h2 class="publication-year">{{ current_year }}</h2>
     {% endif %}
 
-    <article class="publication-entry" data-type="{{ pub.type }}">
+    {% assign publication_number = publication_number | plus: 1 %}
 
-      <h3 class="publication-title">
-        {{ pub.title }}
-      </h3>
+    <article
+      class="publication-card"
+      data-type="{{ pub.type }}"
+    >
 
-      <div class="publication-authors">
-        {{ pub.authors }}
+      <div class="publication-number">
+        {{ publication_number }}
       </div>
 
-      <div class="publication-details">
+      <div class="publication-content">
 
-        {% if pub.journal %}
-          <em>{{ pub.journal }}</em>
-        {% endif %}
+        <h3 class="publication-title">
+          {{ pub.title }}
+        </h3>
 
-        {% if pub.volume %}
-          {{ pub.volume }}
-        {% endif %}
+        <div class="publication-authors">
+          {% assign author_list = pub.authors | split: ", " %}
 
-        {% if pub.issue %}
-          ({{ pub.issue }})
-        {% endif %}
+          {% for author in author_list %}
 
-        {% if pub.pages %}
-          , {{ pub.pages }}
-        {% endif %}
+            {% if author contains "Kristina Wicke" %}
+              <strong class="my-name">{{ author }}</strong>
+            {% else %}
+              {{ author }}
+            {% endif %}
 
-        {% if pub.journal or pub.volume or pub.pages %}
-          ({{ pub.year }})
-        {% else %}
-          {{ pub.type | capitalize }}, {{ pub.year }}
-        {% endif %}
+            {% unless forloop.last %}, {% endunless %}
 
-      </div>
+          {% endfor %}
+        </div>
 
-      <div class="publication-links">
+        <div class="publication-details">
 
-        {% if pub.doi %}
-          <a href="https://doi.org/{{ pub.doi }}" target="_blank" rel="noopener">
-            DOI
-          </a>
-        {% endif %}
+          {% if pub.journal %}
+            <em>{{ pub.journal }}</em>
+          {% endif %}
 
-        {% if pub.arxiv %}
-          <a href="https://arxiv.org/abs/{{ pub.arxiv }}" target="_blank" rel="noopener">
-            arXiv
-          </a>
-        {% endif %}
+          {% if pub.volume %}
+            {{ pub.volume }}
+          {% endif %}
 
-        {% if pub.pdf %}
-          <a href="{{ pub.pdf }}" target="_blank" rel="noopener">
-            PDF
-          </a>
-        {% endif %}
+          {% if pub.issue %}
+            ({{ pub.issue }})
+          {% endif %}
+
+          {% if pub.pages %}
+            , {{ pub.pages }}
+          {% endif %}
+
+          {% if pub.journal or pub.volume or pub.pages %}
+            ({{ pub.year }})
+          {% else %}
+            {{ pub.type | capitalize }}, {{ pub.year }}
+          {% endif %}
+
+        </div>
+
+        <div class="publication-links">
+
+          {% if pub.doi %}
+            <a
+              href="https://doi.org/{{ pub.doi }}"
+              target="_blank"
+              rel="noopener"
+            >DOI</a>
+          {% endif %}
+
+          {% if pub.arxiv %}
+            <a
+              href="https://arxiv.org/abs/{{ pub.arxiv }}"
+              target="_blank"
+              rel="noopener"
+            >arXiv</a>
+          {% endif %}
+
+          {% if pub.pdf %}
+            <a
+              href="{{ pub.pdf }}"
+              target="_blank"
+              rel="noopener"
+            >PDF</a>
+          {% endif %}
+
+          {% if pub.abstract %}
+            <button class="abstract-toggle" type="button">
+              Abstract
+            </button>
+          {% endif %}
+
+        </div>
 
         {% if pub.abstract %}
-          <button class="abstract-toggle" type="button">
-            Abstract
-          </button>
+          <div class="publication-abstract">
+            <p>{{ pub.abstract }}</p>
+          </div>
         {% endif %}
 
       </div>
-
-      {% if pub.abstract %}
-        <div class="publication-abstract">
-          <p>{{ pub.abstract }}</p>
-        </div>
-      {% endif %}
 
     </article>
 
@@ -111,7 +143,7 @@ classes: wide
 document.addEventListener("DOMContentLoaded", function () {
 
   const filters = document.querySelectorAll(".pub-filter");
-  const publications = document.querySelectorAll(".publication-entry");
+  const publications = document.querySelectorAll(".publication-card");
 
   filters.forEach(function (filter) {
 
@@ -127,8 +159,10 @@ document.addEventListener("DOMContentLoaded", function () {
 
       publications.forEach(function (publication) {
 
-        if (selected === "all" ||
-            publication.dataset.type === selected) {
+        if (
+          selected === "all" ||
+          publication.dataset.type === selected
+        ) {
           publication.style.display = "";
         } else {
           publication.style.display = "none";
@@ -140,7 +174,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
   });
 
-
   const abstractButtons =
     document.querySelectorAll(".abstract-toggle");
 
@@ -149,7 +182,7 @@ document.addEventListener("DOMContentLoaded", function () {
     button.addEventListener("click", function () {
 
       const abstract =
-        button.closest(".publication-entry")
+        button.closest(".publication-card")
                .querySelector(".publication-abstract");
 
       abstract.classList.toggle("open");
