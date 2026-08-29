@@ -1,9 +1,20 @@
 :root {
-  --site-red: #cc0000;
+  --site-red: #990000;
   --site-background: #ffffff;
   --site-text: #222222;
   --site-muted: #666666;
   --site-border: #dddddd;
+}
+
+
+/* ==========================================================
+   Site-wide background
+   ========================================================== */
+
+html,
+body,
+.page {
+  background: #ffffff;
 }
 
 
@@ -165,7 +176,7 @@
 
 .publication-links a:hover,
 .abstract-toggle:hover {
-  color: #990000;
+  color: #700000;
   text-decoration: underline;
 }
 
