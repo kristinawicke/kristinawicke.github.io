@@ -1,0 +1,32 @@
+- title: "Comparing the rankings obtained from two biodiversity indices: the Fair Proportion Index and the Shapley Value"
+  authors: "Kristina Wicke and Mareike Fischer"
+  year: 2017
+  type: article
+  journal: "Journal of Theoretical Biology"
+  volume: 430
+  pages: "207–214"
+  doi: "10.1016/j.jtbi.2017.07.010"
+
+- title: "Mycobiomes of sympatric Amorphophallus albispathus (Araceae) and Camellia sinensis (Theaceae) – a case study reveals clear tissue preferences and differences in diversity and composition"
+  authors: "Martin Unterseher, Samantha C. Karunarathna, Roberto García Cruz, Nikki H. Dagamac, Mathilde B. Dahl, Serena E. Dool, Michelle Galla, Lina Herbst, R. Henrik Nilsson, Sébastien J. Puechmaille, Caroline Schöner, Michael Schöner, Abu B. Siddique, Annette Teltewskoi, Kristina Wicke, David G. Würth, Christian Wurzbacher, and Kevin D. Hyde"
+  year: 2018
+  type: article
+  journal: "Mycological Progress"
+  volume: 17
+  issue: 4
+  pages: "489–500"
+  doi: "10.1007/s11557-018-1375-8"
+
+- title: "Enumerating monophyletic characters in mathematical phylogenetics"
+  authors: "Mareike Fischer, Michael Hendriksen, and Kristina Wicke"
+  year: 2026
+  type: preprint
+  arxiv: "2607.22097"
+  abstract: >-
+    Grouping species according to their phylogenetic relationships often results
+    in different groups than grouping them according to their shared traits.
+    Monophyletic groups play an important role in this regard, as they are groups
+    of species sharing the same trait and being uniquely defined by a joint
+    phylogenetic subtree. This immediately leads to the question of how to identify
+    possible monophyletic groups in characters, which assign each present-day species
+    a certain trait and which are typically used for phylogenetic tree reconstruction.
