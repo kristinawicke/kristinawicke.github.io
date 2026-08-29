@@ -7,4 +7,4 @@ author_profile: true
 
 ## Publications
 
-{% bibliography %}
+The publications page is under construction.
