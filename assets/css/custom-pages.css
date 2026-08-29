@@ -8,13 +8,57 @@
 
 
 /* ==========================================================
-   Site-wide background
+   Site-wide appearance
    ========================================================== */
 
 html,
-body,
+body {
+  background: #ffffff;
+}
+
+.masthead {
+  background: #ffffff;
+}
+
+.masthead__inner-wrap {
+  background: #ffffff;
+}
+
+.initial-content {
+  background: #ffffff;
+}
+
 .page {
   background: #ffffff;
+}
+
+.page__content {
+  background: #ffffff;
+}
+
+.page__footer {
+  background: #ffffff;
+}
+
+.page__meta {
+  background: #ffffff;
+}
+
+.site-footer {
+  background: #ffffff;
+}
+
+
+/* ----------------------------------------------------------
+   Site-wide text and links
+   ---------------------------------------------------------- */
+
+a {
+  color: var(--site-red);
+}
+
+a:hover {
+  color: #700000;
 }
 
 
