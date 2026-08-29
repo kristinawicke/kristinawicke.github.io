@@ -10,6 +10,16 @@ classes: wide
 
 <div class="publications-page">
 
+  <div class="publication-filters">
+    <button class="pub-filter active" data-filter="all">All</button>
+    <button class="pub-filter" data-filter="article">Articles</button>
+    <button class="pub-filter" data-filter="preprint">Preprints</button>
+    <button class="pub-filter" data-filter="book">Books</button>
+    <button class="pub-filter" data-filter="chapter">Book Chapters</button>
+    <button class="pub-filter" data-filter="thesis">Theses</button>
+    <button class="pub-filter" data-filter="other">Other</button>
+  </div>
+
   {% assign publications = site.data.pubs | sort: "year" | reverse %}
 
   {% assign current_year = "" %}
@@ -105,3 +115,41 @@ classes: wide
   {% endfor %}
 
 </div>
+
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+
+  const filters = document.querySelectorAll(".pub-filter");
+  const publications = document.querySelectorAll(".publication-card");
+
+  filters.forEach(function (filter) {
+
+    filter.addEventListener("click", function () {
+
+      filters.forEach(function (button) {
+        button.classList.remove("active");
+      });
+
+      filter.classList.add("active");
+
+      const selected = filter.dataset.filter;
+
+      publications.forEach(function (publication) {
+
+        if (
+          selected === "all" ||
+          publication.dataset.type === selected
+        ) {
+          publication.style.display = "";
+        } else {
+          publication.style.display = "none";
+        }
+
+      });
+
+    });
+
+  });
+
+});
+</script>
