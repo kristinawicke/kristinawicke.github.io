@@ -3,8 +3,15 @@ title: "Publications"
 permalink: /publications/
 layout: single
 author_profile: true
+classes: wide
 ---
 
-# Publications
+<h1>Publications</h1>
 
-This page is under construction.
+{% assign publications = site.data.pubs | sort: "year" | reverse %}
+
+{% for pub in publications %}
+  <h2>{{ pub.title }}</h2>
+  <p>{{ pub.authors }}</p>
+  <p>{{ pub.year }}</p>
+{% endfor %}
