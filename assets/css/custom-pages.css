@@ -95,12 +95,6 @@ body {
   line-height: 1.7;
 }
 
-/*
- * Minimal Mistakes uses several nested containers.
- * Explicitly keep the entire site white rather than only
- * the content area.
- */
-
 #main {
   background: #ffffff;
 }
@@ -244,9 +238,6 @@ h3 {
   display: none;
 }
 
-
-/* Introductory lead */
-
 .page__lead {
   color: #706b6b;
   font-size: 1.15em;
@@ -343,16 +334,202 @@ h3 {
 
 
 /* ==========================================================
-   PUBLICATIONS
+   PUBLICATIONS PAGE
+   ========================================================== */
+
+.publications-page {
+  max-width: 100%;
+  background: #ffffff;
+}
+
+
+/* ----------------------------------------------------------
+   Filters
+   ---------------------------------------------------------- */
+
+.publication-filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  margin-bottom: 2.5rem;
+}
+
+.pub-filter {
+  border: 1px solid #cfc5c0;
+  background: transparent;
+  color: #514945;
+  padding: 0.45rem 0.85rem;
+  font-family: inherit;
+  font-size: 0.82rem;
+  line-height: 1.2;
+  cursor: pointer;
+  border-radius: 4px;
+  transition:
+    background 0.2s ease,
+    border-color 0.2s ease,
+    color 0.2s ease;
+}
+
+.pub-filter:hover {
+  border-color: $link-color;
+  color: $link-color;
+}
+
+.pub-filter.active {
+  background: $link-color;
+  border-color: $link-color;
+  color: #ffffff;
+}
+
+
+/* ----------------------------------------------------------
+   Years
+   ---------------------------------------------------------- */
+
+.publication-year {
+  margin: 2.5rem 0 1rem;
+  padding-bottom: 0.35rem;
+  color: #4a3f3b;
+  font-size: 1.55rem;
+  font-weight: 600;
+}
+
+
+/* ----------------------------------------------------------
+   Publication cards
+   ---------------------------------------------------------- */
+
+.publication-card {
+  display: flex;
+  margin-bottom: 1.15rem;
+  padding: 1.25rem 1.4rem;
+  border: 1px solid #e2ddd9;
+  border-radius: 6px;
+  background: #ffffff;
+  box-shadow: 0 1px 3px rgba(50, 35, 30, 0.05);
+  transition:
+    border-color 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.publication-card:hover {
+  border-color: #c8aaa4;
+  box-shadow: 0 3px 10px rgba(50, 35, 30, 0.08);
+}
+
+
+/* ----------------------------------------------------------
+   Number
+   ---------------------------------------------------------- */
+
+.publication-number {
+  flex: 0 0 2.2rem;
+  margin-right: 1rem;
+  padding-top: 0.1rem;
+  color: #9a7770;
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+
+/* ----------------------------------------------------------
+   Content
+   ---------------------------------------------------------- */
+
+.publication-content {
+  min-width: 0;
+  flex: 1;
+}
+
+.publication-title {
+  margin: 0 0 0.35rem;
+  color: #302725;
+  font-size: 1.05rem;
+  line-height: 1.45;
+  font-weight: 600;
+}
+
+.publication-authors {
+  margin-bottom: 0.3rem;
+  color: #514945;
+  font-size: 0.92rem;
+  line-height: 1.5;
+}
+
+.my-name {
+  color: $link-color;
+  font-weight: 700;
+}
+
+.publication-details {
+  margin-bottom: 0.65rem;
+  color: #6a605c;
+  font-size: 0.88rem;
+  line-height: 1.5;
+}
+
+
+/* ----------------------------------------------------------
+   Publication links
+   ---------------------------------------------------------- */
+
+.publication-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.9rem;
+  margin-top: 0.5rem;
+}
+
+.publication-links a,
+.abstract-toggle {
+  padding: 0;
+  border: 0;
+  background: none;
+  color: $link-color;
+  font-family: inherit;
+  font-size: 0.82rem;
+  font-weight: 600;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.publication-links a:hover,
+.abstract-toggle:hover {
+  color: $link-color-hover;
+  text-decoration: underline;
+}
+
+
+/* ----------------------------------------------------------
+   Abstract
+   ---------------------------------------------------------- */
+
+.publication-abstract {
+  display: none;
+  margin-top: 1rem;
+  padding: 1rem 1.2rem;
+  border-left: 3px solid $link-color;
+  background: #f8f4f2;
+  color: #514945;
+  font-size: 0.88rem;
+  line-height: 1.65;
+}
+
+.publication-abstract.open {
+  display: block;
+}
+
+.publication-abstract p {
+  margin: 0;
+}
+
+
+/* ==========================================================
+   GENERAL PUBLICATION STYLES
    ========================================================== */
 
 .publication {
   margin-bottom: 1.4rem;
-}
-
-.publication-title {
-  margin-bottom: 0.15rem;
-  font-weight: 600;
 }
 
 .publication-meta {
@@ -425,15 +602,6 @@ hr {
 
 
 /* ==========================================================
-   PUBLICATION PAGE
-   ========================================================== */
-
-.publications-page {
-  background: #ffffff;
-}
-
-
-/* ==========================================================
    MOBILE
    ========================================================== */
 
@@ -449,6 +617,23 @@ hr {
 
   .page__content {
     font-size: 1em;
+  }
+
+  .publication-card {
+    padding: 1rem;
+  }
+
+  .publication-number {
+    flex-basis: 1.7rem;
+    margin-right: 0.65rem;
+  }
+
+  .publication-title {
+    font-size: 1rem;
+  }
+
+  .publication-year {
+    font-size: 1.3rem;
   }
 
 }
