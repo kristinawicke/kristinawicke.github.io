@@ -636,3 +636,111 @@ hr {
   }
 
 }
+
+
+/* ==========================================================
+   PUBLICATIONS — OVERRIDE MINIMAL MISTAKES BUTTON STYLES
+   ========================================================== */
+
+/* Filter buttons */
+
+.publications-page .publication-filters button.pub-filter,
+.publications-page button.pub-filter {
+  display: inline-block !important;
+  width: auto !important;
+  height: auto !important;
+
+  margin: 0 !important;
+  padding: 0.45rem 0.85rem !important;
+
+  border: 1px solid #cfc5c0 !important;
+  border-radius: 4px !important;
+
+  background: #ffffff !important;
+  color: #514945 !important;
+
+  font-family: inherit !important;
+  font-size: 0.82rem !important;
+  font-weight: 500 !important;
+  line-height: 1.2 !important;
+
+  text-shadow: none !important;
+  box-shadow: none !important;
+
+  cursor: pointer !important;
+}
+
+.publications-page .publication-filters button.pub-filter:hover,
+.publications-page button.pub-filter:hover {
+  background: #ffffff !important;
+  border-color: #7a263a !important;
+  color: #7a263a !important;
+}
+
+.publications-page .publication-filters button.pub-filter.active,
+.publications-page button.pub-filter.active {
+  background: #7a263a !important;
+  border-color: #7a263a !important;
+  color: #ffffff !important;
+}
+
+
+/* Your name */
+
+.publications-page .my-name,
+.publications-page strong.my-name {
+  color: #7a263a !important;
+  font-weight: 700 !important;
+}
+
+
+/* Publication links */
+
+.publications-page .publication-links a,
+.publications-page .publication-links button.abstract-toggle {
+  display: inline !important;
+
+  margin: 0 !important;
+  padding: 0 !important;
+
+  border: 0 !important;
+  background: transparent !important;
+
+  color: #7a263a !important;
+
+  font-family: inherit !important;
+  font-size: 0.82rem !important;
+  font-weight: 600 !important;
+
+  line-height: inherit !important;
+  text-decoration: none !important;
+
+  text-shadow: none !important;
+  box-shadow: none !important;
+
+  cursor: pointer !important;
+}
+
+.publications-page .publication-links a:hover,
+.publications-page .publication-links button.abstract-toggle:hover {
+  color: #5e1d2c !important;
+  text-decoration: underline !important;
+}
+
+
+/* Abstract button specifically */
+
+.publications-page button.abstract-toggle {
+  color: #7a263a !important;
+}
+
+.publications-page button.abstract-toggle:hover {
+  color: #5e1d2c !important;
+}
+
+
+/* Keep the actual publication cards white */
+
+.publications-page .publication-card {
+  background: #ffffff !important;
+}
