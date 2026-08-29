@@ -14,7 +14,8 @@
 
 - title: Combinatorial properties of phylogenetic diversity indices
   authors: Kristina Wicke and Mike Steel
-  year: 2019
+  year: 2020
+  month: 2
   type: article
   journal: Journal of Mathematical Biology
   volume: 80
@@ -35,6 +36,7 @@
 - title: "Statistical inconsistency of maximum parsimony for k-tuple-site data"
   authors: Michelle Galla, Kristina Wicke, and Mareike Fischer
   year: 2019
+  month: 4
   type: article
   journal: Bulletin of Mathematical Biology
   volume: 81
@@ -61,6 +63,7 @@
 - title: "On the Shapley value of unrooted phylogenetic trees"
   authors: Kristina Wicke and Mareike Fischer
   year: 2019
+  month: 2
   type: article
   journal: Bulletin of Mathematical Biology
   volume: 81
@@ -86,6 +89,7 @@
 - title: "Phylogenetic diversity and biodiversity indices on phylogenetic networks"
   authors: "Kristina Wicke and Mareike Fischer"
   year: 2018
+  month: 4
   type: article
   journal: "Mathematical Biosciences"
   volume: 298
@@ -116,6 +120,7 @@
 - title: "Mycobiomes of sympatric Amorphophallus albispathus (Araceae) and Camellia sinensis (Theaceae) – a case study reveals clear tissue preferences and differences in diversity and composition"
   authors: "Martin Unterseher, Samantha C. Karunarathna, Roberto García Cruz, Nikki H. Dagamac, Mathilde B. Dahl, Serena E. Dool, Michelle Galla, Lina Herbst, R. Henrik Nilsson, Sébastien J. Puechmaille, Caroline Schöner, Michael Schöner, Abu B. Siddique, Annette Teltewskoi, Kristina Wicke, David G. Würth, Christian Wurzbacher, and Kevin D. Hyde"
   year: 2018
+  month: 4
   type: article
   journal: "Mycological Progress"
   volume: 17
@@ -149,6 +154,7 @@
 - title: "Comparing the rankings obtained from two biodiversity indices: the Fair Proportion Index and the Shapley Value"
   authors: "Kristina Wicke and Mareike Fischer"
   year: 2017
+  month: 10
   type: article
   journal: "Journal of Theoretical Biology"
   volume: 430
