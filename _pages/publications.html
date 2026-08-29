@@ -31,7 +31,7 @@ classes: wide
     <h2 class="publication-year">{{ current_year }}</h2>
   {% endif %}
 
-  {% assign publication_number = publications.size | minus: forloop.index %}
+  {% assign publication_number = publications.size | minus: forloop.index0 %}
 
   <article class="publication-card" data-type="{{ pub.type }}">
 
