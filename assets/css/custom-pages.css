@@ -354,10 +354,10 @@ h3 {
   margin-bottom: 2.5rem;
 }
 
-.pub-filter {
-  border: 1px solid #cfc5c0;
-  background: transparent;
-  color: #514945;
+.publications-page .pub-filter {
+  border: 1px solid #cfc5c0 !important;
+  background: #ffffff !important;
+  color: #514945 !important;
   padding: 0.45rem 0.85rem;
   font-family: inherit;
   font-size: 0.82rem;
@@ -370,17 +370,17 @@ h3 {
     color 0.2s ease;
 }
 
-.pub-filter:hover {
-  border-color: $link-color;
-  color: $link-color;
+.publications-page .pub-filter:hover {
+  border-color: $link-color !important;
+  background: #ffffff !important;
+  color: $link-color !important;
 }
 
-.pub-filter.active {
-  background: $link-color;
-  border-color: $link-color;
-  color: #ffffff;
+.publications-page .pub-filter.active {
+  background: $link-color !important;
+  border-color: $link-color !important;
+  color: #ffffff !important;
 }
-
 
 /* ----------------------------------------------------------
    Years
@@ -480,12 +480,12 @@ h3 {
   margin-top: 0.5rem;
 }
 
-.publication-links a,
-.abstract-toggle {
-  padding: 0;
-  border: 0;
-  background: none;
-  color: $link-color;
+.publications-page .publication-links a,
+.publications-page .publication-links .abstract-toggle {
+  padding: 0 !important;
+  border: 0 !important;
+  background: transparent !important;
+  color: $link-color !important;
   font-family: inherit;
   font-size: 0.82rem;
   font-weight: 600;
@@ -493,12 +493,11 @@ h3 {
   cursor: pointer;
 }
 
-.publication-links a:hover,
-.abstract-toggle:hover {
-  color: $link-color-hover;
+.publications-page .publication-links a:hover,
+.publications-page .publication-links .abstract-toggle:hover {
+  color: $link-color-hover !important;
   text-decoration: underline;
 }
-
 
 /* ----------------------------------------------------------
    Abstract
