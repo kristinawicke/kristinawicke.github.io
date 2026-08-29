@@ -6,12 +6,102 @@ author_profile: true
 classes: wide
 ---
 
-<h1>Publications</h1>
+<link rel="stylesheet" href="{{ '/assets/css/custom-pages.css' | relative_url }}">
 
-{% assign publications = site.data.pubs | sort: "year" | reverse %}
+<div class="publications-page">
 
-{% for pub in publications %}
-  <h2>{{ pub.title }}</h2>
-  <p>{{ pub.authors }}</p>
-  <p>{{ pub.year }}</p>
-{% endfor %}
+  {% assign publications = site.data.pubs | sort: "year" | reverse %}
+
+  {% assign current_year = "" %}
+  {% assign publication_number = 0 %}
+
+  {% for pub in publications %}
+
+    {% if pub.year != current_year %}
+      {% assign current_year = pub.year %}
+      <h2 class="publication-year">{{ current_year }}</h2>
+    {% endif %}
+
+    {% assign publication_number = publication_number | plus: 1 %}
+
+    <article class="publication-card" data-type="{{ pub.type }}">
+
+      <div class="publication-number">
+        {{ publication_number }}
+      </div>
+
+      <div class="publication-content">
+
+        <h3 class="publication-title">
+          {{ pub.title }}
+        </h3>
+
+        <div class="publication-authors">
+          {% assign author_list = pub.authors | split: ", " %}
+
+          {% for author in author_list %}
+            {% if author == "Kristina Wicke" %}
+              <strong class="my-name">{{ author }}</strong>
+            {% else %}
+              {{ author }}
+            {% endif %}
+
+            {% unless forloop.last %}, {% endunless %}
+          {% endfor %}
+        </div>
+
+        <div class="publication-details">
+
+          {% if pub.journal %}
+            <em>{{ pub.journal }}</em>
+          {% endif %}
+
+          {% if pub.volume %}
+            {{ pub.volume }}
+          {% endif %}
+
+          {% if pub.issue %}
+            ({{ pub.issue }})
+          {% endif %}
+
+          {% if pub.pages %}
+            , {{ pub.pages }}
+          {% endif %}
+
+          {% if pub.journal or pub.volume or pub.pages %}
+            ({{ pub.year }})
+          {% else %}
+            {{ pub.type | capitalize }}, {{ pub.year }}
+          {% endif %}
+
+        </div>
+
+        <div class="publication-links">
+
+          {% if pub.journal_url %}
+            <a href="{{ pub.journal_url }}" target="_blank" rel="noopener">
+              Journal
+            </a>
+          {% endif %}
+
+          {% if pub.arxiv %}
+            <a href="https://arxiv.org/abs/{{ pub.arxiv }}" target="_blank" rel="noopener">
+              arXiv
+            </a>
+          {% endif %}
+
+          {% if pub.pdf %}
+            <a href="{{ pub.pdf }}" target="_blank" rel="noopener">
+              PDF
+            </a>
+          {% endif %}
+
+        </div>
+
+      </div>
+
+    </article>
+
+  {% endfor %}
+
+</div>
