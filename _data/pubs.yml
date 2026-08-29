@@ -1,22 +1,3 @@
-- title: "Comparing the rankings obtained from two biodiversity indices: the Fair Proportion Index and the Shapley Value"
-  authors: "Kristina Wicke and Mareike Fischer"
-  year: 2017
-  type: article
-  journal: "Journal of Theoretical Biology"
-  volume: 430
-  pages: "207–214"
-  doi: "10.1016/j.jtbi.2017.07.010"
-
-- title: "Mycobiomes of sympatric Amorphophallus albispathus (Araceae) and Camellia sinensis (Theaceae) – a case study reveals clear tissue preferences and differences in diversity and composition"
-  authors: "Martin Unterseher, Samantha C. Karunarathna, Roberto García Cruz, Nikki H. Dagamac, Mathilde B. Dahl, Serena E. Dool, Michelle Galla, Lina Herbst, R. Henrik Nilsson, Sébastien J. Puechmaille, Caroline Schöner, Michael Schöner, Abu B. Siddique, Annette Teltewskoi, Kristina Wicke, David G. Würth, Christian Wurzbacher, and Kevin D. Hyde"
-  year: 2018
-  type: article
-  journal: "Mycological Progress"
-  volume: 17
-  issue: 4
-  pages: "489–500"
-  doi: "10.1007/s11557-018-1375-8"
-
 - title: "Enumerating monophyletic characters in mathematical phylogenetics"
   authors: "Mareike Fischer, Michael Hendriksen, and Kristina Wicke"
   year: 2026
@@ -30,3 +11,94 @@
     phylogenetic subtree. This immediately leads to the question of how to identify
     possible monophyletic groups in characters, which assign each present-day species
     a certain trait and which are typically used for phylogenetic tree reconstruction.
+
+- title: "Phylogenetic diversity and biodiversity indices on phylogenetic networks"
+  authors: "Kristina Wicke and Mareike Fischer"
+  year: 2018
+  type: article
+  journal: "Mathematical Biosciences"
+  volume: 298
+  pages: "80-90"
+  doi: "10.1016/j.mbs.2018.02.005"
+  abstract: >-
+    In biodiversity conservation it is often necessary to prioritize the species to conserve.
+    Existing approaches to prioritization, e.g. the Fair Proportion Index and the Shapley Value,
+    are based on phylogenetic trees and rank species according to their contribution to overall
+    phylogenetic diversity. However, in many cases evolution is not treelike and thus, 
+    phylogenetic networks have been developed as a generalization of phylogenetic trees, allowing
+    for the representation of non-treelike evolutionary events, such as hybridization. Here, we
+    extend the concepts of phylogenetic diversity and phylogenetic diversity indices from 
+    phylogenetic trees to phylogenetic networks. On the one hand, we consider the treelike 
+    content of a phylogenetic network, e.g. the (multi)set of phylogenetic trees displayed 
+    by a network and the so-called lowest stable ancestor tree associated with it. 
+    On the other hand, we derive the phylogenetic diversity of subsets of taxa and biodiversity
+    indices directly from the internal structure of the network. We consider both approaches
+    that are independent of so-called inheritance probabilities as well as approaches that
+    explicitly incorporate these probabilities. Furthermore, we introduce our software package
+    NetDiversity, which is implemented in Perl and allows for the calculation of all
+    generalized measures of phylogenetic diversity and generalized phylogenetic diversity
+    indices established in this note that are independent of inheritance probabilities. 
+    We apply our methods to a phylogenetic network representing the evolutionary relationships
+    among swordtails and platyfishes (Xiphophorus: Poeciliidae), a group of species
+    characterized by widespread hybridization.
+    
+- title: "Mycobiomes of sympatric Amorphophallus albispathus (Araceae) and Camellia sinensis (Theaceae) – a case study reveals clear tissue preferences and differences in diversity and composition"
+  authors: "Martin Unterseher, Samantha C. Karunarathna, Roberto García Cruz, Nikki H. Dagamac, Mathilde B. Dahl, Serena E. Dool, Michelle Galla, Lina Herbst, R. Henrik Nilsson, Sébastien J. Puechmaille, Caroline Schöner, Michael Schöner, Abu B. Siddique, Annette Teltewskoi, Kristina Wicke, David G. Würth, Christian Wurzbacher, and Kevin D. Hyde"
+  year: 2018
+  type: article
+  journal: "Mycological Progress"
+  volume: 17
+  issue: 4
+  pages: "489–500"
+  doi: "10.1007/s11557-018-1375-8"
+  abstract: >-
+    Multiple biotic and abiotic parameters influence the dynamics of individual 
+    fungal species and entire communities. Major drivers for tropical plant endophytes
+    are undoubtedly seasonality, local habitat conditions and biogeography. However, 
+    host specialization and tissue preferences also contribute to the structuring of 
+    endophytic mycobiomes. To elucidate such specializations and preferences, we sampled
+    two commercially important, unrelated plant species, Amorphophallus albispathus
+    and Camellia sinensis (tea plant) simultaneously at close proximity. The mycobiomes
+    of different tissue types were assessed with high-throughput amplicon sequencing of
+    the internal transcribed spacer DNA region. Both plants hosted different fungal
+    communities and varied in α- and β-diversity, despite their neighboring occurrence.
+    However, the fungal assemblages of Amorphophallus leaflets shared taxa with the
+    mycobiomes of tea leaves, thereby suggesting common driving forces for leaf-inhabiting
+    fungi irrespective of host plant identity. The mycobiome composition and diversity of
+    tea leaves was clearly driven by leaf age. We suggest that the very youngest tea leaves
+    are colonized by stochastic processes, while mycobiomes of old leaves are rather
+    similar as the result of progressive succession. The biodiversity of fungi associated
+    with A. albispathus was characterized by a large number of unclassified OTUs
+    (at genus and species level) and by tissue-specific composition.This study is the first
+    cultivation-independent high-throughput assessment of fungal biodiversity of an
+    Amorphophallus species, and additionally expands the knowledge base on fungi associated
+    with tea plants.
+  
+  
+- title: "Comparing the rankings obtained from two biodiversity indices: the Fair Proportion Index and the Shapley Value"
+  authors: "Kristina Wicke and Mareike Fischer"
+  year: 2017
+  type: article
+  journal: "Journal of Theoretical Biology"
+  volume: 430
+  pages: "207–214"
+  doi: "10.1016/j.jtbi.2017.07.010"
+  abstract: >-
+    The Shapley Value and the Fair Proportion Index of phylogenetic trees have been
+    frequently discussed as prioritization tools in conservation biology. 
+    Both indices rank species according to their contribution to total phylogenetic diversity,
+    allowing for a simple conservation criterion. While both indices have their specific
+    advantages and drawbacks, it has recently been shown that both values are closely related.
+    However, as different authors use different definitions of the Shapley Value, the specific
+    degree of relatedness depends on the specific version of the Shapley Value – it ranges from a
+    high correlation index to equality of the indices. In this note, we first give an overview
+    of the different indices. Then we turn our attention to the mere ranking order provided
+    by either of the indices. We compare the rankings obtained from different versions of the Shapley
+    Value for a phylogenetic tree of European amphibians and illustrate their differences.
+    We then undertake further analyses on simulated data and show that even though the chance
+    of two rankings being exactly identical (when obtained from different versions of the Shapley Value)
+    decreases with an increasing number of taxa, the distance between the two rankings converges to
+    zero, i.e., the rankings are becoming more and more alike. Moreover, we introduce our freely
+    available software package FairShapley, which was implemented in Perl and with which all
+    calculations have been performed.
+
