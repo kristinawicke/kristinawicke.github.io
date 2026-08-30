@@ -12,7 +12,7 @@
     phylogenetic subtree. This immediately leads to the question of how to identify
     possible monophyletic groups in characters, which assign each present-day species
     a certain trait and which are typically used for phylogenetic tree reconstruction.
-  bib: >-
+  bib: |
     @misc{Fischer2026,
     title = {Enumerating monophyletic characters in mathematical phylogenetics},
     author = {Fischer, Mareike and Hendriksen, Michael and Wicke, Kristina},
@@ -44,7 +44,7 @@
     detail. We also define and investigate analogues of these indices on unrooted trees (where
     SV was originally defined), including an index that is closely related to the Pauplin
     representation of phylogenetic diversity.
-  bib: >-
+  bib: |
     @article{Wicke2020,
     title = {Combinatorial properties of phylogenetic diversity indices},
     volume = {80},
@@ -83,7 +83,7 @@
     and consider alphabets with two and four elements. We show that the equivalence of
     single-site data and k-tuple-site data then no longer holds. Even so, we can show that
     maximum parsimony is statistically inconsistent for k-tuple-site data and five taxa.
-  bib: >-
+  bib: |
     @article{Galla2019,
     title = {Statistical Inconsistency of Maximum Parsimony for k-Tuple-Site Data},
     volume = {81},
@@ -122,7 +122,7 @@
     may fail as a prioritization criterion, meaning that the diversity spanned by the top k
     species (ranked by their Shapley values) cannot approximate the total diversity of all
     n species.
-  bib: >-
+  bib: |
     @article{Wicke2019,
     title = {On the Shapley Value of Unrooted Phylogenetic Trees},
     volume = {81},
@@ -165,7 +165,7 @@
     We apply our methods to a phylogenetic network representing the evolutionary relationships
     among swordtails and platyfishes (Xiphophorus: Poeciliidae), a group of species
     characterized by widespread hybridization.
-  bib: >-
+  bib: |
     @article{Wicke2018,
     title = {Phylogenetic diversity and biodiversity indices on phylogenetic networks},
     volume = {298},
@@ -208,7 +208,7 @@
     cultivation-independent high-throughput assessment of fungal biodiversity of an
     Amorphophallus species, and additionally expands the knowledge base on fungi associated
     with tea plants.
-  bib: >-
+  bib: |
     @article{Unterseher2018,
     title = {Mycobiomes of sympatric Amorphophallus albispathus (Araceae) and Camellia sinensis (Theaceae) – a case study reveals clear tissue preferences and differences in diversity and composition},
     volume = {17},
@@ -249,7 +249,7 @@
     zero, i.e., the rankings are becoming more and more alike. Moreover, we introduce our freely
     available software package FairShapley, which was implemented in Perl and with which all
     calculations have been performed.
-  bib: >-
+  bib: |
     article{Wicke2017,
     title = {Comparing the rankings obtained from two biodiversity indices: the Fair Proportion Index and the Shapley Value},
     volume = {430},
