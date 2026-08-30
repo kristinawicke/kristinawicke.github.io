@@ -72,22 +72,21 @@ classes: wide
       {{ pub.title }}
     </h3>
 
-    <!-- Authors -->
-    <div class="publication-authors">
-      {% assign author_list = pub.authors | split: ", " %}
+   <!-- Authors -->
 
-      {% for author in author_list %}
-        {% assign author = author | strip %}
+  <div class="publication-authors">
+    {%- assign author_list = pub.authors | split: ", " -%}
+    {%- for author in author_list -%}
+      {%- assign author = author | strip -%}
+      {%- if author contains "Kristina Wicke" -%}
+        <strong class="my-name">{{ author }}</strong>
+      {%- else -%}
+        {{ author }}
+      {%- endif -%}
+      {%- unless forloop.last -%}, {% endunless -%}
+    {%- endfor -%}
+  </div>
 
-        {% if author contains "Kristina Wicke" %}
-          <strong class="my-name">{{ author }}</strong>
-        {% else %}
-          {{ author }}
-        {% endif %}
-
-        {% unless forloop.last %}, {% endunless %}
-      {% endfor %}
-    </div>
 
     <!-- Publication details -->
     <div class="publication-details">
