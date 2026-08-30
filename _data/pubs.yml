@@ -13,6 +13,14 @@
     possible monophyletic groups in characters, which assign each present-day species
     a certain trait and which are typically used for phylogenetic tree reconstruction.
   bib: >-
+    @misc{Fischer2026,
+    title = {Enumerating monophyletic characters in mathematical phylogenetics},
+    author = {Fischer, Mareike and Hendriksen, Michael and Wicke, Kristina},
+    year          = {2026},
+    archivePrefix = {arXiv},
+    eprint        = {2607.22097},
+    url = {https://arxiv.org/abs/2607.22097}
+    }
     
 
 - title: Combinatorial properties of phylogenetic diversity indices
