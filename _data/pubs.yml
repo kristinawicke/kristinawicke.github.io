@@ -12,6 +12,8 @@
     phylogenetic subtree. This immediately leads to the question of how to identify
     possible monophyletic groups in characters, which assign each present-day species
     a certain trait and which are typically used for phylogenetic tree reconstruction.
+  bib: >-
+    
 
 - title: Combinatorial properties of phylogenetic diversity indices
   authors: "Kristina Wicke, Mike Steel"
@@ -34,6 +36,17 @@
     detail. We also define and investigate analogues of these indices on unrooted trees (where
     SV was originally defined), including an index that is closely related to the Pauplin
     representation of phylogenetic diversity.
+  bib: >-
+    @article{Wicke2020,
+    title = {Combinatorial properties of phylogenetic diversity indices},
+    volume = {80},
+    DOI = {10.1007/s00285-019-01438-0},
+    number = {3},
+    journal = {Journal of Mathematical Biology},
+    author = {Wicke,  Kristina and Steel,  Mike},
+    year = {2020},
+    pages = {687–715}
+    }
 
 - title: "Statistical inconsistency of maximum parsimony for k-tuple-site data"
   authors: "Michelle Galla, Kristina Wicke, Mareike Fischer"
@@ -62,6 +75,18 @@
     and consider alphabets with two and four elements. We show that the equivalence of
     single-site data and k-tuple-site data then no longer holds. Even so, we can show that
     maximum parsimony is statistically inconsistent for k-tuple-site data and five taxa.
+  bib: >-
+    @article{Galla2019,
+    title = {Statistical Inconsistency of Maximum Parsimony for k-Tuple-Site Data},
+    volume = {81},
+    DOI = {10.1007/s11538-018-00552-2},
+    number = {4},
+    journal = {Bulletin of Mathematical Biology},
+    author = {Galla,  Michelle and Wicke,  Kristina and Fischer,  Mareike},
+    year = {2019},
+    pages = {1173–1200}
+    }
+    
 
 - title: "On the Shapley value of unrooted phylogenetic trees"
   authors: "Kristina Wicke, Mareike Fischer"
@@ -89,6 +114,17 @@
     may fail as a prioritization criterion, meaning that the diversity spanned by the top k
     species (ranked by their Shapley values) cannot approximate the total diversity of all
     n species.
+  bib: >-
+    @article{Wicke2019,
+    title = {On the Shapley Value of Unrooted Phylogenetic Trees},
+    volume = {81},
+    DOI = {10.1007/s11538-018-0392-8},
+    number = {2},
+    journal = {Bulletin of Mathematical Biology},
+    author = {Wicke,  Kristina and Fischer,  Mareike},
+    year = {2019},
+    pages = {618–638}
+    }
 
 - title: "Phylogenetic diversity and biodiversity indices on phylogenetic networks"
   authors: "Kristina Wicke, Mareike Fischer"
@@ -121,6 +157,16 @@
     We apply our methods to a phylogenetic network representing the evolutionary relationships
     among swordtails and platyfishes (Xiphophorus: Poeciliidae), a group of species
     characterized by widespread hybridization.
+  bib: >-
+    @article{Wicke2018,
+    title = {Phylogenetic diversity and biodiversity indices on phylogenetic networks},
+    volume = {298},
+    DOI = {10.1016/j.mbs.2018.02.005},
+    journal = {Mathematical Biosciences},
+    author = {Wicke,  Kristina and Fischer,  Mareike},
+    year = {2018},
+    pages = {80–90}
+    }
     
 - title: "Mycobiomes of sympatric Amorphophallus albispathus (Araceae) and Camellia sinensis (Theaceae) – a case study reveals clear tissue preferences and differences in diversity and composition"
   authors: "Martin Unterseher, Samantha C. Karunarathna, Roberto García Cruz, Nikki H. Dagamac, Mathilde B. Dahl, Serena E. Dool, Michelle Galla, Lina Herbst, R. Henrik Nilsson, Sébastien J. Puechmaille, Caroline Schöner, Michael Schöner, Abu B. Siddique, Annette Teltewskoi, Kristina Wicke, David G. Würth, Christian Wurzbacher, Kevin D. Hyde"
@@ -154,6 +200,17 @@
     cultivation-independent high-throughput assessment of fungal biodiversity of an
     Amorphophallus species, and additionally expands the knowledge base on fungi associated
     with tea plants.
+  bib: >-
+    @article{Unterseher2018,
+    title = {Mycobiomes of sympatric Amorphophallus albispathus (Araceae) and Camellia sinensis (Theaceae) – a case study reveals clear tissue preferences and differences in diversity and composition},
+    volume = {17},
+    DOI = {10.1007/s11557-018-1375-8},
+    number = {4},
+    journal = {Mycological Progress},
+    author = {Unterseher,  Martin and Karunarathna,  Samantha C and Cruz,  García Roberto and Dagamac,  Nikki H and Dahl,  Mathilde B and Dool,  Serena E and Galla,  Michelle and Herbst,  Lina and Nilsson,  R Henrik and Puechmaille,  Sébastien J. and Sch\"{o}ner,  Caroline and Sch\"{o}ner,  Michael and Siddique,  Abu B and Teltewskoi,  Annette and Wicke,  Kristina and W\"{u}rth,  David G and Wurzbacher,  Christian and Hyde,  Kevin D},
+    year = {2018},
+    pages = {489–500}
+    }
   
   
 - title: "Comparing the rankings obtained from two biodiversity indices: the Fair Proportion Index and the Shapley Value"
@@ -184,4 +241,15 @@
     zero, i.e., the rankings are becoming more and more alike. Moreover, we introduce our freely
     available software package FairShapley, which was implemented in Perl and with which all
     calculations have been performed.
+  bib: >-
+    article{Wicke2017,
+    title = {Comparing the rankings obtained from two biodiversity indices: the Fair Proportion Index and the Shapley Value},
+    volume = {430},
+    DOI = {10.1016/j.jtbi.2017.07.010},
+    journal = {Journal of Theoretical Biology},
+    author = {Wicke,  Kristina and Fischer,  Mareike},
+    year = {2017},
+    pages = {207–214}
+    }
+  
 
