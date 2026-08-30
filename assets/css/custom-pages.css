@@ -96,10 +96,10 @@ border-left-color: #7a263a;
 box-shadow: 0 3px 12px rgba(15, 23, 42, 0.07);
 }
 
-publication-type {
-  position: absolute;
-  top: -0.72em;
-  right: 1rem;
+.publication-type {
+  position: absolute !important;
+  top: -0.72em !important;
+  right: 1rem !important;
 
   display: inline-block;
 
@@ -114,7 +114,9 @@ publication-type {
   font-weight: 600;
   line-height: 1.35;
   letter-spacing: 0.02em;
-  text-transform: uppercase;
+  text-transform: none;
+
+  z-index: 10;
 }
 
 /* ==========================================================
