@@ -1,10 +1,11 @@
 ---
-title: "Publications (under construction)"
+
+title: "Publications"
 permalink: /publications/
 layout: single
 author_profile: true
 classes: wide
----
+-------------
 
 <link rel="stylesheet" href="{{ '/assets/css/custom-pages.css' | relative_url }}">
 
@@ -20,117 +21,138 @@ classes: wide
     <button class="pub-filter" data-filter="other">Other</button>
   </div>
 
- {% assign publications = site.data.pubs | sort: "year" | reverse %}
+{% assign publications = site.data.pubs | sort: "year" | reverse %}
 
 {% assign current_year = "" %}
+{% assign total_publications = publications.size %}
 
 {% for pub in publications %}
 
-  {% if pub.year != current_year %}
-    {% assign current_year = pub.year %}
-    <h2 class="publication-year">{{ current_year }}</h2>
-  {% endif %}
+```
+{% assign publication_number = total_publications | minus: forloop.index0 %}
 
-  {% assign publication_number = publications.size | minus: forloop.index0 %}
+{% if pub.year != current_year %}
+  {% assign current_year = pub.year %}
+  <h2 class="publication-year">{{ current_year }}</h2>
+{% endif %}
 
-  <article class="publication-card" data-type="{{ pub.type }}">
+<article
+  class="publication-card"
+  data-type="{{ pub.type }}"
+>
 
-    <div class="publication-number">
-      {{ publication_number }}
+  <div class="publication-number">
+    {{ publication_number }}
+  </div>
+
+  <div class="publication-content">
+
+    <h3 class="publication-title">
+      {{ pub.title }}
+    </h3>
+
+    <div class="publication-authors">
+      {% assign author_list = pub.authors | split: ", " %}
+
+      {% for author in author_list %}
+        {% assign author = author | strip %}{% if author contains "Kristina Wicke" %}<strong class="my-name">{{ author }}</strong>{% else %}{{ author }}{% endif %}{% unless forloop.last %}, {% endunless %}
+      {% endfor %}
     </div>
 
-      <div class="publication-content">
+    <div class="publication-details">
 
-        <h3 class="publication-title">
-          {{ pub.title }}
-        </h3>
+      {% if pub.journal %}
+        <em>{{ pub.journal }}</em>
+      {% endif %}
 
-        <div class="publication-authors">
-          {% assign author_list = pub.authors | split: ", " %}
+      {% if pub.volume %}
+        {{ pub.volume }}
+      {% endif %}
 
-          {% for author in author_list %}
-            {% if author == "Kristina Wicke" %}
-              <strong class="my-name">{{ author }}</strong>
-            {% else %}
-              {{ author }}
-            {% endif %}
+      {% if pub.issue %}
+        ({{ pub.issue }})
+      {% endif %}
 
-            {% unless forloop.last %}, {% endunless %}
-          {% endfor %}
-        </div>
+      {% if pub.pages %}
+        , {{ pub.pages }}
+      {% endif %}
 
-        <div class="publication-details">
+      {% if pub.journal or pub.volume or pub.pages %}
+        ({{ pub.year }})
+      {% else %}
+        {{ pub.type | capitalize }}, {{ pub.year }}
+      {% endif %}
 
-          {% if pub.journal %}
-            <em>{{ pub.journal }}</em>
-          {% endif %}
+    </div>
 
-          {% if pub.volume %}
-            {{ pub.volume }}
-          {% endif %}
+    <div class="publication-links">
 
-          {% if pub.issue %}
-            ({{ pub.issue }})
-          {% endif %}
+      {% if pub.journal_url %}
+        <a
+          href="{{ pub.journal_url }}"
+          target="_blank"
+          rel="noopener"
+        >Journal</a>
+      {% endif %}
 
-          {% if pub.pages %}
-            , {{ pub.pages }}
-          {% endif %}
+      {% if pub.arxiv %}
+        <a
+          href="https://arxiv.org/abs/{{ pub.arxiv }}"
+          target="_blank"
+          rel="noopener"
+        >arXiv</a>
+      {% endif %}
 
-          {% if pub.journal or pub.volume or pub.pages %}
-            ({{ pub.year }})
-          {% else %}
-            {{ pub.type | capitalize }}, {{ pub.year }}
-          {% endif %}
+      {% if pub.pdf %}
+        <a
+          href="{{ pub.pdf }}"
+          target="_blank"
+          rel="noopener"
+        >PDF</a>
+      {% endif %}
 
-        </div>
+      {% if pub.abstract %}
+        <button class="abstract-toggle" type="button">
+          Abstract
+        </button>
+      {% endif %}
 
-        <div class="publication-links">
+    </div>
 
-          {% if pub.journal_url %}
-            <a href="{{ pub.journal_url }}" target="_blank" rel="noopener">
-              Journal
-            </a>
-          {% endif %}
-
-          {% if pub.arxiv %}
-            <a href="https://arxiv.org/abs/{{ pub.arxiv }}" target="_blank" rel="noopener">
-              arXiv
-            </a>
-          {% endif %}
-
-          {% if pub.pdf %}
-            <a href="{{ pub.pdf }}" target="_blank" rel="noopener">
-              PDF
-            </a>
-          {% endif %}
-
-          {% if pub.abstract %}
-            <button class="abstract-toggle" type="button">
-              Abstract
-            </button>
-          {% endif %}
-
-        </div>
-
-        {% if pub.abstract %}
-          <div class="publication-abstract">
-            <p>{{ pub.abstract }}</p>
-          </div>
-        {% endif %}
-
+    {% if pub.abstract %}
+      <div class="publication-abstract">
+        <p>{{ pub.abstract }}</p>
       </div>
+    {% endif %}
 
-    </article>
+  </div>
 
-  {% endfor %}
+  <div class="publication-type">
+    {% case pub.type %}
+      {% when "article" %}
+        Journal article
+      {% when "preprint" %}
+        Preprint
+      {% when "book" %}
+        Book
+      {% when "chapter" %}
+        Book chapter
+      {% when "thesis" %}
+        Thesis
+      {% else %}
+        Other
+    {% endcase %}
+  </div>
+
+</article>
+```
+
+{% endfor %}
 
 </div>
 
 <script>
 document.addEventListener("DOMContentLoaded", function () {
-
-  /* Publication filters */
 
   const filters = document.querySelectorAll(".pub-filter");
   const publications = document.querySelectorAll(".publication-card");
@@ -164,9 +186,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
   });
 
-
-  /* Abstract toggles */
-
   const abstractButtons =
     document.querySelectorAll(".abstract-toggle");
 
@@ -176,7 +195,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
       const abstract =
         button.closest(".publication-card")
-              .querySelector(".publication-abstract");
+               .querySelector(".publication-abstract");
 
       abstract.classList.toggle("open");
 
