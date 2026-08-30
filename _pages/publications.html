@@ -5,11 +5,13 @@ permalink: /publications/
 layout: single
 author_profile: true
 classes: wide
----
+-------------
 
 <link rel="stylesheet" href="{{ '/assets/css/custom-pages.css' | relative_url }}">
 
 <div class="publications-page">
+
+  <!-- Publication filters -->
 
   <div class="publication-filters">
     <button class="pub-filter active" data-filter="all">All</button>
@@ -22,13 +24,12 @@ classes: wide
   </div>
 
 {% assign publications = site.data.pubs | sort: "year" | reverse %}
-
 {% assign current_year = "" %}
 {% assign total_publications = publications.size %}
 
 {% for pub in publications %}
 
-
+```
 {% assign publication_number = total_publications | minus: forloop.index0 %}
 
 {% if pub.year != current_year %}
@@ -41,24 +42,55 @@ classes: wide
   data-type="{{ pub.type }}"
 >
 
+  <!-- Publication number -->
   <div class="publication-number">
     {{ publication_number }}
   </div>
 
+  <!-- Publication type -->
+  <div class="publication-type">
+    {% case pub.type %}
+      {% when "article" %}
+        Journal Article
+      {% when "preprint" %}
+        Preprint
+      {% when "book" %}
+        Book
+      {% when "chapter" %}
+        Book Chapter
+      {% when "thesis" %}
+        Thesis
+      {% else %}
+        Other
+    {% endcase %}
+  </div>
+
+  <!-- Main publication content -->
   <div class="publication-content">
 
+    <!-- Title -->
     <h3 class="publication-title">
       {{ pub.title }}
     </h3>
 
+    <!-- Authors -->
     <div class="publication-authors">
       {% assign author_list = pub.authors | split: ", " %}
 
       {% for author in author_list %}
-        {% assign author = author | strip %}{% if author contains "Kristina Wicke" %}<strong class="my-name">{{ author }}</strong>{% else %}{{ author }}{% endif %}{% unless forloop.last %}, {% endunless %}
+        {% assign author = author | strip %}
+
+        {% if author contains "Kristina Wicke" %}
+          <strong class="my-name">{{ author }}</strong>
+        {% else %}
+          {{ author }}
+        {% endif %}
+
+        {% unless forloop.last %}, {% endunless %}
       {% endfor %}
     </div>
 
+    <!-- Publication details -->
     <div class="publication-details">
 
       {% if pub.journal %}
@@ -85,67 +117,75 @@ classes: wide
 
     </div>
 
+    <!-- Publication actions -->
     <div class="publication-links">
 
-      {% if pub.journal_url %}
-        <a
-          href="{{ pub.journal_url }}"
-          target="_blank"
-          rel="noopener"
-        >Journal</a>
-      {% endif %}
+      <!-- Left-side actions -->
+      <div class="publication-actions-left">
 
-      {% if pub.arxiv %}
-        <a
-          href="https://arxiv.org/abs/{{ pub.arxiv }}"
-          target="_blank"
-          rel="noopener"
-        >arXiv</a>
-      {% endif %}
+        {% if pub.abstract %}
+          <button class="abstract-toggle" type="button">
+            Abstract
+          </button>
+        {% endif %}
 
-      {% if pub.pdf %}
-        <a
-          href="{{ pub.pdf }}"
-          target="_blank"
-          rel="noopener"
-        >PDF</a>
-      {% endif %}
+        {% if pub.bib %}
+          <button class="bib-toggle" type="button">
+            BibTeX
+          </button>
+        {% endif %}
 
-      {% if pub.abstract %}
-        <button class="abstract-toggle" type="button">
-          Abstract
-        </button>
-      {% endif %}
+      </div>
+
+      <!-- Right-side external links -->
+      <div class="publication-actions-right">
+
+        {% if pub.journal_url %}
+          <a
+            href="{{ pub.journal_url }}"
+            target="_blank"
+            rel="noopener"
+          >Journal</a>
+        {% endif %}
+
+        {% if pub.arxiv %}
+          <a
+            href="https://arxiv.org/abs/{{ pub.arxiv }}"
+            target="_blank"
+            rel="noopener"
+          >arXiv</a>
+        {% endif %}
+
+        {% if pub.pdf %}
+          <a
+            href="{{ pub.pdf }}"
+            target="_blank"
+            rel="noopener"
+          >PDF</a>
+        {% endif %}
+
+      </div>
 
     </div>
 
+    <!-- Abstract -->
     {% if pub.abstract %}
       <div class="publication-abstract">
         <p>{{ pub.abstract }}</p>
       </div>
     {% endif %}
 
+    <!-- BibTeX -->
+    {% if pub.bib %}
+      <div class="publication-bib">
+        <pre><code>{{ pub.bib }}</code></pre>
+      </div>
+    {% endif %}
+
   </div>
 
- <div class="publication-type">
-  {% case pub.type %}
-    {% when "article" %}
-      Journal Article
-    {% when "preprint" %}
-      Preprint
-    {% when "book" %}
-      Book
-    {% when "chapter" %}
-      Book Chapter
-    {% when "thesis" %}
-      Thesis
-    {% else %}
-      Other
-  {% endcase %}
-</div>
-
 </article>
-
+```
 
 {% endfor %}
 
@@ -154,8 +194,16 @@ classes: wide
 <script>
 document.addEventListener("DOMContentLoaded", function () {
 
-  const filters = document.querySelectorAll(".pub-filter");
-  const publications = document.querySelectorAll(".publication-card");
+  /* ==========================================================
+     PUBLICATION FILTERS
+     ========================================================== */
+
+  const filters =
+    document.querySelectorAll(".pub-filter");
+
+  const publications =
+    document.querySelectorAll(".publication-card");
+
 
   filters.forEach(function (filter) {
 
@@ -167,7 +215,8 @@ document.addEventListener("DOMContentLoaded", function () {
 
       filter.classList.add("active");
 
-      const selected = filter.dataset.filter;
+      const selected =
+        filter.dataset.filter;
 
       publications.forEach(function (publication) {
 
@@ -186,23 +235,62 @@ document.addEventListener("DOMContentLoaded", function () {
 
   });
 
+
+  /* ==========================================================
+     ABSTRACT TOGGLE
+     ========================================================== */
+
   const abstractButtons =
     document.querySelectorAll(".abstract-toggle");
+
 
   abstractButtons.forEach(function (button) {
 
     button.addEventListener("click", function () {
 
+      const card =
+        button.closest(".publication-card");
+
       const abstract =
-        button.closest(".publication-card")
-               .querySelector(".publication-abstract");
+        card.querySelector(".publication-abstract");
 
       abstract.classList.toggle("open");
 
       if (abstract.classList.contains("open")) {
-        button.textContent = "Hide abstract";
+        button.textContent = "Hide Abstract";
       } else {
         button.textContent = "Abstract";
+      }
+
+    });
+
+  });
+
+
+  /* ==========================================================
+     BIBTEX TOGGLE
+     ========================================================== */
+
+  const bibButtons =
+    document.querySelectorAll(".bib-toggle");
+
+
+  bibButtons.forEach(function (button) {
+
+    button.addEventListener("click", function () {
+
+      const card =
+        button.closest(".publication-card");
+
+      const bib =
+        card.querySelector(".publication-bib");
+
+      bib.classList.toggle("open");
+
+      if (bib.classList.contains("open")) {
+        button.textContent = "Hide BibTeX";
+      } else {
+        button.textContent = "BibTeX";
       }
 
     });
