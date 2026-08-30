@@ -21,7 +21,41 @@
     eprint        = {2607.22097},
     url = {https://arxiv.org/abs/2607.22097}
     }
-    
+
+
+
+
+
+- title: Classes of tree-based networks
+  authors: "Mareike Fischer, Michelle Galla, Lina Herbst, Yangjing Long, Kristina Wicke"
+  year: 2020
+  month: 5
+  type: article
+  journal: Visual Computing for Industry, Biomedicine, and Art
+  volume: 3
+  pages: "26 pages"
+  journal_url: "https://doi.org/10.1186/s42492-020-00043-z"
+  arxiv: "1810.06844"
+  abstract: >-
+    Recently, so-called tree-based phylogenetic networks have attracted considerable attention.
+    These networks can be constructed from a phylogenetic tree, called the base tree, by adding
+    additional edges. The primary aim of this study is to provide sufficient criteria for 
+    tree-basedness by reducing phylogenetic networks to related graph structures. Even though it
+    is generally known that determining whether a network is tree-based is an NP-complete problem,
+    one of these criteria, namely edge-basedness, can be verified in linear time. Surprisingly, 
+    the class of edge-based networks is closely related to a well-known family of graphs, namely,
+    the class of generalized series-parallel graphs, and we explore this relationship in full detail.
+    Additionally, we introduce further classes of tree-based networks and analyze their relationships.
+  bib: |
+    @article{Fischer2020,
+    title = {Classes of tree-based networks},
+    volume = {3},
+    DOI = {10.1186/s42492-020-00043-z},
+    journal = {Visual Computing for Industry,  Biomedicine,  and Art},
+    author = {Fischer,  Mareike and Galla,  Michelle and Herbst,  Lina and Long,  Yangjing and Wicke,  Kristina},
+    year = {2020}
+    }
+
 
 - title: Combinatorial properties of phylogenetic diversity indices
   authors: "Kristina Wicke, Mike Steel"
@@ -55,6 +89,7 @@
     year = {2020},
     pages = {687–715}
     }
+
 
 - title: "Statistical inconsistency of maximum parsimony for k-tuple-site data"
   authors: "Michelle Galla, Kristina Wicke, Mareike Fischer"
@@ -134,6 +169,7 @@
     pages = {618–638}
     }
 
+
 - title: "Phylogenetic diversity and biodiversity indices on phylogenetic networks"
   authors: "Kristina Wicke, Mareike Fischer"
   year: 2018
@@ -175,6 +211,7 @@
     year = {2018},
     pages = {80–90}
     }
+
     
 - title: "Mycobiomes of sympatric Amorphophallus albispathus (Araceae) and Camellia sinensis (Theaceae) – a case study reveals clear tissue preferences and differences in diversity and composition"
   authors: "Martin Unterseher, Samantha C. Karunarathna, Roberto García Cruz, Nikki H. Dagamac, Mathilde B. Dahl, Serena E. Dool, Michelle Galla, Lina Herbst, R. Henrik Nilsson, Sébastien J. Puechmaille, Caroline Schöner, Michael Schöner, Abu B. Siddique, Annette Teltewskoi, Kristina Wicke, David G. Würth, Christian Wurzbacher, Kevin D. Hyde"
