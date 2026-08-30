@@ -1,746 +1,295 @@
----
----
-
-/*
- * Kristina Wicke — custom Minimal Mistakes theme
- *
- * Clean academic/editorial palette:
- *   Background: #FFFFFF
- *   Text:       #292626
- *   Burgundy:   #7A263A
- */
-
-
 /* ==========================================================
-   COLORS
-   ========================================================== */
-
-$background-color: #ffffff;
-$body-color: #ffffff;
-$text-color: #292626;
-$muted-text-color: #706b6b;
-
-$link-color: #7a263a;
-$link-color-hover: #5e1d2c;
-
-$masthead-link-color: #292626;
-$masthead-link-color-hover: #7a263a;
-
-$border-color: #e5dfdd;
-
-$primary-color: #7a263a;
-
-
-/* ==========================================================
-   TYPOGRAPHY
-   ========================================================== */
-
-$serif:
-  Georgia,
-  "Times New Roman",
-  Times,
-  serif;
-
-$sans-serif:
-  -apple-system,
-  BlinkMacSystemFont,
-  "Segoe UI",
-  Helvetica,
-  Arial,
-  sans-serif;
-
-$monospace:
-  "SFMono-Regular",
-  Consolas,
-  "Liberation Mono",
-  monospace;
-
-$global-font-family: $sans-serif;
-$header-font-family: $sans-serif;
-
-
-/* ==========================================================
-   TYPE SCALE
-   ========================================================== */
-
-$type-size-1: 2.4em;
-$type-size-2: 1.9em;
-$type-size-3: 1.5em;
-$type-size-4: 1.25em;
-$type-size-5: 1em;
-$type-size-6: 0.8em;
-
-
-/* ==========================================================
-   MINIMAL MISTAKES
-   ========================================================== */
-
-@import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}";
-@import "minimal-mistakes";
-
-
-/* ==========================================================
-   GLOBAL
-   ========================================================== */
-
-html {
-  background: #ffffff;
-  scroll-behavior: smooth;
-}
-
-body {
-  background: #ffffff;
-  color: $text-color;
-  font-size: 16px;
-  line-height: 1.7;
-}
-
-#main {
-  background: #ffffff;
-}
-
-.initial-content {
-  background: #ffffff;
-}
-
-.page {
-  background: #ffffff;
-}
-
-.page__content {
-  background: #ffffff;
-}
-
-::selection {
-  background: #eadcdf;
-  color: #292626;
-}
-
-
-/* ==========================================================
-   LINKS
-   ========================================================== */
-
-a {
-  color: $link-color;
-  text-decoration-thickness: 1px;
-  text-underline-offset: 2px;
-}
-
-a:hover,
-a:focus {
-  color: $link-color-hover;
-}
-
-
-/* ==========================================================
-   HEADINGS
-   ========================================================== */
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  color: #211f1f;
-  font-family: $header-font-family;
-  font-weight: 600;
-  letter-spacing: -0.025em;
-}
-
-h1 {
-  line-height: 1.15;
-}
-
-h2 {
-  margin-top: 2em;
-  margin-bottom: 0.7em;
-}
-
-h3 {
-  margin-top: 1.7em;
-}
-
-
-/* ==========================================================
-   HEADER / NAVIGATION
-   ========================================================== */
-
-.masthead {
-  background: #ffffff;
-  border-bottom: 1px solid $border-color;
-}
-
-.greedy-nav {
-  background: #ffffff;
-}
-
-.greedy-nav a {
-  color: #292626;
-  font-size: 0.9em;
-  font-weight: 500;
-}
-
-.greedy-nav a:hover {
-  color: $link-color;
-}
-
-.greedy-nav .visible-links a:before {
-  background: $link-color;
-}
-
-
-/* Site title */
-
-.masthead__menu-item--lg a {
-  color: #211f1f;
-  font-size: 1.05em;
-  font-weight: 600;
-}
-
-.masthead__menu-item--lg a:hover {
-  color: $link-color;
-}
-
-
-/* ==========================================================
-   MAIN CONTENT
-   ========================================================== */
-
-.page {
-  background: #ffffff;
-}
-
-.page__content {
-  background: #ffffff;
-  font-size: 1em;
-}
-
-.page__content p {
-  margin-bottom: 1.25em;
-}
-
-.page__content li {
-  margin-bottom: 0.35em;
-}
-
-
-/* ==========================================================
-   HOMEPAGE
-   ========================================================== */
-
-.layout--home .page__content {
-  max-width: 850px;
-}
-
-.layout--home .page__title {
-  display: none;
-}
-
-.page__lead {
-  color: #706b6b;
-  font-size: 1.15em;
-  line-height: 1.6;
-}
-
-
-/* ==========================================================
-   AUTHOR / PROFILE
-   ========================================================== */
-
-.author__avatar img {
-  border-radius: 50%;
-}
-
-.author__name {
-  color: #211f1f;
-  font-weight: 600;
-}
-
-.author__bio {
-  color: #706b6b;
-  line-height: 1.5;
-}
-
-.author__urls a {
-  color: #706b6b;
-}
-
-.author__urls a:hover {
-  color: $link-color;
-}
-
-
-/* ==========================================================
-   SECTION HEADINGS
-   ========================================================== */
-
-.home-section {
-  margin-top: 3.5rem;
-}
-
-.home-section h2 {
-  color: #211f1f;
-  font-size: 1.45em;
-  padding-bottom: 0.4em;
-  border-bottom: 1px solid $border-color;
-}
-
-.home-section h2::before {
-  content: "";
-  display: inline-block;
-  width: 0.45em;
-  height: 0.45em;
-  margin-right: 0.55em;
-  background: $link-color;
-  vertical-align: 0.08em;
-}
-
-
-/* ==========================================================
-   NEWS
-   ========================================================== */
-
-.news-item {
-  display: grid;
-  grid-template-columns: 7.5rem 1fr;
-  column-gap: 1.5rem;
-  padding: 0.75rem 0;
-  border-bottom: 1px solid #eee9e7;
-}
-
-.news-date {
-  color: #817979;
-  font-size: 0.9em;
-  white-space: nowrap;
-}
-
-.news-text {
-  margin: 0;
-}
-
-@media (max-width: 600px) {
-
-  .news-item {
-    display: block;
-  }
-
-  .news-date {
-    margin-bottom: 0.25rem;
-  }
-
-}
-
-
-/* ==========================================================
-   PUBLICATIONS PAGE
-   ========================================================== */
+PUBLICATIONS PAGE
+========================================================== */
 
 .publications-page {
-  max-width: 100%;
-  background: #ffffff;
+width: 100%;
+max-width: 100%;
 }
 
-
-/* ----------------------------------------------------------
-   Filters
-   ---------------------------------------------------------- */
+/* ==========================================================
+FILTERS
+========================================================== */
 
 .publication-filters {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.4rem;
-  margin-bottom: 2.5rem;
+display: flex;
+flex-wrap: wrap;
+gap: 0.45rem;
+margin: 0 0 2rem;
 }
 
-.publications-page .pub-filter {
-  border: 1px solid #cfc5c0 !important;
-  background: #ffffff !important;
-  color: #514945 !important;
-  padding: 0.45rem 0.85rem;
-  font-family: inherit;
-  font-size: 0.82rem;
-  line-height: 1.2;
-  cursor: pointer;
-  border-radius: 4px;
-  transition:
-    background 0.2s ease,
-    border-color 0.2s ease,
-    color 0.2s ease;
+.pub-filter {
+display: inline-block;
+padding: 0.3rem 0.7rem;
+border: 1px solid #d8d3d1;
+border-radius: 3px;
+background: #ffffff;
+color: #555050;
+font-family: inherit;
+font-size: 0.78rem;
+line-height: 1.3;
+cursor: pointer;
+transition:
+background-color 0.15s ease,
+border-color 0.15s ease,
+color 0.15s ease;
 }
 
-.publications-page .pub-filter:hover {
-  border-color: $link-color !important;
-  background: #ffffff !important;
-  color: $link-color !important;
+.pub-filter:hover {
+border-color: #7a263a;
+color: #7a263a;
 }
 
-.publications-page .pub-filter.active {
-  background: $link-color !important;
-  border-color: $link-color !important;
-  color: #ffffff !important;
+.pub-filter.active {
+background: #7a263a;
+border-color: #7a263a;
+color: #ffffff;
 }
 
-/* ----------------------------------------------------------
-   Years
-   ---------------------------------------------------------- */
+/* ==========================================================
+YEAR HEADINGS
+========================================================== */
 
 .publication-year {
-  margin: 2.5rem 0 1rem;
-  padding-bottom: 0.35rem;
-  color: #4a3f3b;
-  font-size: 1.55rem;
-  font-weight: 600;
+margin: 2.2rem 0 1.2rem;
+padding-bottom: 0.35rem;
+border-bottom: 1px solid #e5dfdd;
+color: #292626;
+font-size: 1.35rem;
+font-weight: 600;
+letter-spacing: -0.015em;
 }
 
+.publication-year:first-of-type {
+margin-top: 0;
+}
 
-/* ----------------------------------------------------------
-   Publication cards
-   ---------------------------------------------------------- */
+/* ==========================================================
+PUBLICATION CARDS
+========================================================== */
 
 .publication-card {
-  display: flex;
-  margin-bottom: 1.15rem;
-  padding: 1.25rem 1.4rem;
-  border: 1px solid #e2ddd9;
-  border-radius: 6px;
-  background: #ffffff;
-  box-shadow: 0 1px 3px rgba(50, 35, 30, 0.05);
-  transition:
-    border-color 0.2s ease,
-    box-shadow 0.2s ease;
+position: relative;
+display: block;
+
+margin: 0 0 1.35rem;
+padding: 1.05rem 1.15rem 1rem;
+
+border: 1px solid #e2dddd;
+border-left: 3px solid #7a263a;
+border-radius: 4px;
+
+background: #ffffff;
+
+box-shadow: 0 2px 10px rgba(15, 23, 42, 0.04);
+
+scroll-margin-top: 1em;
+
+transition:
+box-shadow 0.15s ease,
+border-color 0.15s ease;
 }
 
 .publication-card:hover {
-  border-color: #c8aaa4;
-  box-shadow: 0 3px 10px rgba(50, 35, 30, 0.08);
+border-color: #d2c7c9;
+border-left-color: #7a263a;
+box-shadow: 0 3px 12px rgba(15, 23, 42, 0.07);
 }
 
+/* ==========================================================
+PUBLICATION NUMBER
+========================================================== */
 
-/* ----------------------------------------------------------
-   Number
-   ---------------------------------------------------------- */
+/*
+
+* Small label sitting on the top-left border,
+* inspired by Leo's publication cards.
+  */
 
 .publication-number {
-  flex: 0 0 2.2rem;
-  margin-right: 1rem;
-  padding-top: 0.1rem;
-  color: #9a7770;
-  font-size: 0.9rem;
-  font-weight: 600;
+position: absolute;
+top: -0.72em;
+left: 1rem;
+
+display: inline-block;
+
+padding: 1px 6px;
+
+border-radius: 3px;
+
+background-color: #f1e8ea;
+color: #7a263a;
+
+font-size: 0.68rem;
+font-weight: 600;
+line-height: 1.35;
 }
 
-
-/* ----------------------------------------------------------
-   Content
-   ---------------------------------------------------------- */
+/* ==========================================================
+CONTENT
+========================================================== */
 
 .publication-content {
-  min-width: 0;
-  flex: 1;
+min-width: 0;
 }
+
+/* ==========================================================
+TITLE
+========================================================== */
 
 .publication-title {
-  margin: 0 0 0.35rem;
-  color: #302725;
-  font-size: 1.05rem;
-  line-height: 1.45;
-  font-weight: 600;
+margin: 0 0 0.25rem;
+
+color: #292626;
+
+font-size: 1rem;
+font-weight: 600;
+line-height: 1.45;
 }
 
+/* ==========================================================
+AUTHORS
+========================================================== */
+
 .publication-authors {
-  margin-bottom: 0.3rem;
-  color: #514945;
-  font-size: 0.92rem;
-  line-height: 1.5;
+margin-bottom: 0.25rem;
+
+color: #555050;
+
+font-size: 0.82rem;
+line-height: 1.5;
 }
 
 .my-name {
-  color: $link-color;
-  font-weight: 700;
+color: #7a263a;
+font-weight: 700;
 }
+
+/* ==========================================================
+PUBLICATION DETAILS
+========================================================== */
 
 .publication-details {
-  margin-bottom: 0.65rem;
-  color: #6a605c;
-  font-size: 0.88rem;
-  line-height: 1.5;
+margin-bottom: 0.45rem;
+
+color: #666060;
+
+font-size: 0.76rem;
+line-height: 1.5;
 }
 
+.publication-details em {
+font-style: italic;
+}
 
-/* ----------------------------------------------------------
-   Publication links
-   ---------------------------------------------------------- */
+/* ==========================================================
+LINKS
+========================================================== */
 
 .publication-links {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.9rem;
-  margin-top: 0.5rem;
+display: flex;
+flex-wrap: wrap;
+gap: 0.75rem;
+
+margin-top: 0.35rem;
 }
 
-.publications-page .publication-links a,
-.publications-page .publication-links .abstract-toggle {
-  padding: 0 !important;
-  border: 0 !important;
-  background: transparent !important;
-  color: $link-color !important;
-  font-family: inherit;
-  font-size: 0.82rem;
-  font-weight: 600;
-  text-decoration: none;
-  cursor: pointer;
+.publication-links a,
+.abstract-toggle {
+display: inline-block;
+
+padding: 0;
+
+border: 0;
+background: none;
+
+color: #7a263a;
+
+font-family: inherit;
+font-size: 0.72rem;
+font-weight: 600;
+
+line-height: 1.4;
+
+text-decoration: none;
+cursor: pointer;
 }
 
-.publications-page .publication-links a:hover,
-.publications-page .publication-links .abstract-toggle:hover {
-  color: $link-color-hover !important;
-  text-decoration: underline;
+.publication-links a:hover,
+.publication-links a:focus,
+.abstract-toggle:hover,
+.abstract-toggle:focus {
+color: #5e1d2c;
+text-decoration: underline;
 }
 
-/* ----------------------------------------------------------
-   Abstract
-   ---------------------------------------------------------- */
+/* ==========================================================
+ABSTRACT
+========================================================== */
 
 .publication-abstract {
-  display: none;
-  margin-top: 1rem;
-  padding: 1rem 1.2rem;
-  border-left: 3px solid $link-color;
-  background: #f8f4f2;
-  color: #514945;
-  font-size: 0.88rem;
-  line-height: 1.65;
+display: none;
+
+margin-top: 0.8rem;
+padding: 0.8rem 1rem;
+
+border-left: 2px solid #7a263a;
+
+background: #faf7f8;
+
+color: #555050;
+
+font-size: 0.78rem;
+line-height: 1.65;
 }
 
 .publication-abstract.open {
-  display: block;
+display: block;
 }
 
 .publication-abstract p {
-  margin: 0;
+margin: 0;
 }
-
 
 /* ==========================================================
-   GENERAL PUBLICATION STYLES
-   ========================================================== */
+MOBILE
+========================================================== */
 
-.publication {
-  margin-bottom: 1.4rem;
+@media screen and (max-width: 600px) {
+
+.publication-filters {
+gap: 0.35rem;
+margin-bottom: 1.7rem;
 }
 
-.publication-meta {
-  color: #706b6b;
-  font-size: 0.9em;
+.pub-filter {
+padding: 0.3rem 0.6rem;
+font-size: 0.75rem;
 }
 
-
-/* ==========================================================
-   BUTTONS
-   ========================================================== */
-
-.btn--primary {
-  background: $link-color;
-  border-color: $link-color;
+.publication-year {
+margin-top: 1.8rem;
+font-size: 1.2rem;
 }
 
-.btn--primary:hover {
-  background: $link-color-hover;
-  border-color: $link-color-hover;
+.publication-card {
+margin-bottom: 1.15rem;
+padding: 0.95rem 0.9rem 0.9rem;
 }
 
-
-/* ==========================================================
-   BLOCKQUOTES
-   ========================================================== */
-
-blockquote {
-  border-left: 3px solid $link-color;
-  color: #706b6b;
-  font-style: normal;
+.publication-title {
+font-size: 0.95rem;
 }
 
-
-/* ==========================================================
-   HORIZONTAL RULES
-   ========================================================== */
-
-hr {
-  border-top: 1px solid $border-color;
+.publication-authors {
+font-size: 0.8rem;
 }
 
-
-/* ==========================================================
-   FOOTER
-   ========================================================== */
-
-.page__footer {
-  background: #ffffff;
-  border-top: 1px solid $border-color;
-  color: #817979;
+.publication-details {
+font-size: 0.74rem;
 }
 
-.page__footer a {
-  color: #706b6b;
+.publication-links {
+gap: 0.65rem;
 }
-
-.page__footer a:hover {
-  color: $link-color;
-}
-
-
-/* ==========================================================
-   SEARCH
-   ========================================================== */
-
-.search-content {
-  background: #ffffff;
-}
-
-
-/* ==========================================================
-   MOBILE
-   ========================================================== */
-
-@media (max-width: 768px) {
-
-  body {
-    font-size: 15px;
-  }
-
-  .masthead__menu-item--lg a {
-    font-size: 1em;
-  }
-
-  .page__content {
-    font-size: 1em;
-  }
-
-  .publication-card {
-    padding: 1rem;
-  }
-
-  .publication-number {
-    flex-basis: 1.7rem;
-    margin-right: 0.65rem;
-  }
-
-  .publication-title {
-    font-size: 1rem;
-  }
-
-  .publication-year {
-    font-size: 1.3rem;
-  }
-
-}
-
-
-/* ==========================================================
-   PUBLICATIONS — OVERRIDE MINIMAL MISTAKES BUTTON STYLES
-   ========================================================== */
-
-/* Filter buttons */
-
-.publications-page .publication-filters button.pub-filter,
-.publications-page button.pub-filter {
-  display: inline-block !important;
-  width: auto !important;
-  height: auto !important;
-
-  margin: 0 !important;
-  padding: 0.45rem 0.85rem !important;
-
-  border: 1px solid #cfc5c0 !important;
-  border-radius: 4px !important;
-
-  background: #ffffff !important;
-  color: #514945 !important;
-
-  font-family: inherit !important;
-  font-size: 0.82rem !important;
-  font-weight: 500 !important;
-  line-height: 1.2 !important;
-
-  text-shadow: none !important;
-  box-shadow: none !important;
-
-  cursor: pointer !important;
-}
-
-.publications-page .publication-filters button.pub-filter:hover,
-.publications-page button.pub-filter:hover {
-  background: #ffffff !important;
-  border-color: #7a263a !important;
-  color: #7a263a !important;
-}
-
-.publications-page .publication-filters button.pub-filter.active,
-.publications-page button.pub-filter.active {
-  background: #7a263a !important;
-  border-color: #7a263a !important;
-  color: #ffffff !important;
-}
-
-
-/* Your name */
-
-.publications-page .my-name,
-.publications-page strong.my-name {
-  color: #7a263a !important;
-  font-weight: 700 !important;
-}
-
-
-/* Publication links */
-
-.publications-page .publication-links a,
-.publications-page .publication-links button.abstract-toggle {
-  display: inline !important;
-
-  margin: 0 !important;
-  padding: 0 !important;
-
-  border: 0 !important;
-  background: transparent !important;
-
-  color: #7a263a !important;
-
-  font-family: inherit !important;
-  font-size: 0.82rem !important;
-  font-weight: 600 !important;
-
-  line-height: inherit !important;
-  text-decoration: none !important;
-
-  text-shadow: none !important;
-  box-shadow: none !important;
-
-  cursor: pointer !important;
-}
-
-.publications-page .publication-links a:hover,
-.publications-page .publication-links button.abstract-toggle:hover {
-  color: #5e1d2c !important;
-  text-decoration: underline !important;
-}
-
-
-/* Abstract button specifically */
-
-.publications-page button.abstract-toggle {
-  color: #7a263a !important;
-}
-
-.publications-page button.abstract-toggle:hover {
-  color: #5e1d2c !important;
-}
-
-
-/* Keep the actual publication cards white */
-
-.publications-page .publication-card {
-  background: #ffffff !important;
 }
