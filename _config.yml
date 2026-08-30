@@ -26,7 +26,10 @@ minimal_mistakes_skin: "default"
 
 remote_theme: "mmistakes/minimal-mistakes"
 
-search: true
+search: false
+
+atom_feed:
+  hide: true
 
 
 # ==========================================================
