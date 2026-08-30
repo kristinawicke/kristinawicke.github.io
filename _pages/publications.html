@@ -5,7 +5,7 @@ permalink: /publications/
 layout: single
 author_profile: true
 classes: wide
--------------
+---
 
 <link rel="stylesheet" href="{{ '/assets/css/custom-pages.css' | relative_url }}">
 
@@ -28,7 +28,7 @@ classes: wide
 
 {% for pub in publications %}
 
-```
+
 {% assign publication_number = total_publications | minus: forloop.index0 %}
 
 {% if pub.year != current_year %}
@@ -145,7 +145,7 @@ classes: wide
   </div>
 
 </article>
-```
+
 
 {% endfor %}
 
