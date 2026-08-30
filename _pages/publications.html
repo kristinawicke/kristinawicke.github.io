@@ -127,22 +127,22 @@ classes: wide
 
   </div>
 
-  <div class="publication-type">
-    {% case pub.type %}
-      {% when "article" %}
-        Journal article
-      {% when "preprint" %}
-        Preprint
-      {% when "book" %}
-        Book
-      {% when "chapter" %}
-        Book chapter
-      {% when "thesis" %}
-        Thesis
-      {% else %}
-        Other
-    {% endcase %}
-  </div>
+ <div class="publication-type">
+  {% case pub.type %}
+    {% when "article" %}
+      Journal Article
+    {% when "preprint" %}
+      Preprint
+    {% when "book" %}
+      Book
+    {% when "chapter" %}
+      Book Chapter
+    {% when "thesis" %}
+      Thesis
+    {% else %}
+      Other
+  {% endcase %}
+</div>
 
 </article>
 
