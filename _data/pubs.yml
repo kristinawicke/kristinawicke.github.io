@@ -17,14 +17,52 @@
     @misc{Fischer2026,
     title = {Enumerating monophyletic characters in mathematical phylogenetics},
     author = {Fischer, Mareike and Hendriksen, Michael and Wicke, Kristina},
-    year          = {2026},
+    year = {2026},
     archivePrefix = {arXiv},
-    eprint        = {2607.22097},
+    eprint = {2607.22097},
     url = {https://arxiv.org/abs/2607.22097}
     }
 
 
-
+- title: On the minimum value of the Colless index and the bifurcating trees that achieve it
+  authors: "Tomás Coronado, Mareike Fischer, Lina Herbst, Francesc Rosselló, Kristina Wicke"
+  year: 2020
+  month: 6
+  date: 2020-06-01
+  type: article
+  journal: Journal of Mathematical Biology
+  volume: 80
+  pages: "1993–2054"
+  journal_url: "https://doi.org/10.1007/s00285-020-01488-9"
+  arxiv: "1907.05064"
+  abstract: >-
+    Measures of tree balance play an important role in the analysis of phylogenetic trees. One
+    of the oldest and most popular indices in this regard is the Colless index for rooted
+    bifurcating trees, introduced by Colless (Syst Zool 31:100–104, 1982). While many of its
+    statistical properties under different probabilistic models for phylogenetic trees have
+    already been established, little is known about its minimum value and the trees that
+    achieve it. In this manuscript, we fill this gap in the literature. To begin with, we derive
+    both recursive and closed expressions for the minimum Colless index of a tree with n
+    leaves. Surprisingly, these expressions show a connection between the minimum Colless
+    index and the so-called Blancmange curve, a fractal curve. We then fully characterize the
+    tree shapes that achieve this minimum value and we introduce both an algorithm to
+    generate them and a recurrence to count them. After focusing on two extremal classes of
+    trees with minimum Colless index (the maximally balanced trees and the greedy from the
+    bottom trees), we conclude by showing that all trees with minimum Colless index also
+    have minimum Sackin index, another popular balance index. 
+  bib: |
+    @article{Coronado2020,
+    title = {On the minimum value of the Colless index and the bifurcating trees that achieve it},
+    volume = {80},
+    DOI = {10.1007/s00285-020-01488-9},
+    number = {7},
+    publisher = {Springer Science and Business Media LLC},
+    author = {Coronado,  Tomás M. and Fischer,  Mareike and Herbst,  Lina and Rosselló,  Francesc and Wicke,  Kristina},
+    year = {2020},
+    month = June,
+    pages = {1993–2054}
+    }
+    
 
 
 - title: Classes of tree-based networks
@@ -54,7 +92,7 @@
     volume = {3},
     DOI = {10.1186/s42492-020-00043-z},
     journal = {Visual Computing for Industry,  Biomedicine,  and Art},
-    author = {Fischer,  Mareike and Galla,  Michelle and Herbst,  Lina and Long,  Yangjing and Wicke,  Kristina},
+    author = {Fischer, Mareike and Galla, Michelle and Herbst, Lina and Long, Yangjing and Wicke, Kristina},
     year = {2020}
     }
 
@@ -88,7 +126,7 @@
     DOI = {10.1007/s00285-019-01438-0},
     number = {3},
     journal = {Journal of Mathematical Biology},
-    author = {Wicke,  Kristina and Steel,  Mike},
+    author = {Wicke, Kristina and Steel, Mike},
     year = {2020},
     pages = {687–715}
     }
@@ -124,12 +162,12 @@
     maximum parsimony is statistically inconsistent for k-tuple-site data and five taxa.
   bib: |
     @article{Galla2019,
-    title = {Statistical Inconsistency of Maximum Parsimony for k-Tuple-Site Data},
+    title = {Statistical inconsistency of maximum parsimony for k-tuple-site data},
     volume = {81},
     DOI = {10.1007/s11538-018-00552-2},
     number = {4},
     journal = {Bulletin of Mathematical Biology},
-    author = {Galla,  Michelle and Wicke,  Kristina and Fischer,  Mareike},
+    author = {Galla, Michelle and Wicke, Kristina and Fischer, Mareike},
     year = {2019},
     pages = {1173–1200}
     }
@@ -164,12 +202,12 @@
     n species.
   bib: |
     @article{Wicke2019,
-    title = {On the Shapley Value of Unrooted Phylogenetic Trees},
+    title = {On the Shapley value of unrooted phylogenetic trees},
     volume = {81},
     DOI = {10.1007/s11538-018-0392-8},
     number = {2},
     journal = {Bulletin of Mathematical Biology},
-    author = {Wicke,  Kristina and Fischer,  Mareike},
+    author = {Wicke, Kristina and Fischer, Mareike},
     year = {2019},
     pages = {618–638}
     }
@@ -213,7 +251,7 @@
     volume = {298},
     DOI = {10.1016/j.mbs.2018.02.005},
     journal = {Mathematical Biosciences},
-    author = {Wicke,  Kristina and Fischer,  Mareike},
+    author = {Wicke, Kristina and Fischer, Mareike},
     year = {2018},
     pages = {80–90}
     }
@@ -259,13 +297,13 @@
     DOI = {10.1007/s11557-018-1375-8},
     number = {4},
     journal = {Mycological Progress},
-    author = {Unterseher,  Martin and Karunarathna,  Samantha C and Cruz,  García Roberto and Dagamac,  Nikki H and Dahl,  Mathilde B and Dool,  Serena E and Galla,  Michelle and Herbst,  Lina and Nilsson,  R Henrik and Puechmaille,  Sébastien J. and Sch\"{o}ner,  Caroline and Sch\"{o}ner,  Michael and Siddique,  Abu B and Teltewskoi,  Annette and Wicke,  Kristina and W\"{u}rth,  David G and Wurzbacher,  Christian and Hyde,  Kevin D},
+    author = {Unterseher, Martin and Karunarathna, Samantha C and Cruz, García Roberto and Dagamac, Nikki H and Dahl, Mathilde B and Dool, Serena E and Galla, Michelle and Herbst, Lina and Nilsson, R Henrik and Puechmaille, Sébastien J. and Sch\"{o}ner, Caroline and Sch\"{o}ner, Michael and Siddique, Abu B and Teltewskoi, Annette and Wicke, Kristina and W\"{u}rth, David G and Wurzbacher, Christian and Hyde, Kevin D},
     year = {2018},
     pages = {489–500}
     }
   
   
-- title: "Comparing the rankings obtained from two biodiversity indices: the Fair Proportion Index and the Shapley Value"
+- title: "Comparing the rankings obtained from two biodiversity indices: the fair proportion index and the Shapley value"
   authors: "Kristina Wicke, Mareike Fischer"
   year: 2017
   month: 10
@@ -296,11 +334,11 @@
     calculations have been performed.
   bib: |
     article{Wicke2017,
-    title = {Comparing the rankings obtained from two biodiversity indices: the Fair Proportion Index and the Shapley Value},
+    title = {Comparing the rankings obtained from two biodiversity indices: the fair proportion index and the Shapley value},
     volume = {430},
     DOI = {10.1016/j.jtbi.2017.07.010},
     journal = {Journal of Theoretical Biology},
-    author = {Wicke,  Kristina and Fischer,  Mareike},
+    author = {Wicke, Kristina and Fischer, Mareike},
     year = {2017},
     pages = {207–214}
     }
