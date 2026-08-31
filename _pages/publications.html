@@ -89,31 +89,32 @@ classes: wide
 
 
     <!-- Publication details -->
+
     <div class="publication-details">
 
-      {% if pub.journal %}
-        <em>{{ pub.journal }}</em>
-      {% endif %}
+    {% if pub.journal %} <em>{{ pub.journal }}</em>
+    {% endif %}
 
-      {% if pub.volume %}
-        {{ pub.volume }}
-      {% endif %}
+    {% if pub.volume %}
+    {{ pub.volume }}
+    {% endif %}
 
-      {% if pub.issue %}
-        ({{ pub.issue }})
-      {% endif %}
+    {% if pub.issue %}
+    ({{ pub.issue }})
+    {% endif %}
 
-      {% if pub.pages %}
-        , {{ pub.pages }}
-      {% endif %}
+    {% if pub.pages %}
+    : {{ pub.pages }}
+    {% endif %}
 
-      {% if pub.journal or pub.volume or pub.pages %}
-        ({{ pub.year }})
-      {% else %}
-        {{ pub.type | capitalize }}, {{ pub.year }}
-      {% endif %}
+    {% if pub.journal or pub.volume or pub.pages %}
+    , {{ pub.year }}.
+    {% else %}
+    {{ pub.type | capitalize }}, {{ pub.year }}.
+    {% endif %}
 
-    </div>
+  </div>
+
 
     <!-- Publication actions -->
     <div class="publication-links">
