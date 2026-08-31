@@ -1,6 +1,7 @@
 - title: "Enumerating monophyletic characters in mathematical phylogenetics"
   authors: "Mareike Fischer, Michael Hendriksen, Kristina Wicke"
   year: 2026
+  date: 2026-07-24
   type: preprint
   arxiv: "2607.22097"
   journal: ""
@@ -30,6 +31,7 @@
   authors: "Mareike Fischer, Michelle Galla, Lina Herbst, Yangjing Long, Kristina Wicke"
   year: 2020
   month: 5
+  date: 2020-05-01
   type: article
   journal: Visual Computing for Industry, Biomedicine, and Art
   volume: 3
@@ -61,6 +63,7 @@
   authors: "Kristina Wicke, Mike Steel"
   year: 2020
   month: 2
+  date: 2020-02-01
   type: article
   journal: Journal of Mathematical Biology
   volume: 80
@@ -95,6 +98,7 @@
   authors: "Michelle Galla, Kristina Wicke, Mareike Fischer"
   year: 2019
   month: 4
+  date: 2019-04-01
   type: article
   journal: Bulletin of Mathematical Biology
   volume: 81
@@ -135,6 +139,7 @@
   authors: "Kristina Wicke, Mareike Fischer"
   year: 2019
   month: 2
+  date: 2019-02-01
   type: article
   journal: Bulletin of Mathematical Biology
   volume: 81
@@ -174,6 +179,7 @@
   authors: "Kristina Wicke, Mareike Fischer"
   year: 2018
   month: 4
+  date: 2018-04-01
   type: article
   journal: "Mathematical Biosciences"
   volume: 298
@@ -217,6 +223,7 @@
   authors: "Martin Unterseher, Samantha C. Karunarathna, Roberto García Cruz, Nikki H. Dagamac, Mathilde B. Dahl, Serena E. Dool, Michelle Galla, Lina Herbst, R. Henrik Nilsson, Sébastien J. Puechmaille, Caroline Schöner, Michael Schöner, Abu B. Siddique, Annette Teltewskoi, Kristina Wicke, David G. Würth, Christian Wurzbacher, Kevin D. Hyde"
   year: 2018
   month: 4
+  date: 2018-04-20
   type: article
   journal: "Mycological Progress"
   volume: 17
@@ -262,6 +269,7 @@
   authors: "Kristina Wicke, Mareike Fischer"
   year: 2017
   month: 10
+  date: 2017-10-07
   type: article
   journal: "Journal of Theoretical Biology"
   volume: 430
