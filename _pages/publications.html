@@ -23,7 +23,7 @@ classes: wide
     <button class="pub-filter" data-filter="other">Other</button>
   </div>
 
-{% assign publications = site.data.pubs | sort: "year" | reverse %}
+{% assign publications = site.data.pubs | sort: "date" | reverse %}
 {% assign current_year = "" %}
 {% assign total_publications = publications.size %}
 
