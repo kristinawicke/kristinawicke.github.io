@@ -75,20 +75,20 @@
   journal_url: "https://doi.org/10.1016/j.aam.2020.102046"
   arxiv: 1802.02520
   abstract: >-
-   The so-called binary perfect phylogeny with persistent characters has recently been
-   thoroughly studied in computational biology as it is less restrictive than the well-known
-   binary perfect phylogeny. Here, we focus on the notion of (binary) persistent characters, i.e.
-   characters that can be realized on a phylogenetic tree by at most one 0→1 transition
-   followed by at most one 1→0 transition in the tree, and analyze these characters under
-   different aspects. First, we illustrate the connection between persistent characters and
-   Maximum Parsimony, where we characterize persistent characters in terms of the first
-   phase of the famous Fitch algorithm. Afterwards we focus on the number of persistent
-   characters for a given phylogenetic tree. We show that this number solely depends on the
-   balance of the tree. To be precise, we develop a formula for counting the number of
-   persistent characters for a given phylogenetic tree based on an index of tree balance,
-   namely the Sackin index. Lastly, we consider the question of how many (carefully chosen)
-   binary characters together with their persistence status are needed to uniquely determine
-   a phylogenetic tree and provide an upper bound for the number of characters needed.
+    The so-called binary perfect phylogeny with persistent characters has recently been
+    thoroughly studied in computational biology as it is less restrictive than the well-known
+    binary perfect phylogeny. Here, we focus on the notion of (binary) persistent characters, i.e.
+    characters that can be realized on a phylogenetic tree by at most one 0→1 transition
+    followed by at most one 1→0 transition in the tree, and analyze these characters under
+    different aspects. First, we illustrate the connection between persistent characters and
+    Maximum Parsimony, where we characterize persistent characters in terms of the first
+    phase of the famous Fitch algorithm. Afterwards we focus on the number of persistent
+    characters for a given phylogenetic tree. We show that this number solely depends on the
+    balance of the tree. To be precise, we develop a formula for counting the number of
+    persistent characters for a given phylogenetic tree based on an index of tree balance,
+    namely the Sackin index. Lastly, we consider the question of how many (carefully chosen)
+    binary characters together with their persistence status are needed to uniquely determine
+    a phylogenetic tree and provide an upper bound for the number of characters needed.
  bib: |
   @article{Wicke2020,
   title = {Combinatorial views on persistent characters in phylogenetics},
