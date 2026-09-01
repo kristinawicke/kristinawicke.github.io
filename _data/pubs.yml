@@ -63,18 +63,18 @@
   
 
 
--title: "Combinatorial views on persistent characters in phylogenetics"
- authors: "Kristina Wicke, Mareike Fischer"
- year: 2020
- month: 8
- date: 2020-08-01
- type: article
- journal: Advances in Applied Mathematics
- volume: 119
- pages: "43 pages"
- journal_url: "https://doi.org/10.1016/j.aam.2020.102046"
- arxiv: 1802.02520
- abstract: >-
+- title: "Combinatorial views on persistent characters in phylogenetics"
+  authors: "Kristina Wicke, Mareike Fischer"
+  year: 2020
+  month: 8
+  date: 2020-08-01
+  type: article
+  journal: Advances in Applied Mathematics
+  volume: 119
+  pages: "43 pages"
+  journal_url: "https://doi.org/10.1016/j.aam.2020.102046"
+  arxiv: 1802.02520
+  abstract: >-
    The so-called binary perfect phylogeny with persistent characters has recently been
    thoroughly studied in computational biology as it is less restrictive than the well-known
    binary perfect phylogeny. Here, we focus on the notion of (binary) persistent characters, i.e.
@@ -89,7 +89,7 @@
    namely the Sackin index. Lastly, we consider the question of how many (carefully chosen)
    binary characters together with their persistence status are needed to uniquely determine
    a phylogenetic tree and provide an upper bound for the number of characters needed.
-bib: |
+ bib: |
   @article{Wicke2020,
   title = {Combinatorial views on persistent characters in phylogenetics},
   volume = {119},
