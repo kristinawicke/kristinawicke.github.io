@@ -24,17 +24,17 @@
     }
 
 
--title: "Formal links between feature diversity and phylogenetic diversity"
- authors: "Kristina Wicke, Arne Mooers, Mike Steel"
- year: 2021
- month: 5
- type: article
- journal: Systematic Biology
- volume: 70
- issue: 3
- pages: "480-490"
- journal_url: "https://doi.org/10.1093/sysbio/syaa062"
- abstract: >- 
+- title: "Formal links between feature diversity and phylogenetic diversity"
+  authors: "Kristina Wicke, Arne Mooers, Mike Steel"
+  year: 2021
+  month: 5
+  type: article
+  journal: Systematic Biology
+  volume: 70
+  issue: 3
+  pages: "480-490"
+  journal_url: "https://doi.org/10.1093/sysbio/syaa062"
+  abstract: >- 
    The extent to which phylogenetic diversity (PD) captures feature diversity (FD) is a
    topical and controversial question in biodiversity conservation. In this short
    paper, we formalize this question and establish a precise mathematical condition
@@ -48,7 +48,7 @@
    cooperative game theory). In a second mathematical result, we show that the two
    indices can take identical values for any phylogenetic tree, provided the branch
    lengths in the tree are chosen appropriately.
-bib: |
+ bib: |
   @article{Wicke2021,
   title = {Formal links between feature diversity and phylogenetic diversity},
   volume = {70},
