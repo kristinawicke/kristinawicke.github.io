@@ -24,6 +24,86 @@
     }
 
 
+- title: "Combinatorial perspectives on Dollo-k characters in phylogenetics"
+  authors: "Remco Bouckaert, Mareike Fischer, Kristina Wicke"
+  year: 2021
+  month: 10
+  date: 2021-10-01
+  type: article
+  journal: "Advances in Applied Mathematics"
+  volume: 131
+  pages: "39 pages"
+  journal_url: "https://doi.org/10.1016/j.aam.2021.102252"
+  arxiv: "2011.13479"
+  abstract: >-
+    Recently, the perfect phylogeny model with persistent characters has attracted great
+    attention in the literature. It is based on the assumption that complex traits or characters
+    can only be gained once and lost once in the course of evolution. Here, we consider a
+    generalization of this model, namely Dollo parsimony, that allows for multiple character
+    losses. More precisely, we take a combinatorial perspective on the notion of Dollo-k
+    characters, i.e. traits that are gained at most once and lost precisely k times throughout
+    evolution. We first introduce an algorithm based on the notion of spanning subtrees for
+    finding a Dollo-k labelling for a given character and a given tree in linear time. We then
+    compare persistent characters (consisting of the union of Dollo-0 and Dollo-1 characters)
+    and general Dollo-k characters. While it is known that there is a strong connection between
+    Fitch parsimony and persistent characters, we show that Dollo parsimony and Fitch
+    parsimony are in general very different. Moreover, while it is known that there is a direct
+    relationship between the number of persistent characters and the Sackin index of a tree,
+    a popular index of tree balance, we show that this relationship does not generalize to Dollo-k
+    characters. In fact, determining the number of Dollo-k characters for a given tree is much
+    more involved than counting persistent characters, and we end this manuscript by
+    introducing a recursive approach for the former. This approach leads to a polynomial time
+    algorithm for counting the number of Dollo-k characters, and both this algorithm as well as
+    the algorithm for computing Dollo-k labellings are publicly available in the Babel package
+    for BEAST 2.
+  bib: |
+    @article{Bouckaert2021,
+    title = {Combinatorial perspectives on Dollo-k characters in phylogenetics},
+    volume = {131},
+    DOI = {10.1016/j.aam.2021.102252},
+    journal = {Advances in Applied Mathematics},
+    author = {Bouckaert, Remco and Fischer, Mareike and Wicke, Kristina},
+    year = {2021},
+    pages = {102252}
+    }
+  
+
+- title: "Unrooted non-binary tree-based phylogenetic networks"
+  authors: "Mareike Fischer, Michelle Galla, Lina Herbst, Yangjing Long, Kristina Wicke"
+  year: 2021
+  month: 5
+  date: 2021-05-21
+  type: article
+  journal: "Discrete Applied Mathematics"
+  volume: 294
+  pages: "10-30"
+  journal_url: "https://doi.org/10.1016/j.dam.2021.01.005"
+  arxiv: "1810.06853"
+  abstract: >-
+    Phylogenetic networks are a generalization of phylogenetic trees allowing for the
+    representation of non-treelike evolutionary events such as hybridization. Typically, such
+    networks have been analyzed based on their ‘level’, i.e. based on the complexity of their
+    2-edge-connected components. However, recently the question of how ‘treelike’ a
+    phylogenetic network is has become the center of attention in various studies. This led to
+    the introduction of tree-based networks, i.e. networks that can be constructed from a
+    phylogenetic tree, called the base tree, by adding additional edges. While the concept of
+    tree-basedness was originally introduced for rooted phylogenetic networks, it has recently
+    also been considered for unrooted networks. In the present study, we compare and contrast
+    findings obtained for unrooted binary tree-based networks to unrooted non-binary networks.
+    In particular, while it is known that up to level 4 all unrooted binary networks are
+    tree-based, we show that in the case of non-binary networks, this result only holds up to
+    level 3.
+  bib: |
+    @article{Fischer2021,
+    title = {Unrooted non-binary tree-based phylogenetic networks},
+    volume = {294},
+    DOI = {10.1016/j.dam.2021.01.005},
+    journal = {Discrete Applied Mathematics},
+    author = {Fischer, Mareike and Galla, Michelle and Herbst, Lina and Long, Yangjing and Wicke, Kristina},
+    year = {2021},
+    pages = {10–30}
+    }
+
 - title: "Formal links between feature diversity and phylogenetic diversity"
   authors: "Kristina Wicke, Arne Mooers, Mike Steel"
   year: 2021
@@ -58,7 +138,6 @@
       journal = {Systematic Biology},
       author = {Wicke, Kristina and Mooers, Arne and Steel, Mike},
       year = {2021},
-      month = May,
       pages = {480–490}
       }
 
@@ -135,7 +214,6 @@
     publisher = {Springer Science and Business Media LLC},
     author = {Coronado, Tomás M. and Fischer, Mareike and Herbst, Lina and Rosselló, Francesc and Wicke, Kristina},
     year = {2020},
-    month = June,
     pages = {1993–2054}
     }
     
