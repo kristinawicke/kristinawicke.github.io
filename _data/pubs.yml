@@ -24,6 +24,40 @@
     }
 
 
+- title: "On the maximum agreement subtree conjecture for balanced trees"
+  authors: Magnus Bordewich, Simone Linz, Megan Owen, Katherine St. John, Charles Semple, Kristina Wicke"
+  year: 2022
+  month: 01
+  date: 2022-01-01
+  type: article
+  journal: "SIAM Journal on Discrete Mathematics"
+  volume: 36
+  issue: 1
+  pages: "336–354"
+  journal_url: "https://doi.org/10.1137/20M1379678"
+  arxiv: "2005.07357"
+  abstract: >-
+    We give a counterexample to the conjecture of Martin and Thatte that two
+    balanced rooted binary leaf-labeled trees on $n$ leaves have a maximum
+    agreement subtree (MAST) of size at least $n^{1/2}$. In particular, we show
+    that for any $c > 0$, there exist two balanced rooted binary leaf-labeled
+    trees on $n$ leaves such that any MAST for these two trees has size less than
+    $c n^{1/2}$. We also improve the lower bound of the size of such a MAST to
+    $n^{1/6}$.
+  bib: |
+    @article{Bordewich2022,
+    title = {On the maximum agreement subtree conjecture for balanced trees},
+    volume = {36},
+    DOI = {10.1137/20m1379678},
+    number = {1},
+    journal = {SIAM Journal on Discrete Mathematics},
+    author = {Bordewich, Magnus and Linz, Simone and Owen, Megan and John, Katherine St. and Semple, Charles and Wicke, Kristina},
+    year = {2022},
+    pages = {336–354}
+    }
+    
+  
+
 - title: "Combinatorial perspectives on Dollo-k characters in phylogenetics"
   authors: "Remco Bouckaert, Mareike Fischer, Kristina Wicke"
   year: 2021
