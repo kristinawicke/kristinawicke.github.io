@@ -24,8 +24,80 @@
     }
 
 
+- title: "Classes of explicit phylogenetic networks and their biological and mathematical significance"
+  authors: "Sungsik Kong, Joan Carles Pons, Laura Kubatko, Kristina Wicke"
+  year: 2022
+  month: 05
+  date: 2022-05-03
+  type: article
+  journal: "Journal of Mathematical Biology"
+  volume: 84
+  pages: "44 pages"
+  journal_url: "https://doi.org/10.1007/s00285-022-01746-y"
+  arxiv: "2109.10251"
+  abstract: >-
+    The evolutionary relationships among organisms have traditionally been represented
+    using rooted phylogenetic trees. However, due to reticulate processes such as hybridization
+    or lateral gene transfer, evolution cannot always be adequately represented by a
+    phylogenetic tree, and rooted phylogenetic networks that describe such complex processes
+    have been introduced as a generalization of rooted phylogenetic trees. In fact, estimating
+    rooted phylogenetic networks from genomic sequence data and analyzing their structural
+    properties is one of the most important tasks in contemporary phylogenetics. Over the last
+    two decades, several subclasses of rooted phylogenetic networks (characterized by certain
+    structural constraints) have been introduced in the literature, either to model specific
+    biological phenomena or to enable tractable mathematical and computational analyses. In
+    the present manuscript, we provide a thorough review of these network classes, as well as
+    provide a biological interpretation of the structural constraints underlying these networks
+    where possible. In addition, we discuss how imposing structural constraints on the
+    network topology can be used to address the scalability and identifiability challenges faced
+    in the estimation of phylogenetic networks from empirical data.
+  bib: |
+    @article{Kong2022,
+    title = {Classes of explicit phylogenetic networks and their biological and mathematical significance},
+    volume = {84},
+    DOI = {10.1007/s00285-022-01746-y},
+    number = {6},
+    journal = {Journal of Mathematical Biology},
+    publisher = {Springer Science and Business Media LLC},
+    author = {Kong, Sungsik and Pons, Joan Carles and Kubatko, Laura and Wicke, Kristina},
+    year = {2022}
+    }
+
+
+- title: "Non-binary universal tree-based networks"
+  authors: "Mareike Fischer, Michelle Galla, Kristina Wicke"
+  year: 2022
+  month: 01
+  date: 2022-01-02
+  type: article
+  journal: "Journal of Graph Algorithms and Applications"
+  volume: 26
+  issue: 1
+  pages: "81-90"
+  journal_url: "https://doi.org/10.7155/jgaa.00583"
+  arxiv: "2001.06093"
+  abstract: >-
+    A tree-based network $N$ on $X$ is called universal if every phylogenetic tree on $X$
+    is a base tree for $N$. Recently, binary universal tree-based networks have
+    attracted great attention in the literature and their existence has been analyzed
+    in various studies. In this note, we extend the analysis to non-binary networks and
+    show that there exist both a rooted and an unrooted non-binary universal tree-based
+    network with $n$ leaves for all positive integers $n$.
+  bib: |
+    @article{Fischer2022,
+    title = {Non-binary universal tree-based networks},
+    volume = {26},
+    DOI = {10.7155/jgaa.00583},
+    number = {1},
+    journal = {Journal of Graph Algorithms and Applications},
+    author = {Fischer, Mareike and Galla, Michelle and Wicke, Kristina},
+    year = {2022},
+    pages = {81–90}
+    }
+
+
 - title: "On the maximum agreement subtree conjecture for balanced trees"
-  authors: Magnus Bordewich, Simone Linz, Megan Owen, Katherine St. John, Charles Semple, Kristina Wicke"
+  authors: "Magnus Bordewich, Simone Linz, Megan Owen, Katherine St. John, Charles Semple, Kristina Wicke"
   year: 2022
   month: 01
   date: 2022-01-01
