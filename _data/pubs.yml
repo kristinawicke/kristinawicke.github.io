@@ -24,6 +24,83 @@
     url = {https://arxiv.org/abs/2607.22097}
     }
 
+- title: "Effects of discordance between species and gene trees on phylogenetic diversity conservation"
+  authors: "Kristina Wicke, Mareike Fischer, Laura Kubatko"
+  year: 2023
+  month: 01
+  date: 2023-01-01
+  type: article
+  journal: "Journal of Mathematical Biology"
+  volume: 86
+  issue: 1
+  pages: "34 pages"
+  journal_url: "https://doi.org/10.1007/s00285-022-01845-w"
+  arxiv: "2112.10717"
+  abstract: >-
+    Phylogenetic diversity indices such as the Fair Proportion (FP) index are frequently
+    discussed as prioritization criteria in biodiversity conservation. They rank species
+    according to their contribution to overall diversity by taking into account the unique and
+    shared evolutionary history of each species as indicated by its placement in an underlying
+    phylogenetic tree. Traditionally, phylogenetic trees were inferred from single genes and
+    the resulting gene trees were assumed to be a valid estimate for the species tree, i.e., the
+    “true” evolutionary history of the species under consideration. However, nowadays it is
+    common to sequence whole genomes of hundreds or thousands of genes, and it is often the
+    case that conflicting genealogical histories exist in different genes throughout the genome,
+    resulting in discordance between individual gene trees and the species tree. Here, we
+    analyze the effects of gene and species tree discordance on prioritization decisions based
+    on the FP index. In particular, we consider the ranking order of taxa induced by (i) The FP
+    index on a species tree, and (ii) The expected FP index across all gene tree histories
+    associated with the species tree. On the one hand, we show that for particular tree shapes,
+    the two rankings always coincide. On the other hand, we show that for all leaf numbers
+    greater than or equal to five, there exist species trees for which the two rankings differ.
+    Finally, we illustrate the variability in the rankings obtained from the FP index across
+    different gene tree and species tree estimates for an empirical multilocus mammal data set.
+  bib: |
+    @article{Wicke2023,
+    title = {Effects of discordance between species and gene trees on phylogenetic diversity conservation},
+    volume = {86},
+    DOI = {10.1007/s00285-022-01845-w},
+    number = {1},
+    journal = {Journal of Mathematical Biology},
+    author = {Wicke,  Kristina and Fischer,  Mareike and Kubatko,  Laura},
+    year = {2023}
+    }
+
+
+- title: "On the complexity of optimising variants of phylogenetic diversity on phylogenetic networks"
+  authors: "Magnus Bordewich, Charles Semple, Kristina Wicke"
+  alphabetical: true
+  year: 2022
+  month: 05
+  date: 2022-05-22
+  type: article
+  journal: "Theoretical Computer Science"
+  volume: 917
+  pages: "66-80"
+  journal_url: "https://doi.org/10.1016/j.tcs.2022.03.012"
+  arxiv: "2107.07834"
+  abstract: >-
+    Phylogenetic Diversity (PD) is a prominent quantitative measure of the biodiversity of a
+    collection of present-day species (taxa). This measure is based on the evolutionary distance
+    among the species in the collection. Loosely speaking, if 𝒯 is a rooted phylogenetic tree
+    whose leaf set X represents a set of species and whose edges have real-valued lengths
+    (weights), then the PD score of a subset S of X is the sum of the weights of the edges of the
+    minimal subtree of 𝒯 connecting the species in S. In this paper, we define several natural
+    variants of the PD score for a subset of taxa which are related by a known rooted
+    phylogenetic network. Under these variants, we explore, for a positive integer k, the
+    computational complexity of determining the maximum PD score over all subsets of taxa of
+    size k when the input is restricted to different classes of rooted phylogenetic networks.
+  bib: |
+    @article{Bordewich2022,
+    title = {On the complexity of optimising variants of phylogenetic diversity on phylogenetic networks},
+    volume = {917},
+    DOI = {10.1016/j.tcs.2022.03.012},
+    journal = {Theoretical Computer Science},
+    author = {Bordewich,  Magnus and Semple,  Charles and Wicke,  Kristina},
+    year = {2022},
+    pages = {66–80}
+    }
+  
 
 - title: "Classes of explicit phylogenetic networks and their biological and mathematical significance"
   authors: "Sungsik Kong, Joan Carles Pons, Laura Kubatko, Kristina Wicke"
