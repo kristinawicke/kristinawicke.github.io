@@ -24,6 +24,143 @@
     url = {https://arxiv.org/abs/2607.22097}
     }
 
+
+- title: "Exploring spaces of semi-directed level-1 networks"
+  authors: "Simone Linz, Kristina Wicke"
+  alphabetical: true
+  year: 2023
+  month: 11
+  date: 2023-11-01
+  type: article
+  journal: "Journal of Mathematical Biology"
+  volume: 87
+  issue: 5
+  pages: "30 pages"
+  journal_url: "https://doi.org/10.1007/s00285-023-02004-5"
+  arxiv: "2301.10818"
+  abstract: >-
+    Semi-directed phylogenetic networks have recently emerged as a class of phylogenetic
+    networks sitting between rooted (directed) and unrooted (undirected) phylogenetic
+    networks as they contain both directed as well as undirected edges. While various spaces of
+    rooted phylogenetic networks and unrooted phylogenetic networks have been analyzed in
+    recent years and several rearrangement moves to traverse these spaces have been
+    introduced, little is known about spaces of semi-directed phylogenetic networks. Here,
+    we propose a simple rearrangement move for semi-directed phylogenetic networks, called cut
+    edge transfer (CET), and show that the space of semi-directed level-$1$ networks with
+    precisely $k$ reticulations is connected under CET. This level-$1$ space is currently the
+    predominantly used search space for most algorithms that reconstruct semi-directed
+    phylogenetic networks. Our results imply that every semi-directed level-$1$ network with a
+    fixed number of reticulations and leaf set can be reached from any other such network by
+    a sequence of CETs. By introducing two additional moves, $R^+$ and $R^-$, that allow for the
+    addition and deletion, respectively, of a reticulation, we then establish connectedness for
+    the space of all semi-directed level-$1$ networks on a fixed leaf set. As a byproduct of our
+    results for semi-directed phylogenetic networks, we also show that the space of rooted
+    level-$1$ networks with a fixed number of reticulations and leaf set is connected under CET,
+    when translated into the rooted setting.
+  bib: |
+    @article{Linz2023,
+    title = {Exploring spaces of semi-directed level-1 networks},
+    volume = {87},
+    DOI = {10.1007/s00285-023-02004-5},
+    number = {5},
+    journal = {Journal of Mathematical Biology},
+    author = {Linz, Simone and Wicke, Kristina},
+    year = {2023}
+    }
+
+
+- title: "How far is my network from being edge-based? Proximity measures for edge-basedness of unrooted phylogenetic networks"
+  authors: "Mareike Fischer, Tom N. Hamann, Kristina Wicke"
+  alphabetical: true
+  year: 2023
+  month: 10
+  date: 2023-10-15
+  type: article
+  journal: "Discrete Applied Mathematics"
+  volume: 337
+  pages: "303-320"
+  journal_url: "https://doi.org/10.1016/j.dam.2023.04.026"
+  arxiv: "2207.01370"
+  abstract: >-
+    Phylogenetic networks which are, as opposed to trees, suitable to describe processes like
+    hybridization and horizontal gene transfer, play a substantial role in evolutionary research.
+    However, while non-treelike events need to be taken into account, they are relatively rare,
+    which implies that biologically relevant networks are often assumed to be similar to trees
+    in the sense that they can be obtained by taking a tree and adding some additional edges.
+    This observation led to the concept of so-called tree-based networks, which recently gained
+    substantial interest in the literature. Unfortunately, though, identifying such networks in
+    the unrooted case is an NP-complete problem. Therefore, classes of networks for which
+    tree-basedness can be guaranteed are of the utmost interest.
+    The most prominent such class is formed by so-called edge-based networks, which have a
+    close relationship to generalized series–parallel graphs known from graph theory. They can
+    be identified in linear time and are in some regards biologically more plausible than
+    general tree-based networks. While concerning the latter proximity measures for general
+    networks have already been introduced, such measures are not yet available for edge-
+    basedness. This means that for an arbitrary unrooted network, the “distance” to the nearest
+    edge-based network could so far not be determined. The present manuscript fills this gap
+    by introducing two classes of proximity measures for edge-basedness, one based on the
+    given network itself and one based on its so-called leaf shrink graph (LS graph). Both
+    classes contain four different proximity measures, whose similarities and differences we
+    study subsequently.
+  bib: |
+    @article{Fischer2023,
+    title = {How far is my network from being edge-based? Proximity measures for edge-basedness of unrooted phylogenetic networks},
+    volume = {337},
+    DOI = {10.1016/j.dam.2023.04.026},
+    journal = {Discrete Applied Mathematics},
+    author = {Fischer, Mareike and Hamann, Tom Niklas and Wicke, Kristina},
+    year = {2023},
+    pages = {303–320}
+    }
+
+
+- title: "Phylogenetic diversity rankings in the face of extinctions: the robustness of the fair proportion index"
+  authors: "Mareike Fischer, Andrew Francis, Kristina Wicke"
+  alphabetical: true
+  year: 2023
+  month: 05
+  date: 2023-05-01
+  type: article
+  journal: "Systematic Biology"
+  volume: 72
+  issue: 3
+  pages: "606-615"
+  journal_url: "https://doi.org/10.1093/sysbio/syac030"
+  arxiv: "2107.00748"
+  abstract: >-
+    Planning for the protection of species often involves difficult choices about which
+    species to prioritize, given constrained resources. One way of prioritizing species
+    is to consider their “evolutionary distinctiveness,” (ED) that is, their relative
+    evolutionary isolation on a phylogenetic tree. Several evolutionary isolation
+    metrics or phylogenetic diversity indices have been introduced in the literature,
+    among them the so-called Fair Proportion (FP) index (also known as the ED score).
+    This index apportions the total diversity of a tree among all leaves, thereby
+    providing a simple prioritization criterion for conservation. Here, we focus on the
+    prioritization order obtained from the FP index and analyze the effects of species
+    extinction on this ranking. More precisely, we analyze the extent to which the
+    ranking order may change when some species go extinct and the FP index is
+    recomputed for the remaining taxa. We show that for each phylogenetic tree, there
+    are edge lengths such that the extinction of one leaf per cherry completely
+    reverses the ranking. Moreover, we show that even if only the lowest-ranked
+    species goes extinct, the ranking order may drastically change. We end by
+    analyzing the effects of these two extinction scenarios (extinction of the lowest-
+    ranked species and extinction of one leaf per cherry) for a collection of empirical
+    and simulated trees. In both cases, we can observe significant changes in the
+    prioritization orders, highlighting the empirical relevance of our theoretical
+    findings.
+  bib: |
+    @article{Fischer2023,
+    title = {Phylogenetic diversity rankings in the face of extinctions: the robustness of the fair proportion index},
+    volume = {72},
+    DOI = {10.1093/sysbio/syac030},
+    number = {3},
+    journal = {Systematic Biology},
+    author = {Fischer, Mareike and Francis, Andrew and Wicke, Kristina},
+    year = {2023},
+    pages = {606–615}
+    }
+
+
 - title: "Effects of discordance between species and gene trees on phylogenetic diversity conservation"
   authors: "Kristina Wicke, Mareike Fischer, Laura Kubatko"
   year: 2023
@@ -62,7 +199,7 @@
     DOI = {10.1007/s00285-022-01845-w},
     number = {1},
     journal = {Journal of Mathematical Biology},
-    author = {Wicke,  Kristina and Fischer,  Mareike and Kubatko,  Laura},
+    author = {Wicke, Kristina and Fischer, Mareike and Kubatko, Laura},
     year = {2023}
     }
 
@@ -96,7 +233,7 @@
     volume = {917},
     DOI = {10.1016/j.tcs.2022.03.012},
     journal = {Theoretical Computer Science},
-    author = {Bordewich,  Magnus and Semple,  Charles and Wicke,  Kristina},
+    author = {Bordewich, Magnus and Semple, Charles and Wicke, Kristina},
     year = {2022},
     pages = {66–80}
     }
@@ -110,6 +247,7 @@
   type: article
   journal: "Journal of Mathematical Biology"
   volume: 84
+  issue: 6
   pages: "44 pages"
   journal_url: "https://doi.org/10.1007/s00285-022-01746-y"
   arxiv: "2109.10251"
@@ -376,6 +514,7 @@
   type: article
   journal: Journal of Mathematical Biology
   volume: 80
+  issue: 7
   pages: "1993–2054"
   journal_url: "https://doi.org/10.1007/s00285-020-01488-9"
   arxiv: "1907.05064"
