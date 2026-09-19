@@ -25,6 +25,224 @@
     }
 
 
+- title: "The weighted total cophenetic index: A novel balance index for phylogenetic networks"
+  authors: "Linda Knüver, Mareike Fischer, Marc Hellmuth, Kristina Wicke"
+  year: 2024
+  month: 12
+  date: 2024-12-31
+  type: article
+  journal: "Discrete Applied Mathematics"
+  volume: 359
+  pages: "89-142"
+  journal_url: "https://doi.org/10.1016/j.dam.2024.07.037"
+  arxiv: "2307.08654"
+  abstract: >-
+    Phylogenetic networks play an important role in evolutionary biology as, other than
+    phylogenetic trees, they can be used to accommodate reticulate evolutionary events such
+    as horizontal gene transfer and hybridization. Recent research has provided a lot of
+    progress concerning the reconstruction of such networks from data as well as insight into
+    their graph theoretical properties. However, methods and tools to quantify structural
+    properties of networks or differences between them are still very limited. For example, for
+    phylogenetic trees, it is common to use balance indices to draw conclusions concerning the
+    underlying evolutionary model, and more than twenty such indices have been proposed
+    and are used for different purposes. One of the most frequently used balance index for trees
+    is the so-called total cophenetic index, which has several mathematically and biologically
+    desirable properties. For networks, on the other hand, balance indices are to-date still
+    scarce.
+    In this contribution, we introduce the weighted total cophenetic index as a generalization of
+    the total cophenetic index for trees to make it applicable to general phylogenetic networks.
+    As we shall see, this index can be determined efficiently and behaves in a mathematical
+    sound way, i.e., it satisfies so-called locality and recursiveness conditions. In addition, we
+    analyze its extremal properties and, in particular, we investigate its maxima and minima as
+    well as the structure of networks that achieve these values within the space of so-called
+    level-1 networks. We finally briefly compare this novel index to the two other network
+    balance indices available so-far.
+  bib: |
+    @article{Knuever2024,
+    title = {The weighted total cophenetic index: A novel balance index for phylogenetic networks},
+    volume = {359},
+    DOI = {10.1016/j.dam.2024.07.037},
+    journal = {Discrete Applied Mathematics},
+    author = {Kn\"{u}ver, Linda and Fischer, Mareike and Hellmuth, Marc and Wicke, Kristina},
+    year = {2024},
+    pages = {89–142}
+    }
+
+
+
+- title: "Bounding the softwired parsimony score of a phylogenetic network"
+  authors: "Janosch Döckers, Simone Linz, Kristina Wicke"
+  alphabetical: true
+  year: 2024
+  month: 10
+  date: 2024-10-01
+  type: article
+  journal: "Bulletin of Mathematical Biology"
+  volume: 86
+  issue: 10
+  pages: "28 pages"
+  journal_url: "http://dx.doi.org/10.1007/s11538-024-01350-9"
+  arxiv: "2405.19587"
+  abstract: >-
+    In comparison to phylogenetic trees, phylogenetic networks are more suitable to represent
+    complex evolutionary histories of species whose past includes reticulation such as
+    hybridisation or lateral gene transfer. However, the reconstruction of phylogenetic
+    networks remains challenging and computationally expensive due to their intricate
+    structural properties. For example, the small parsimony problem that is solvable in
+    polynomial time for phylogenetic trees, becomes NP-hard on phylogenetic networks
+    under softwired and parental parsimony, even for a single binary character and
+    structurally constrained networks. To calculate the parsimony score of a phylogenetic
+    network N, these two parsimony notions consider different exponential-size sets of
+    phylogenetic trees that can be extracted from N and infer the minimum parsimony score
+    over all trees in the set. In this paper, we ask: What is the maximum difference between the
+    parsimony score of any phylogenetic tree that is contained in the set of considered trees
+    and a phylogenetic tree whose parsimony score equates to the parsimony score of N? Given
+    a gap-free sequence alignment of multi-state characters and a rooted binary level-k
+    phylogenetic network, we use the novel concept of an informative blob to show that this
+    difference is bounded by times the softwired parsimony score of N. In particular, the
+    difference is independent of the alignment length and the number of character states. We
+    show that an analogous bound can be obtained for the softwired parsimony score of semi-
+    directed networks, while under parental parsimony on the other hand, such a bound does
+    not hold.
+  bib: |
+    @article{Doecker2024,
+    title = {Bounding the Softwired Parsimony Score of a Phylogenetic Network},
+    volume = {86},
+    DOI = {10.1007/s11538-024-01350-9},
+    number = {10},
+    journal = {Bulletin of Mathematical Biology},
+    author = {D\"{o}cker, Janosch and Linz, Simone and Wicke, Kristina},
+    year = {2024},
+    month = Aug 
+    }
+
+
+- title: "On the maximum value of the stairs2 index"
+  authors: "Bryan Currie, Kristina Wicke"
+  year: 2024
+  month: 08
+  date: 2024-08-02
+  type: article
+  journal: "Advances in Applied Mathematics"
+  volume: 159
+  pages: "17 pages"
+  journal_url: "https://doi.org/10.1016/j.aam.2024.102732"
+  arxiv: "2401.08838"
+  abstract: >-
+    Measures of tree balance play an important role in different research areas such as
+    mathematical phylogenetics or theoretical computer science. The balance of a tree is
+    usually quantified in a single number, called a balance or imbalance index, and several such
+    indices exist in the literature. Here, we focus on the stairs2 balance index for rooted binary
+    trees, which was first introduced in the context of viral phylogenetics but has not been fully
+    analyzed from a mathematical viewpoint yet. While it is known that the caterpillar tree
+    uniquely minimizes the stairs2 index for all leaf numbers and the fully balanced tree
+    uniquely maximizes the stairs2 index for leaf numbers that are powers of two,
+    understanding the maximum value and maximal trees for arbitrary leaf numbers has been
+    an open problem in the literature. In this note, we fill this gap by showing that for all leaf
+    numbers, there is a unique rooted binary tree maximizing the stairs2 index. Additionally,
+    we obtain recursive and closed expressions for the maximum value of the stairs2 index of a
+    rooted binary tree with $n$ leaves.
+  bib: |
+    @article{Currie2024,
+    title = {On the maximum value of the stairs2 index},
+    volume = {159},
+    DOI = {10.1016/j.aam.2024.102732},
+    journal = {Advances in Applied Mathematics},
+    author = {Currie, Bryan and Wicke, Kristina},
+    year = {2024}
+    }
+
+
+- title: "Phylogenetic diversity indices from an affine and projective viewpoint"
+  authors: "Vincent Moulton, Andreas Spillner, Kristina Wicke"
+  alphabetical: true
+  year: 2024
+  month: 08
+  date: 2024-08-01
+  type: article
+  journal: "Bulletin of Mathematical Biology"
+  volume: 86
+  issue: 8
+  pages: "31 pages"
+  journal_url: "https://doi.org/10.1007/s11538-024-01332-x"
+  arxiv: "2403.15842"
+  abstract: >-
+    Phylogenetic diversity indices are commonly used to rank the elements in a collection of
+    species or populations for conservation purposes. The derivation of these indices is
+    typically based on some quantitative description of the evolutionary history of the species
+    in question, which is often given in terms of a phylogenetic tree. Both rooted and unrooted
+    phylogenetic trees can be employed, and there are close connections between the indices
+    that are derived in these two different ways. In this paper, we introduce more general
+    phylogenetic diversity indices that can be derived from collections of subsets (clusters) and
+    collections of bipartitions (splits) of the given set of species. Such indices could be useful,
+    for example, in case there is some uncertainty in the topology of the tree being used to
+    derive a phylogenetic diversity index. As well as characterizing some of the indices that we
+    introduce in terms of their special properties, we provide a link between cluster-based and
+    split-based phylogenetic diversity indices that uses a discrete analogue of the classical link
+    between affine and projective geometry. This provides a unified framework for many of the
+    various phylogenetic diversity indices used in the literature based on rooted and unrooted
+    phylogenetic trees, generalizations and new proofs for previous results concerning tree-
+    based indices, and a way to define some new phylogenetic diversity indices that naturally
+    arise as affine or projective variants of each other or as generalizations of tree-based
+    indices.
+- bib: | 
+    @article{Moulton2024,
+    title = {Phylogenetic diversity indices from an affine and projective viewpoint},
+    volume = {86},
+    DOI = {10.1007/s11538-024-01332-x},
+    number = {8},
+    journal = {Bulletin of Mathematical Biology},
+    author = {Moulton, Vincent and Spillner, Andreas and Wicke, Kristina},
+    year = {2024}
+    }
+
+
+- title: "Implications of gene tree heterogeneity on downstream phylogenetic analyses: A case study employing the fair proportion index"
+  authors: "Kristina Wicke, Md Rejuan Haque, Laura Kubatko"
+  year: 2024
+  month: 04
+  date: 2024-04-25
+  type: article
+  journal: "PLoS One"
+  volume: 19
+  issue: 4
+  pages: "12 pages"
+  journal_url: "https://doi.org/10.1371/journal.pone.0300900"
+  biorxiv: 
+  abstract: >-
+    Many questions in evolutionary biology require the specification of a phylogeny for downstream
+    phylogenetic analyses. However, with the increasingly widespread availability of genomic data,
+    phylogenetic studies are often confronted with conflicting signal in the form of genomic
+    heterogeneity and incongruence between gene trees and the species tree. This raises the
+    question of determining what data and phylogeny should be used in downstream analyses, and
+    to what extent the choice of phylogeny (e.g., gene trees versus species trees) impacts the
+    analyses and their outcomes. In this paper, we study this question in the realm of phylogenetic
+    diversity indices, which provide ways to prioritize species for conservation based on their
+    relative evolutionary isolation on a phylogeny, and are thus one example of downstream
+    phylogenetic analyses. We use the Fair Proportion (FP) index, also known as the evolutionary
+    distinctiveness score, and explore the variability in species rankings based on gene trees as
+    compared to the species tree for several empirical data sets. Our results indicate that
+    prioritization rankings among species vary greatly depending on the underlying phylogeny,
+    suggesting that the choice of phylogeny is a major influence in assessing phylogenetic diversity
+    in a conservation setting. While we use phylogenetic diversity conservation as an example, we
+    suspect that other types of downstream phylogenetic analyses such as ancestral state
+    reconstruction are similarly affected by genomic heterogeneity and incongruence. Our aim is
+    thus to raise awareness of this issue and inspire new research on which evolutionary
+    information (species trees, gene trees, or a combination of both) should form the basis for
+    analyses in these settings.
+  bib: |
+    @article{Wicke2024,
+    title = {Implications of gene tree heterogeneity on downstream phylogenetic analyses: A case study employing the Fair Proportion index},
+    volume = {19},
+    DOI = {10.1371/journal.pone.0300900},
+    number = {4},
+    journal = {PLOS ONE},
+    publisher = {Public Library of Science (PLoS)},
+    author = {Wicke, Kristina and Haque, Md. Rejuan and Kubatko, Laura},
+    year = {2024}
+    }
+
+
 - title: "Exploring spaces of semi-directed level-1 networks"
   authors: "Simone Linz, Kristina Wicke"
   alphabetical: true
