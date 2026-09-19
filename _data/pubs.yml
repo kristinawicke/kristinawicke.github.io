@@ -153,50 +153,6 @@
     }
 
 
-- title: "Phylogenetic diversity indices from an affine and projective viewpoint"
-  authors: "Vincent Moulton, Andreas Spillner, Kristina Wicke"
-  alphabetical: true
-  year: 2024
-  month: 08
-  date: 2024-08-01
-  type: article
-  journal: "Bulletin of Mathematical Biology"
-  volume: 86
-  issue: 8
-  pages: "31 pages"
-  journal_url: "https://doi.org/10.1007/s11538-024-01332-x"
-  arxiv: "2403.15842"
-  abstract: >-
-    Phylogenetic diversity indices are commonly used to rank the elements in a collection of
-    species or populations for conservation purposes. The derivation of these indices is
-    typically based on some quantitative description of the evolutionary history of the species
-    in question, which is often given in terms of a phylogenetic tree. Both rooted and unrooted
-    phylogenetic trees can be employed, and there are close connections between the indices
-    that are derived in these two different ways. In this paper, we introduce more general
-    phylogenetic diversity indices that can be derived from collections of subsets (clusters) and
-    collections of bipartitions (splits) of the given set of species. Such indices could be useful,
-    for example, in case there is some uncertainty in the topology of the tree being used to
-    derive a phylogenetic diversity index. As well as characterizing some of the indices that we
-    introduce in terms of their special properties, we provide a link between cluster-based and
-    split-based phylogenetic diversity indices that uses a discrete analogue of the classical link
-    between affine and projective geometry. This provides a unified framework for many of the
-    various phylogenetic diversity indices used in the literature based on rooted and unrooted
-    phylogenetic trees, generalizations and new proofs for previous results concerning tree-
-    based indices, and a way to define some new phylogenetic diversity indices that naturally
-    arise as affine or projective variants of each other or as generalizations of tree-based
-    indices.
-- bib: | 
-    @article{Moulton2024,
-    title = {Phylogenetic diversity indices from an affine and projective viewpoint},
-    volume = {86},
-    DOI = {10.1007/s11538-024-01332-x},
-    number = {8},
-    journal = {Bulletin of Mathematical Biology},
-    author = {Moulton, Vincent and Spillner, Andreas and Wicke, Kristina},
-    year = {2024}
-    }
-
-
 - title: "Implications of gene tree heterogeneity on downstream phylogenetic analyses: A case study employing the fair proportion index"
   authors: "Kristina Wicke, Md Rejuan Haque, Laura Kubatko"
   year: 2024
