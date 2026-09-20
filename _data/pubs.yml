@@ -25,6 +25,195 @@
     }
 
 
+- title: "Distinguishing phylogenetic level-2 networks with quartets and inter-taxon quartet distances"
+  authors: "Niels Holtgrefe, Elizabeth S. Allman, Hector Baños, Leo van Iersel, Vincent Moulton, John A. Rhodes, Kristina Wicke"
+  year: 2025
+  month: 12
+  date: 2025-12-02
+  type: article
+  journal: "Bulletin of Mathematical Biology"
+  volume: 81
+  issue: 12
+  pages: "35 pages"
+  journal_url: "https://doi.org/10.1007/s11538-025-01549-4"
+  arxiv: "2507.17308"
+  abstract: >-
+    The inference of phylogenetic networks, which model complex evolutionary processes
+    including hybridization and gene flow, remains a central challenge in evolutionary biology.
+    Until now, statistically consistent inference methods have been limited to phylogenetic
+    level-1 networks, which allow no interdependence between reticulate events. In this work,
+    we establish the theoretical foundations for a statistically consistent inference method for
+    a much broader class: semi-directed level-2 networks that are outer-labeled planar and
+    galled. We precisely characterize the features of these networks that are distinguishable
+    from the topologies of their displayed quartet trees. Moreover, we prove that an inter-
+    taxon distance derived from these quartets is circular decomposable, enabling future
+    robust inference of these networks from quartet data, such as concordance factors
+    obtained from gene tree distributions under the Network Multispecies Coalescent model.
+    Our results also have novel identifiability implications across different data types and
+    evolutionary models, applying to any setting in which displayed quartets can be
+    distinguished.
+  bib: |
+    @article{Holtgrefe2025,
+    title = {Distinguishing Phylogenetic Level-2 Networks with Quartets and Inter-Taxon Quartet Distances},
+    volume = {87},
+    DOI = {10.1007/s11538-025-01549-4},
+    number = {12},
+    journal = {Bulletin of Mathematical Biology},
+    publisher = {Springer Science and Business Media LLC},
+    author = {Holtgrefe, Niels and Allman, Elizabeth S. and Baños, Hector and van Iersel, Leo and Moulton, Vincent and Rhodes, John A. and Wicke, Kristina},
+    year = {2025}
+    }
+
+
+- title: "NANUQ+: A divide-and-conquer approach to network estimation"
+  authors: "Elizabeth S. Allman, Hector Baños, John A. Rhodes, Kristina Wicke"
+  alphabetical: true
+  year: 2025
+  month: 12
+  date: 2025-12-01
+  type: article
+  journal: "Algorithms for Molecular Biology"
+  volume: 20
+  issue: 1
+  pages: "25 pages"
+  journal_url: "https://doi.org/10.1186/s13015-025-00274-w"
+  biorxiv:
+  abstract: >-
+    Inference of a species network from genomic data remains a difficult problem, with recent
+    progress mostly limited to the level-1 case. However, inference of the Tree of Blobs of a
+    network, showing only the network’s cut edges, can be performed for any network by
+    TINNiK, suggesting a divide-and-conquer approach to network inference where the tree’s
+    multifurcations are individually resolved to give more detailed structure. Here we develop a
+    method, NANUQ^+, to quickly perform such a level-1 resolution. Viewed as part of the
+    NANUQ pipeline for fast level-1 inference, this gives tools for both understanding when the
+    level-1 assumption is likely to be met and for exploring all highly-supported resolutions to
+    cycles.
+  bib: |
+    @article{Allman2025,
+    title = {NANUQ+: A divide-and-conquer approach to network estimation},
+    volume = {20},
+    DOI = {10.1186/s13015-025-00274-w},
+    number = {1},
+    journal = {Algorithms for Molecular Biology},
+    author = {Allman, Elizabeth S. and Baños, Hector and Rhodes, John A. and Wicke, Kristina},
+    year = {2025}
+    }
+
+
+- title: "Metaconcepts of rooted tree balance"
+  authors: "Mareike Fischer, Tom N. Hamann, Kristina Wicke"
+  alphabetical: true
+  year: 2025
+  month: 09
+  date: 2025-09-01
+  type: article
+  journal: "Bulletin of Mathematical Biology"
+  volume: 87
+  issue: 9
+  pages: "56 pages"
+  journal_url: "https://doi.org/10.1007/s11538-025-01509-y"
+  arxiv: "2506.08614"
+  abstract: >-
+    Measures of tree balance play an important role in many different research areas such as
+    mathematical phylogenetics or theoretical computer science. Typically, tree balance is
+    quantified by a single number which is assigned to the tree by a balance or imbalance
+    index, of which several exist in the literature. Most of these indices are based on structural
+    aspects of tree shape, such as clade sizes or leaf depths. For instance, indices like the
+    Sackin index, total cophenetic index, and -shape statistic all quantify tree balance
+    through clade sizes, albeit with different definitions and properties. In this paper, we
+    formalize the idea that many tree (im)balance indices are functions of similar underlying
+    tree shape characteristics by introducing metaconcepts of tree balance. A metaconcept is a
+    function that depends on a function f capturing some aspect of tree shape, such as
+    balance values, clade sizes, or leaf depths. These metaconcepts encompass existing indices
+    but also provide new means of measuring tree balance. The versatility and generality of
+    metaconcepts allow for the systematic study of entire families of (im)balance indices,
+    providing deeper insights that extend beyond index-by-index analysis.
+  bib: |
+    @article{Fischer2025,
+    title = {Metaconcepts of Rooted Tree Balance},
+    volume = {87},
+    DOI = {10.1007/s11538-025-01509-y},
+    number = {9},
+    journal = {Bulletin of Mathematical Biology},
+    publisher = {Springer Science and Business Media LLC},
+    author = {Fischer,  Mareike and Hamann,  Tom Niklas and Wicke,  Kristina},
+    year = {2025}
+    }
+
+
+- title: "Tree balance in phylogenetic models"
+  authors: "Sophie J. Kersting, Kristina Wicke, Mareike Fischer"
+  year: 2025
+  month: 02
+  date: 2025-02-13
+  type: article
+  journal: "Philosophical Transactions of the Royal Society B: Biological Sciences"
+  volume: 380
+  issue: 1919
+  pages: "15 pages"
+  journal_url: "https://doi.org/10.1098/rstb.2023.0303"
+  arxiv: "2406.05185"
+  abstract: >-
+    Tree shape statistics, particularly measures of tree (im)balance, play an important role in the analysis of
+    the shape of phylogenetic trees. With applications ranging from testing evolutionary models
+    to studying the impact of fertility inheritance and selection, or tumour development and language
+    evolution, the assessment of measures of tree balance is important. Currently, a multitude of at least
+    30 (im)balance indices can be found in the literature, alongside numerous other tree shape statistics.
+    This diversity prompts essential questions: how can we assist researchers in choosing only a small
+    number of indices to mitigate the challenges of multiple testing? Is there a preeminent balance index
+    tailored to specific tasks? This research expands previous studies on the examination of index power,
+    encompassing almost all established indices and a broader array of alternative models, such as a
+    variety of trait-based models. Our investigation reveals distinct groups of balance indices better suited
+    for different tree models, suggesting that decisions on balance index selection can be enhanced with
+    prior knowledge. Furthermore, we present the R software package poweRbal which allows the
+    inclusion of new indices and models, thus facilitating future research on the power of tree shape
+    statistics.
+  bib: |
+    @article{Kersting2025,
+    title = {Tree balance in phylogenetic models},
+    volume = {380},
+    DOI = {10.1098/rstb.2023.0303},
+    number = {1919},
+    journal = {Philosophical Transactions of the Royal Society B: Biological Sciences},
+    publisher = {The Royal Society},
+    author = {Kersting, Sophie J. and Wicke, Kristina and Fischer, Mareike},
+    year = {2025}
+    }
+  
+
+
+- title: "Decks of rooted binary trees"
+  authors: "Ann Clifton, Éva Czabarka, Audace Dossou-Olory, Kevin Liu, Sarah Loeb, Utku Okur, Laszlo Székely, Kristina Wicke"
+  alphabetical: true
+  year: 2025
+  month: 02
+  date: 2025-02-01
+  type: article
+  journal: "European Journal of Combinatorics"
+  volume: 124
+  pages: "21 pages"
+  journal_url: "https://doi.org/10.1016/j.ejc.2024.104076"
+  arxiv: "2311.02255"
+  abstract: >-
+    We consider extremal problems related to decks and multidecks of rooted binary trees
+    (a.k.a. rooted phylogenetic tree shapes). Here, the deck (resp. multideck) of a tree 𝑇 refers
+    to the set (resp. multiset) of leaf-induced binary subtrees of 𝑇. On the one hand, we
+    consider the reconstruction of trees from their (multi)decks. We give lower and upper
+    bounds on the minimum (multi)deck size required to uniquely encode a rooted binary
+    tree on 𝑛 leaves. On the other hand, we consider problems related to deck cardinalities.
+    In particular, we characterize trees with minimum-size as well as maximum-size decks.
+    Finally, we present some exhaustive computations for 𝑘-universal trees, i.e., rooted
+    binary trees that contain all 𝑘-leaf rooted binary trees as leaf-induced subtrees.
+  bib: |
+    @article{Clifton2025,
+    title = {Decks of rooted binary trees},
+    volume = {124},
+    DOI = {10.1016/j.ejc.2024.104076},
+    journal = {European Journal of Combinatorics},
+    author = {Clifton, Ann and Czabarka, Éva and Dossou-Olory, Audace A.V. and Liu, Kevin and Loeb, Sarah and Okur, Utku and Székely, László and Wicke, Kristina},
+    year = {2025}
+    }
+
 - title: "The weighted total cophenetic index: A novel balance index for phylogenetic networks"
   authors: "Linda Knüver, Mareike Fischer, Marc Hellmuth, Kristina Wicke"
   year: 2024
